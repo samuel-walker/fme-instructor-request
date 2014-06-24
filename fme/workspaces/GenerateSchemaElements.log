@@ -1,0 +1,177 @@
+2014-05-15 12:01:24|   0.0|  0.0|INFORM|FME 2014 SP2 Beta (20140508 - Build 14323 - macosx)
+2014-05-15 12:01:24|   0.0|  0.0|INFORM|FME_HOME is '/Applications/FME 2014/Engine/'
+2014-05-15 12:01:24|   0.0|  0.0|INFORM|FME Desktop Smallworld Edition (floating)
+2014-05-15 12:01:24|   0.0|  0.0|INFORM|Permanent License.
+2014-05-15 12:01:24|   0.0|  0.0|INFORM|Machine host name is: gimli.safe.internal
+2014-05-15 12:01:24|   0.0|  0.0|INFORM|START - ProcessID: 14933, peak process memory usage: 0 kB, current process memory usage: 0 kB
+2014-05-15 12:01:24|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `/Applications/FME 2014/Engine//bin/fme' `/www/fmepedia-easygeocoder/fme/workspaces/wb-xlate-1400180483885_13283' `LOG_STANDARDOUT' `YES' `LogCount' `/tmp/wb-xlate-counts-1400180483888_13283'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|Shared directories for formats are : /Users/lkerssens/Library/Application Support/FME/Formats;/Applications/FME 2014/Engine/datasources;/Users/lkerssens/Documents/MyFiles/FMEResources/Formats
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|Shared directories for transformers are : /Users/lkerssens/Library/Application Support/FME/Transformers;/Applications/FME 2014/Engine/transformers;/Users/lkerssens/Documents/MyFiles/FMEResources/Transformers;/Users/lkerssens/Library/Caches/Safe Software/FME/FME Store/Transformers
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|Shared directories for coordinate systems are : /Users/lkerssens/Library/Application Support/FME/CoordinateSystems;/Users/lkerssens/Documents/MyFiles/FMEResources/CoordinateSystems
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|Shared directories for coordinate system exceptions are : /Users/lkerssens/Library/Application Support/FME/CoordinateSystemExceptions;/Users/lkerssens/Documents/MyFiles/FMEResources/CoordinateSystemExceptions
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|Shared directories for coordinate system grid overrides are : /Users/lkerssens/Documents/MyFiles/FMEResources/CoordinateSystemGridOverrides;/Users/lkerssens/Library/Application Support/FME/CoordinateSystemGridOverrides
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|Shared directories for CS-MAP transformation exceptions are : /Users/lkerssens/Library/Application Support/FME/CsmapTransformationExceptions;/Users/lkerssens/Documents/MyFiles/FMEResources/CsmapTransformationExceptions
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|Shared directories for transformer categories are : /Users/lkerssens/Library/Application Support/FME/TransformerCategories;/Users/lkerssens/Documents/MyFiles/FMEResources/TransformerCategories
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: Reader Keyword is `MULTI_READER'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: Reader type is `MULTI_READER'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: Current working directory is `/www/fmepedia-easygeocoder/fme/workspaces'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: Temporary directory is `/tmp'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: FME_HOME is `/Applications/FME 2014/Engine/'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: FME_MF_DIR is '/www/fmepedia-easygeocoder/fme/workspaces/'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'GenerateSchemaElements.fmw'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2014 SP1'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|Operating System: Darwin 13.1.0 x86_64
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Platform: macosx
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|The memory allocator being used by FME is : `/usr/lib/system/libsystem_malloc.dylib'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|Locale: C
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: Process limit is 16384 MB (out of 16384 MB physical memory and 17592186044415 MB address space)
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: Start freeing memory when process usage exceeds 9830 MB of memory or 17592186043816 MB of address space
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: Stop freeing memory when process usage is below 7372 MB of memory and 13194139532862 MB of address space
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|FME Configuration: Autodetermining optimal maximum number of objects in memory
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Will fail with first member reader failure
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding SCHEMA Reader with keyword SCHEMA_1
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|MULTI_READER(MULTI_READER): Adding NULL Reader with keyword CSV_1
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|Using Multi Reader $Revision: 114961 $ ( $Date: 2014-01-08 16:53:06 -0800 (Wed, 08 Jan 2014) $ ) with keyword `MULTI_READER' to read multiple datasets
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `SCHEMA'
+2014-05-15 12:01:24|   0.1|  0.0|INFORM|DYLD_LIBRARY_PATH is '/Applications/FME 2014/Engine/plugins'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Loaded module 'SCHEMA' from file '/Applications/FME 2014/Engine/plugins/generic.so'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|FME API version of module 'SCHEMA' matches current internal version (3.7 20140327)
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `CREATED_USING_FME_OBJECTS' setting specified with value `Yes'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `READER_META_ATTRIBUTES' setting specified with value `fme_basename'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `SKIP_LINES' setting specified with value `1'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `SKIP_FOOTER' setting specified with value `0'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `FIELD_NAMES' setting specified with value `YES'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `FIELD_NAMES_AFTER_HEADER' setting specified with value `no'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `STRIP_QUOTES' setting specified with value `yes'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `SEPARATOR' setting specified with value `(,)'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `EXTENSION' setting specified with value `CSV'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `DUPLICATE_DELIMS' setting specified with value `no'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `SEQUENCED' setting specified with value `no'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `ALLOW_SPACES_IN_COLUMN_NAMES' setting specified with value `yes'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `UNENCODED_ATTR_PREFIX' setting specified with value `fme_'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `READER_META_ATTRIBUTES' setting specified with value `fme_feature_type'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Generic Reader: The CSV Reader has its `MAX_FEATURES' setting specified with value `1'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `CSV'
+2014-05-15 12:01:24|   0.2|  0.0|WARN  |FME Configuration: Maximum of 1 feature(s) will be read starting from feature number 1
+2014-05-15 12:01:24|   0.2|  0.0|WARN  |FME Configuration: Maximum of 1 feature(s) will be read starting from feature number 1
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Loaded module 'CSV' from file '/Applications/FME 2014/Engine/plugins/csv.so'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|FME API version of module 'CSV' matches current internal version (3.7 20140327)
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Opening the SCHEMA Reader on dataset `/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Using MultiWriter $Revision: 59162 $ ( $Date: 2009-04-07 10:04:59 -0700 (Tue, 07 Apr 2009) $ ) with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2014-05-15 12:01:24|   0.2|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2014-05-15 12:01:24|   0.3|  0.1|INFORM|Loaded module 'LogCount_func' from file '/Applications/FME 2014/Engine/plugins/logcount_func.so'
+2014-05-15 12:01:24|   0.3|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.7 20140327)
+2014-05-15 12:01:24|   0.3|  0.0|INFORM|Loaded module 'Geometry_func' from file '/Applications/FME 2014/Engine/plugins/geometry_func.so'
+2014-05-15 12:01:24|   0.3|  0.0|INFORM|FME API version of module 'Geometry_func' matches current internal version (3.7 20140327)
+2014-05-15 12:01:24|   0.3|  0.0|INFORM|ListExploder(ElementFactory): Using LEAN processing mode
+2014-05-15 12:01:24|   0.4|  0.1|INFORM|Loaded module 'XMLTemplaterFactory' from file '/Applications/FME 2014/Engine/plugins/xmltemplaterfactory.so'
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|FME API version of module 'XMLTemplaterFactory' matches current internal version (3.7 20140327)
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `CSV'
+2014-05-15 12:01:24|   0.4|  0.0|WARN  |FME Configuration: Maximum of 1 feature(s) will be read starting from feature number 1
+2014-05-15 12:01:24|   0.4|  0.0|WARN  |FME Configuration: Maximum of 1 feature(s) will be read starting from feature number 1
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|FME API version of module 'CSV' matches current internal version (3.7 20140327)
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|CSV Reader: Opening CSV files in directory `/www/fmepedia-easygeocoder/fme/data'
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|CSV Reader: Separator Character: ','
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|CSV Reader: Skip Duplicate Delimiters: no
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|CSV Reader: Strip Quotes From Fields: yes
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|CSV Reader: File Has Field Names: yes
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|CSV Reader: Field Names Follow Header: no
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|CSV Reader: Number of Lines to Skip: 1
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|CSV Reader: Number of Footer Lines to Skip: 0
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|CSV Reader: Encoding name ''
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|CSV Reader: Allowing Spaces in Column Names: yes
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|CSV Reader: Max features to scan for schema: 10000
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|CSV Reader: Feature type names from file names: no
+2014-05-15 12:01:24|   0.4|  0.0|INFORM|CSV Reader: Opening dataset '/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|Using Tabular Reader $Revision: 112537 $ ( $Date: 2013-11-21 15:01:44 -0800 (Thu, 21 Nov 2013) $ ) to read files from directory `/www/fmepedia-easygeocoder/fme/data'
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|Stripping quotes around fields in CSV File `/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|Opened Separated Value File /www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv for input with delimiter `,'
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|Reading attributes in internal sequenced mode CSV File `/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|Skipped line `RecordID,acct_sgmnt_cd,lblty_type_cd,AddressLine1,addr2,City,StateProvince,PostalCode,zip4,act_susp_lines' in CSV File `/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|CSV Reader: Closing dataset '/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|CSV Reader: Done reading CSV files in directory `/www/fmepedia-easygeocoder/fme/data'
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|Closing the SCHEMA Reader
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `NULL'
+2014-05-15 12:01:24|   0.5|  0.0|WARN  |FME Configuration: Maximum of 1 feature(s) will be read starting from feature number 1
+2014-05-15 12:01:24|   0.5|  0.0|WARN  |FME Configuration: Maximum of 1 feature(s) will be read starting from feature number 1
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|Loaded module 'NULL' from file '/Applications/FME 2014/Engine/plugins/null.so'
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|FME API version of module 'NULL' matches current internal version (3.7 20140327)
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|MULTI_READER(MULTI_READER): Done reading 1 features from 2 readers
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|Emptying factory pipeline
+2014-05-15 12:01:24|   0.5|  0.0|STATS |SCHEMA_1 Merger(TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2014-05-15 12:01:24|   0.5|  0.0|STATS |Unexpected Input Remover(TestFactory): Tested 1 input feature(s) -- 1 feature(s) passed and 0 feature(s) failed
+2014-05-15 12:01:24|   0.5|  0.0|STATS |Unexpected Input Remover Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2014-05-15 12:01:24|   0.5|  0.0|STATS |Source -> Generic(TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2014-05-15 12:01:24|   0.5|  0.0|STATS |schema Feature Counter -1 50(TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2014-05-15 12:01:24|   0.5|  0.0|STATS |Creator_XML_Creator(CreationFactory): Created 1 features
+2014-05-15 12:01:24|   0.5|  0.0|STATS |Creator_Cloner(TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2014-05-15 12:01:24|   0.5|  0.0|STATS |Creator_CREATED Feature Counter -1 21(TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2014-05-15 12:01:24|   0.5|  0.0|STATS |ListExploder(ElementFactory): Split out 10 list elements from 1 input features, using mode LEAN
+2014-05-15 12:01:24|   0.5|  0.0|STATS |ListExploder_LIST_FOUND Feature Counter -1 17(TeeFactory): Cloned 10 input feature(s) into 10 output feature(s)
+2014-05-15 12:01:24|   0.5|  0.0|STATS |JSONTemplater_SUB_INPUT_FACTORY(TeeFactory): Cloned 10 input feature(s) into 10 output feature(s)
+2014-05-15 12:01:24|   0.5|  0.0|INFORM|JSONTemplater(XMLTemplaterFactory): All features received
+2014-05-15 12:01:24|   0.6|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `TEXTLINE'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Loaded module 'TEXTLINE' from file '/Applications/FME 2014/Engine/plugins/textline.so'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|FME API version of module 'TEXTLINE' matches current internal version (3.7 20140327)
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|FME API version of module 'TEXTLINE' matches current internal version (3.7 20140327)
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Writer `TEXTLINE_1' of type `TEXTLINE' using group definition keyword `TEXTLINE_DEF'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|FME API version of module 'TEXTLINE' matches current internal version (3.7 20140327)
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Text File Writer: Opening the file '/www/fmepedia-easygeocoder/fme/data/Output/json_fields.txt'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Text File Writer: Line Termination: Unix
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Text File Writer: Write the final line termination character: yes
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Text File Writer: Character Encoding: ''
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Text File Writer: Write UTF-8 Byte Order Mark: yes
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|JSONTemplater_Output: Feature is:
+2014-05-15 12:01:25|   0.6|  0.0|STATS |Storing feature(s) to FME feature store file `/www/fmepedia-easygeocoder/fme/workspaces/GenerateSchemaElements_log.ffs'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Feature Type: `JSONTemplater_Output_LOGGED'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Attribute(32 bit unsigned integer): `_creation_instance' has value `0'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Attribute(string)                 : `fme_feature_type' has value `Creator'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Attribute(string)                 : `fme_geometry' has value `fme_undefined'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Attribute(string)                 : `fme_type' has value `fme_no_geom'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Attribute(encoded: utf-8)         : `text_line_data' has value `{ "columns" : [ "RecordID", "acct_sgmnt_cd", "lblty_type_cd", "AddressLine1", "addr2", "City", "StateProvince", "PostalCode", "zip4", "act_susp_lines" ] }'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Coordinate System: `'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Geometry Type: IFMENull
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|===========================================================================
+2014-05-15 12:01:25|   0.6|  0.0|STATS |JSONTemplater OUTPUT Splitter(TeeFactory): Cloned 1 input feature(s) into 2 output feature(s)
+2014-05-15 12:01:25|   0.6|  0.0|STATS |JSONTemplater_OUTPUT_0_xnBej65EAuY= Feature Counter -1 19(TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2014-05-15 12:01:25|   0.6|  0.0|STATS |JSONTemplater_OUTPUT_1_xnBej65EAuY= Feature Counter -1 16(TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2014-05-15 12:01:25|   0.6|  0.0|STATS |JSONTemplater_Output_Logger(TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2014-05-15 12:01:25|   0.6|  0.0|STATS |JSONTemplater_Output LOGGED Output Nuker(TeeFactory): Cloned 1 input feature(s) into 0 output feature(s)
+2014-05-15 12:01:25|   0.6|  0.0|STATS |JSONTemplater_OUTPUT_0_xnBej65EAuY= -> text_line Correlator(TeeFactory): Cloned 1 input feature(s) into 1 output feature(s)
+2014-05-15 12:01:25|   0.6|  0.0|STATS |Final Output Feature Type Router(TestFactory): Tested 1 input feature(s) -- 1 feature(s) passed and 0 feature(s) failed
+2014-05-15 12:01:25|   0.6|  0.0|STATS |Final Output Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Text File Writer: Closing the file '/www/fmepedia-easygeocoder/fme/data/Output/json_fields.txt'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Feature output statistics for `TEXTLINE' writer using keyword `TEXTLINE_1':
+2014-05-15 12:01:25|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-05-15 12:01:25|   0.6|  0.0|STATS |                               Features Written
+2014-05-15 12:01:25|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-05-15 12:01:25|   0.6|  0.0|STATS |text_line                                                                    1
+2014-05-15 12:01:25|   0.6|  0.0|STATS |==============================================================================
+2014-05-15 12:01:25|   0.6|  0.0|STATS |Total Features Written                                                       1
+2014-05-15 12:01:25|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-05-15 12:01:25|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-05-15 12:01:25|   0.6|  0.0|STATS |                            Features Read Summary
+2014-05-15 12:01:25|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-05-15 12:01:25|   0.6|  0.0|STATS |schema                                                                       1
+2014-05-15 12:01:25|   0.6|  0.0|STATS |==============================================================================
+2014-05-15 12:01:25|   0.6|  0.0|STATS |Total Features Read                                                          1
+2014-05-15 12:01:25|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-05-15 12:01:25|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-05-15 12:01:25|   0.6|  0.0|STATS |                           Features Written Summary
+2014-05-15 12:01:25|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-05-15 12:01:25|   0.6|  0.0|STATS |text_line                                                                    1
+2014-05-15 12:01:25|   0.6|  0.0|STATS |==============================================================================
+2014-05-15 12:01:25|   0.6|  0.0|STATS |Total Features Written                                                       1
+2014-05-15 12:01:25|   0.6|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|Translation was SUCCESSFUL with 6 warning(s) (1 feature(s) output)
+2014-05-15 12:01:25|   0.6|  0.0|STATS |Stored 1 feature(s) to FME feature store file `/www/fmepedia-easygeocoder/fme/workspaces/GenerateSchemaElements_log.ffs'
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|FME Session Duration: 0.8 seconds. (CPU: 0.5s user, 0.1s system)
+2014-05-15 12:01:25|   0.6|  0.0|INFORM|END - ProcessID: 14933, peak process memory usage: 0 kB, current process memory usage: 0 kB

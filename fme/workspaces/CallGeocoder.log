@@ -1,0 +1,168 @@
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME 2014 SP2 Beta (20140528 - Build 14336 - macosx)
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME_HOME is '/Applications/FME 2014/Engine/'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Desktop Smallworld Edition (floating)
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|Permanent License.
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|Machine host name is: gimli.safe.internal
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|START - ProcessID: 7041, peak process memory usage: 0 kB, current process memory usage: 0 kB
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: Command line arguments are `/Applications/FME 2014/Engine//bin/fme' `/www/fmepedia-easygeocoder/fme/workspaces/wb-xlate-1402010305678_3290' `LOG_STANDARDOUT' `YES' `LogCount' `/tmp/wb-xlate-counts-1402010318695_3290'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|Shared directories for formats are : /Users/lkerssens/Library/Application Support/FME/Formats;/Applications/FME 2014/Engine/datasources;/Users/lkerssens/Documents/MyFiles/FMEResources/Formats
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|Shared directories for transformers are : /Users/lkerssens/Library/Application Support/FME/Transformers;/Applications/FME 2014/Engine/transformers;/Users/lkerssens/Documents/MyFiles/FMEResources/Transformers;/Users/lkerssens/Library/Caches/Safe Software/FME/FME Store/Transformers
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|Shared directories for coordinate systems are : /Users/lkerssens/Library/Application Support/FME/CoordinateSystems;/Users/lkerssens/Documents/MyFiles/FMEResources/CoordinateSystems
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|Shared directories for coordinate system exceptions are : /Users/lkerssens/Library/Application Support/FME/CoordinateSystemExceptions;/Users/lkerssens/Documents/MyFiles/FMEResources/CoordinateSystemExceptions
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|Shared directories for coordinate system grid overrides are : /Users/lkerssens/Documents/MyFiles/FMEResources/CoordinateSystemGridOverrides;/Users/lkerssens/Library/Application Support/FME/CoordinateSystemGridOverrides
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|Shared directories for CS-MAP transformation exceptions are : /Users/lkerssens/Library/Application Support/FME/CsmapTransformationExceptions;/Users/lkerssens/Documents/MyFiles/FMEResources/CsmapTransformationExceptions
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|Shared directories for transformer categories are : /Users/lkerssens/Library/Application Support/FME/TransformerCategories;/Users/lkerssens/Documents/MyFiles/FMEResources/TransformerCategories
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: Reader Keyword is `CSV_2'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: Writer Keyword is `MULTI_WRITER'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: Writer Group Definition Keyword is `MULTI_WRITER_DEF'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: Reader type is `CSV'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: Writer type is `MULTI_WRITER'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: Current working directory is `/www/fmepedia-easygeocoder/fme/workspaces'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: Temporary directory is `/tmp'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: FME_HOME is `/Applications/FME 2014/Engine/'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: FME_BASE is 'no'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: FME_MF_DIR is '/www/fmepedia-easygeocoder/fme/workspaces/'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: FME_MF_NAME is 'CallGeocoder.fmw'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Configuration: FME_PRODUCT_NAME is 'FME(R) 2014 SP2'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|Operating System: Darwin 13.2.0 x86_64
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|FME Platform: macosx
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|The memory allocator being used by FME is : `/usr/lib/system/libsystem_malloc.dylib'
+2014-06-05 16:18:39|   0.0|  0.0|INFORM|Locale: C
+2014-06-05 16:18:39|   0.1|  0.0|INFORM|FME Configuration: Process limit is 16384 MB (out of 16384 MB physical memory and 17592186044415 MB address space)
+2014-06-05 16:18:39|   0.1|  0.0|INFORM|FME Configuration: Start freeing memory when process usage exceeds 9830 MB of memory or 17592186043816 MB of address space
+2014-06-05 16:18:39|   0.1|  0.0|INFORM|FME Configuration: Stop freeing memory when process usage is below 7372 MB of memory and 13194139532862 MB of address space
+2014-06-05 16:18:39|   0.1|  0.0|INFORM|FME Configuration: Autodetermining optimal maximum number of objects in memory
+2014-06-05 16:18:39|   0.1|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `CSV'
+2014-06-05 16:18:39|   0.1|  0.0|INFORM|DYLD_LIBRARY_PATH is not set
+2014-06-05 16:18:39|   0.1|  0.0|INFORM|Loaded module 'CSV' from file '/Applications/FME 2014/Engine/plugins/csv.so'
+2014-06-05 16:18:39|   0.1|  0.0|INFORM|FME API version of module 'CSV' matches current internal version (3.7 20140327)
+2014-06-05 16:18:39|   0.1|  0.0|INFORM|CSV Reader: Opening CSV files in directory `/www/fmepedia-easygeocoder/fme/data'
+2014-06-05 16:18:39|   0.1|  0.0|INFORM|Using MultiWriter $Revision: 59162 $ ( $Date: 2009-04-07 10:04:59 -0700 (Tue, 07 Apr 2009) $ ) with keyword `MULTI_WRITER' to output data (ID_ATTRIBUTE is `multi_writer_id')
+2014-06-05 16:18:39|   0.1|  0.0|INFORM|Writer output will be ordered by value of multi_writer_id
+2014-06-05 16:18:39|   0.2|  0.1|INFORM|Loaded module 'LogCount_func' from file '/Applications/FME 2014/Engine/plugins/logcount_func.so'
+2014-06-05 16:18:39|   0.2|  0.0|INFORM|FME API version of module 'LogCount_func' matches current internal version (3.7 20140327)
+2014-06-05 16:18:39|   0.2|  0.0|INFORM|Loaded module 'EvaluateExpression_func' from file '/Applications/FME 2014/Engine/plugins/evaluateexpression_func.so'
+2014-06-05 16:18:39|   0.2|  0.0|INFORM|FME API version of module 'EvaluateExpression_func' matches current internal version (3.7 20140327)
+2014-06-05 16:18:39|   0.3|  0.0|INFORM|Loaded module 'HTTPFactory' from file '/Applications/FME 2014/Engine/plugins/httpfactory.so'
+2014-06-05 16:18:39|   0.3|  0.0|INFORM|FME API version of module 'HTTPFactory' matches current internal version (3.7 20140327)
+2014-06-05 16:18:39|   0.3|  0.1|INFORM|Loaded module 'XFMapFactory' from file '/Applications/FME 2014/Engine/plugins/xfmapfactory.so'
+2014-06-05 16:18:39|   0.3|  0.0|INFORM|FME API version of module 'XFMapFactory' matches current internal version (3.7 20140327)
+2014-06-05 16:18:39|   0.4|  0.1|INFORM|Loaded module 'VertexCreatorFactory' from file '/Applications/FME 2014/Engine/plugins/vertexcreatorfactory.so'
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|FME API version of module 'VertexCreatorFactory' matches current internal version (3.7 20140327)
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|CSV Reader: Separator Character: ','
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|CSV Reader: Skip Duplicate Delimiters: no
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|CSV Reader: Strip Quotes From Fields: yes
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|CSV Reader: File Has Field Names: yes
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|CSV Reader: Field Names Follow Header: no
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|CSV Reader: Number of Lines to Skip: 1
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|CSV Reader: Number of Footer Lines to Skip: 0
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|CSV Reader: Encoding name ''
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|CSV Reader: Allowing Spaces in Column Names: yes
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|CSV Reader: Max features to scan for schema: 10000
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|CSV Reader: Feature type names from file names: no
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|CSV Reader: Opening dataset '/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|Using Tabular Reader $Revision: 112537 $ ( $Date: 2013-11-21 15:01:44 -0800 (Thu, 21 Nov 2013) $ ) to read files from directory `/www/fmepedia-easygeocoder/fme/data'
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|Stripping quotes around fields in CSV File `/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|Opened Separated Value File /www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv for input with delimiter `,'
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|Skipped line `RecordID,acct_sgmnt_cd,lblty_type_cd,AddressLine1,addr2,City,StateProvince,PostalCode,zip4,act_susp_lines' in CSV File `/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-06-05 16:18:39|   0.4|  0.0|INFORM|Sending request to 'http://services.gisgraphy.com/geocoding/geocode?address=175%20S%20LAKE%20AVE%20UNIT%20315%20PASADENA&postal=&country='''
+2014-06-05 16:18:43|   0.4|  0.0|INFORM|HTTP transfer summary - status code: 200, download size: '2948 bytes', DNS lookup time: '0.000339 seconds', total transfer time: '4.024605 seconds', url: 'http://services.gisgraphy.com/geocoding/geocode?address=175%20S%20LAKE%20AVE%20UNIT%20315%20PASADENA&postal=&country='''
+2014-06-05 16:18:43|   0.5|  0.1|INFORM|Trying to find a DYNAMIC plugin for reader named `CSV'
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|FME API version of module 'CSV' matches current internal version (3.7 20140327)
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|Trying to find a DYNAMIC plugin for reader named `CSV'
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|FME API version of module 'CSV' matches current internal version (3.7 20140327)
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Opening CSV files in directory `/www/fmepedia-easygeocoder/fme/data'
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Separator Character: ','
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Skip Duplicate Delimiters: no
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Strip Quotes From Fields: yes
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: File Has Field Names: yes
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Field Names Follow Header: no
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Number of Lines to Skip: 1
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Number of Footer Lines to Skip: 0
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Encoding name ''
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Allowing Spaces in Column Names: yes
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Max features to scan for schema: 10000
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Feature type names from file names: no
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Opening dataset '/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|Using Tabular Reader $Revision: 112537 $ ( $Date: 2013-11-21 15:01:44 -0800 (Thu, 21 Nov 2013) $ ) to read files from directory `/www/fmepedia-easygeocoder/fme/data'
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|Stripping quotes around fields in CSV File `/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|Opened Separated Value File /www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv for input with delimiter `,'
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|Reading attributes in internal sequenced mode CSV File `/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|Skipped line `RecordID,acct_sgmnt_cd,lblty_type_cd,AddressLine1,addr2,City,StateProvince,PostalCode,zip4,act_susp_lines' in CSV File `/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Closing dataset '/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|CSV Reader: Done reading CSV files in directory `/www/fmepedia-easygeocoder/fme/data'
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|Reader `CSV_2' of type `CSV' provided schema for types: CSV
+2014-06-05 16:18:43|   0.5|  0.0|INFORM|Trying to find a DYNAMIC plugin for writer named `OGCKML'
+2014-06-05 16:18:43|   0.6|  0.1|INFORM|Loaded module 'OGCKML' from file '/Applications/FME 2014/Engine/plugins/kml21.so'
+2014-06-05 16:18:43|   0.6|  0.0|INFORM|FME API version of module 'OGCKML' matches current internal version (3.7 20140327)
+2014-06-05 16:18:43|   0.6|  0.0|INFORM|FME Configuration: No destination coordinate system set
+2014-06-05 16:18:43|   0.6|  0.0|INFORM|FME API version of module 'OGCKML' matches current internal version (3.7 20140327)
+2014-06-05 16:18:43|   0.6|  0.0|INFORM|Writer `OGCKML_1' of type `OGCKML' using group definition keyword `OGCKML_1_DEF'
+2014-06-05 16:18:43|   0.6|  0.0|INFORM|FME API version of module 'OGCKML' matches current internal version (3.7 20140327)
+2014-06-05 16:18:43|   0.6|  0.0|INFORM|KML: Initializing KML21 preferences...
+2014-06-05 16:18:43|   0.6|  0.0|INFORM|KML: Initializing dataset `/www/fmepedia-easygeocoder/fme/data/Output/GeocodedResults.kml'...
+2014-06-05 16:18:43|   0.6|  0.0|INFORM|Sending request to 'http://services.gisgraphy.com/geocoding/geocode?address=110%20S%20MANHATTAN%20AVE%20APT%2064%20TAMPA&postal=&country='''
+2014-06-05 16:18:44|   0.6|  0.0|INFORM|HTTP transfer summary - status code: 200, download size: '2894 bytes', DNS lookup time: '1.4e-05 seconds', total transfer time: '1.241836 seconds', url: 'http://services.gisgraphy.com/geocoding/geocode?address=110%20S%20MANHATTAN%20AVE%20APT%2064%20TAMPA&postal=&country='''
+2014-06-05 16:18:44|   0.6|  0.0|INFORM|Sending request to 'http://services.gisgraphy.com/geocoding/geocode?address=3245%20N%20VENTURA%20RD%20OXNARD&postal=&country='''
+2014-06-05 16:18:46|   0.6|  0.0|INFORM|HTTP transfer summary - status code: 200, download size: '3035 bytes', DNS lookup time: '1.4e-05 seconds', total transfer time: '1.920409 seconds', url: 'http://services.gisgraphy.com/geocoding/geocode?address=3245%20N%20VENTURA%20RD%20OXNARD&postal=&country='''
+2014-06-05 16:18:46|   0.6|  0.0|INFORM|Sending request to 'http://services.gisgraphy.com/geocoding/geocode?address=3739%20E%2085TH%20ST%20TULSA&postal=&country='''
+2014-06-05 16:18:49|   0.6|  0.0|INFORM|HTTP transfer summary - status code: 200, download size: '3049 bytes', DNS lookup time: '1.6e-05 seconds', total transfer time: '2.858004 seconds', url: 'http://services.gisgraphy.com/geocoding/geocode?address=3739%20E%2085TH%20ST%20TULSA&postal=&country='''
+2014-06-05 16:18:49|   0.6|  0.0|INFORM|Sending request to 'http://services.gisgraphy.com/geocoding/geocode?address=4250%20CHESTNUT%20RD%20WILSON&postal=&country='''
+2014-06-05 16:18:50|   0.6|  0.0|INFORM|HTTP transfer summary - status code: 200, download size: '2993 bytes', DNS lookup time: '1.4e-05 seconds', total transfer time: '1.074145 seconds', url: 'http://services.gisgraphy.com/geocoding/geocode?address=4250%20CHESTNUT%20RD%20WILSON&postal=&country='''
+2014-06-05 16:18:50|   0.6|  0.0|INFORM|CSV Reader: Closing dataset '/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv'
+2014-06-05 16:18:50|   0.6|  0.0|INFORM|Emptying factory pipeline
+2014-06-05 16:18:50|   0.6|  0.0|STATS |Unexpected Input Remover(TestFactory): Tested 1000 input feature(s) -- 1000 feature(s) passed and 0 feature(s) failed
+2014-06-05 16:18:50|   0.6|  0.0|STATS |Unexpected Input Remover Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2014-06-05 16:18:50|   0.6|  0.0|STATS |Source -> Generic(TeeFactory): Cloned 1000 input feature(s) into 1000 output feature(s)
+2014-06-05 16:18:50|   0.6|  0.0|STATS |CSV Feature Counter -1 44(TeeFactory): Cloned 1000 input feature(s) into 1000 output feature(s)
+2014-06-05 16:18:50|   0.6|  0.0|STATS |Sampler(SamplingFactory): Sampled 5 of 1000 feature(s)
+2014-06-05 16:18:50|   0.6|  0.0|STATS |Sampler_Sampled(TeeFactory): Cloned 5 input feature(s) into 5 output feature(s)
+2014-06-05 16:18:50|   0.6|  0.0|STATS |Sampler_SAMPLED Feature Counter -1 41(TeeFactory): Cloned 5 input feature(s) into 5 output feature(s)
+2014-06-05 16:18:50|   0.6|  0.0|STATS |AttributeCreator OUTPUT Splitter(TeeFactory): Cloned 5 input feature(s) into 10 output feature(s)
+2014-06-05 16:18:50|   0.6|  0.0|STATS |AttributeCreator_OUTPUT_0_olPiq+C1D00= Feature Counter -1 26(TeeFactory): Cloned 5 input feature(s) into 5 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|STATS |AttributeCreator_OUTPUT_1_olPiq+C1D00= Feature Counter -1 22(TeeFactory): Cloned 5 input feature(s) into 5 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|STATS |AttributeValueMapper (Disabled) Nuker(TeeFactory): Cloned 5 input feature(s) into 0 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|STATS |AttributeValueMapper_OUTPUT Feature Counter -1 24(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|STATS |HTTPFetcher_OUTPUT Feature Counter -1 37(TeeFactory): Cloned 5 input feature(s) into 5 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|STATS |HTTPFetcher_<REJECTED> Feature Counter -1 45(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|STATS |HTTPFetcher__Rejected__Logger(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|STATS |HTTPFetcher__Rejected_ LOGGED Output Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|INFORM|XMLFlattener(XFMapFactory): Total Results: 5 Mapped Feature(s), 5 Input Feature(s), and 0 Invalid input Feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|STATS |XMLFlattener_OUTPUT Feature Counter -1 42(TeeFactory): Cloned 5 input feature(s) into 5 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|STATS |VertexCreator_OUTPUT Feature Counter -1 39(TeeFactory): Cloned 5 input feature(s) into 5 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|STATS |CoordinateSystemSetter(TeeFactory): Cloned 5 input feature(s) into 5 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|STATS |CoordinateSystemSetter_OUTPUT Feature Counter -1 48(TeeFactory): Cloned 5 input feature(s) into 5 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|STATS |CoordinateSystemSetter_OUTPUT -> NewFeatureType Correlator(TeeFactory): Cloned 5 input feature(s) into 5 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|STATS |Final Output Feature Type Router(TestFactory): Tested 5 input feature(s) -- 5 feature(s) passed and 0 feature(s) failed
+2014-06-05 16:18:50|   0.7|  0.0|STATS |Final Output Nuker(TeeFactory): Cloned 0 input feature(s) into 0 output feature(s)
+2014-06-05 16:18:50|   0.7|  0.0|INFORM|KML: Writing dataset to filesystem...
+2014-06-05 16:18:50|   0.7|  0.0|INFORM|FME Configuration: Using FME Reprojection Engine
+2014-06-05 16:18:50|   0.7|  0.0|INFORM|KML: Finished writing dataset to filesystem
+2014-06-05 16:18:50|   0.7|  0.0|INFORM|=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-06-05 16:18:50|   0.7|  0.0|INFORM|Feature output statistics for `OGCKML' writer using keyword `OGCKML_1':
+2014-06-05 16:18:50|   0.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-06-05 16:18:50|   0.7|  0.0|STATS |                               Features Written
+2014-06-05 16:18:50|   0.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-06-05 16:18:50|   0.7|  0.0|STATS |GeocodedResults                                                              5
+2014-06-05 16:18:50|   0.7|  0.0|STATS |==============================================================================
+2014-06-05 16:18:50|   0.7|  0.0|STATS |Total Features Written                                                       5
+2014-06-05 16:18:50|   0.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-06-05 16:18:50|   0.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-06-05 16:18:50|   0.7|  0.0|STATS |                            Features Read Summary
+2014-06-05 16:18:50|   0.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-06-05 16:18:50|   0.7|  0.0|STATS |CSV                                                                       1000
+2014-06-05 16:18:50|   0.7|  0.0|STATS |==============================================================================
+2014-06-05 16:18:50|   0.7|  0.0|STATS |Total Features Read                                                       1000
+2014-06-05 16:18:50|   0.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-06-05 16:18:50|   0.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-06-05 16:18:50|   0.7|  0.0|STATS |                           Features Written Summary
+2014-06-05 16:18:50|   0.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-06-05 16:18:50|   0.7|  0.0|STATS |GeocodedResults                                                              5
+2014-06-05 16:18:50|   0.7|  0.0|STATS |==============================================================================
+2014-06-05 16:18:50|   0.7|  0.0|STATS |Total Features Written                                                       5
+2014-06-05 16:18:50|   0.7|  0.0|STATS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2014-06-05 16:18:50|   0.7|  0.0|INFORM|CSV Reader: Done reading CSV files in directory `/www/fmepedia-easygeocoder/fme/data'
+2014-06-05 16:18:50|   0.7|  0.0|INFORM|Translation was SUCCESSFUL with 0 warning(s) (5 feature(s) output)
+2014-06-05 16:18:50|   0.7|  0.0|INFORM|FME Session Duration: 11.8 seconds. (CPU: 0.6s user, 0.0s system)
+2014-06-05 16:18:50|   0.7|  0.0|INFORM|END - ProcessID: 7041, peak process memory usage: 0 kB, current process memory usage: 0 kB

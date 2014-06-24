@@ -1,0 +1,1600 @@
+#! <?xml version="1.0" encoding="windows-1252" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    "/Applications/FME 2014/Engine/fme" /www/fmepedia-easygeocoder/fme/workspaces/CallGeocoder.fmw
+#          --AddressAttr AddressLine1
+#          --CityAttr City
+#          --ProvinceAttr StateProvince
+#          --PostalCodeAttr ""
+#          --CountryAttr US
+#          --SourceDataset /www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv
+#    
+#    
+#! PASSWORD=""
+#! ATTR_TYPE_ENCODING="SDF"
+#! VIEW_POSITION="-96 -204"
+#! SHOW_INFO_NODES="true"
+#! FME_STROKE_MAX_DEVIATION="0"
+#! BEGIN_PYTHON=""
+#! FME_GEOMETRY_HANDLING="Enhanced"
+#! DESCRIPTION=""
+#! TITLE=""
+#! MAX_LOG_FEATURES="200"
+#! END_TCL=""
+#! FME_BUILD_NUM="14336"
+#! ZOOM_SCALE="100"
+#! CATEGORY=""
+#! REDIRECT_TERMINATORS="NONE"
+#! LEGAL_TERMS_CONDITIONS=""
+#! FME_REPROJECTION_ENGINE="FME"
+#! USAGE=""
+#! END_PYTHON=""
+#! HISTORY=""
+#! FME_DOCUMENT_PRIORGUID="cdeaf10c-ea79-11e3-9a8d-d3c5ab7d1ca8,1a423706-ea7d-11e3-896a-b4134a57705e,8f5363d8-ea98-11e3-896a-b4134a57705e,8516e430-eab1-11e3-896a-b4134a57705e,61911d10-eb78-11e3-9e72-a06b92e0836f"
+#! DOC_TOP_LEFT="0 -1382"
+#! REQUIREMENTS_KEYWORD=""
+#! SOURCE_ROUTING_FILE=""
+#! DESTINATION_ROUTING_FILE=""
+#! DESTINATION="NONE"
+#! LAST_SAVE_DATE="2014-06-05T16:16:49"
+#! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#! WORKSPACE_VERSION="1"
+#! SOURCE="NONE"
+#! LAST_SAVE_BUILD="FME(R) 2014 SP2 (20140528 - Build 14336 - macosx)"
+#! FME_SERVER_SERVICES=""
+#! LOG_MAX_RECORDED_FEATURES="200"
+#! LOG_FILE=""
+#! REQUIREMENTS=""
+#! BEGIN_TCL=""
+#! DOC_EXTENTS="3282 1168"
+#! FME_DOCUMENT_GUID="b25b4d1e-eb79-11e3-9e72-a06b92e0836f"
+#! SHOW_ANNOTATIONS="true"
+#! IGNORE_READER_FAILURE="No"
+#! WARN_INVALID_XFORM_PARAM="Yes"
+#! >
+#! <DATASETS>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="CSV"
+#! DATASET="$(SourceDataset)"
+#! KEYWORD="CSV_2"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE=""
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_text_size float fme_rotation float csv_total_number_of_columns number(11,0) fme_feature_type text multi_reader_keyword text multi_reader_id int fme_dataset text csv_line_number number(11,0) multi_reader_full_id int fme_geometry fme_char(50) multi_reader_type text fme_fill_color text fme_basename text fme_text_string text fme_secondary_axis float fme_primary_axis float fme_sweep_angle float fme_start_angle float csv_number_of_fields number(11,0) fme_type text fme_color text"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="14336"
+#! MAX_FEATURES=""
+#! COORDSYS=""
+#! MIN_FEATURES=""
+#! FEATURE_TYPES=""
+#! START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="text/csv ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_FEATURE_TYPE_EDITING"
+#! VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="_ENCODING CSV_OUT_ENCODING _WRITE_UTF8_BOM"
+#! />
+#! </DATASET>
+#! <DATASET
+#! IS_SOURCE="false"
+#! ROLE="WRITER"
+#! FORMAT="OGCKML"
+#! DATASET="/www/fmepedia-easygeocoder/fme/data/Output/GeocodedResults.kml"
+#! KEYWORD="OGCKML_1"
+#! MULTI_GEOM_ALLOWED="true"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE="KML21_INFORMATION_POINT_ICON &quot;&quot; KML21_OPACITY &quot;&quot; KML21_FILL_OPACITY &quot;&quot; KML21_PEN_OPACITY &quot;&quot; KML21_ICON_COLOR &quot;&quot; KML21_FILL_COLOR &quot;&quot; KML21_PEN_COLOR &quot;&quot; KML21_SORT_BY_ATTRIBUTE &quot;&quot; KML21_ATTR_IN_DESCRIPTION &quot;&quot; KML21_HTML_DESCRIPTIONS &quot;&quot; KML21_DOCUMENT_FILENAME &quot;&quot; KML21_CREATE_FOLDER_FOR_FEATURE_TYPE &quot;&quot;"
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="kml_imagepyramid_tilesize kml_real64 kml_gx_timespan_end kml_datetime kml_tessellate kml_int16 kml_gx_play_mode kml_char(20) kml_schema_data{}.value kml_buffer kml_lookat_gx_timespan_begin kml_datetime kml_lookat_range kml_real64 kml_camera_altitude kml_real64 kml_data{}.display_name_raw_text kml_buffer kml_viewvolume_near kml_int16 kml_timespan_end kml_datetime kml_target_style kml_buffer kml_description_text kml_buffer kml_latlonaltbox_max_altitude kml_real64 kml_atom_author_name kml_buffer kml_balloon_color kml_char(10) kml_target_style_normal kml_buffer kml_snippet_raw_text kml_buffer kml_screenxy_x kml_real64 kml_style_url kml_buffer kml_refresh_visibility kml_int16 kml_screenxy_y kml_real64 kml_extended_data_xml kml_buffer kml_latlonaltbox_west kml_real64 kml_lookat_altitude_mode kml_char(20) kml_link_snippet_max_lines kml_int16 fme_opacity kml_real64 kml_labelstyle_color kml_char(10) kml_lookat_longitude kml_real64 kml_liststyle_item_icon{}.href kml_buffer kml_balloon_text_color kml_char(10) kml_href kml_buffer kml_style_url_normal kml_buffer kml_label_opacity kml_real64 kml_balloon_opacity kml_real64 kml_icon_refresh_mode kml_char(50) kml_extended_data_xmlns_url kml_buffer kml_tour_stop_tour_name kml_buffer kml_tour_stop_delay_duration kml_int16 kml_icon_href kml_buffer kml_message kml_buffer kml_camera_altitude_mode kml_char(50) kml_cookie kml_buffer kml_viewvolume_bottomfov kml_int16 kml_tour_stop_view_range kml_char(25) kml_orientation_heading kml_real64 kml_linestyle_label_visibility kml_boolean kml_gx_camera_altitude_mode kml_char(50) kml_gx_duration kml_int16 kml_balloonstyle_bgcolor kml_char(10) kml_lookat_tilt kml_real64 kml_atom_link_href kml_buffer kml_shape kml_buffer fme_basename kml_char(50) kml_iconstyle_heading kml_real64 kml_location_latitude kml_real64 fme_text_string kml_char(50) kml_gx_latlonaltbox_altitude_mode kml_char(50) kml_create_info_point kml_char(3) kml_address kml_buffer fme_feature_type kml_char(50) fme_fill_opacity kml_real64 kml_icon kml_buffer kml_lookat_gx_timespan_end kml_datetime kml_link_href kml_buffer kml_visibility kml_int16 kml_size_xunits kml_char(20) kml_linestyle_width kml_real64 kml_rotationxy_yunits kml_char(20) kml_viewvolume_leftfov kml_int16 kml_altitude_mode kml_char(50) kml_overlayxy_yunits kml_char(20) kml_name kml_buffer kml_link_snippet kml_buffer kml_hotspot_yunits kml_char(20) kml_phone_number kml_buffer kml_description_raw_text kml_buffer kml_camera_gx_timespan_begin kml_datetime kml_polystyle_color_mode kml_char(20) kml_viewvolume_topfov kml_int16 kml_animated_update kml_buffer kml_icon_color kml_char(50) kml_schema_data{}.name kml_buffer kml_latlonbox_south kml_real64 kml_camera_latitude kml_real64 kml_target_href kml_buffer kml_tour_stop_display_balloon kml_char(3) kml_latlonbox_east kml_real64 kml_scale_x kml_real64 kml_scale_y kml_real64 kml_labelstyle_color_mode kml_char(20) kml_scale_z kml_real64 kml_polystyle_outline kml_int16 kml_orientation_roll kml_real64 kml_location_altitude kml_real64 kml_orientation_tilt kml_real64 kml_fly_to_view kml_int16 kml_tour_stop_view_heading kml_char(25) kml_attribute_table_title kml_buffer kml_imagepyramid_maxwidth kml_int16 kml_rotation kml_real64 kml_color kml_char(8) fme_sweep_angle kml_real64 kml_document_href kml_buffer kml_tour_stop_tour_duration kml_int16 kml_min_refresh_period kml_real64 kml_polystyle_color kml_char(10) kml_balloonstyle_raw_text kml_buffer kml_style_id kml_buffer kml_hotspot_xunits kml_char(20) kml_gx_lookat_altitude_mode kml_char(50) kml_link_view_refresh_mode kml_char(50) kml_link_name kml_buffer kml_imagepyramid_maxheight kml_int16 kml_linestyle_color kml_char(10) kml_liststyle_bgcolor kml_char(50) kml_draw_order kml_int16 kml_icon_view_format kml_buffer kml_lod_min_lod_pixels kml_real64 kml_liststyle_item_icon kml_buffer fme_fill_color kml_char(50) kml_data{}.display_name kml_buffer kml_camera_roll kml_real64 kml_camera_tilt kml_real64 kml_icon_opacity kml_real64 kml_tour_stop_delay_type kml_char(10) kml_max_session_length kml_real64 kml_linestyle_physical_width kml_real64 kml_style_url_highlight kml_buffer kml_size_x kml_real64 kml_size_y kml_real64 kml_gx_balloon_visibility kml_int16 kml_latlonbox_north kml_real64 fme_geometry fme_char(50) kml_iconstyle_color kml_char(10) fme_primary_axis kml_real64 kml_screenxy_xunits kml_char(20) fme_color kml_char(50) kml_lookat_gx_timestamp_when kml_datetime kml_iconstyle_scale kml_real64 kml_document kml_buffer kml_labelstyle_scale kml_real64 fme_start_angle kml_real64 kml_altitude kml_real64 kml_link_refresh_mode kml_char(50) kml_camera_heading kml_real64 kml_hotspot_x kml_int16 kml_hotspot_y kml_int16 kml_link_refresh_interval kml_real64 kml_screenxy_yunits kml_char(20) kml_link_view_bound_scale kml_real64 kml_icon_http_query kml_buffer kml_lookat_altitude kml_real64 fme_type kml_char(50) kml_link_view_refresh_time kml_int16 kml_location_longitude kml_real64 kml_raw_text kml_buffer fme_dataset kml_char(50) kml_icon_view_refresh_mode kml_char(50) kml_target_style_highlight kml_buffer kml_update_mode kml_char(10) kml_balloon_text_opacity kml_real64 kml_gx_timespan_begin kml_datetime kml_parent kml_buffer kml_open kml_int16 kml_imagepyramid_gridorigin kml_buffer kml_latlonaltbox_altitude_mode kml_char(50) kml_latlonaltbox_east kml_char(255) fme_text_size kml_real64 kml_timespan_begin kml_datetime kml_icon_view_bound_scale kml_real64 kml_latlonbox_west kml_real64 kml_snippet kml_buffer fme_rotation kml_real64 kml_overlayxy_xunits kml_char(20) kml_data{}.value kml_buffer kml_icon_refresh_interval kml_int16 kml_balloonstyle_text_color kml_char(10) kml_lookat_heading kml_real64 kml_liststyle_item_icon{}.state kml_char(50) kml_lod_max_lod_pixels kml_real64 kml_camera_gx_timespan_end kml_datetime kml_tour_stop_flyto_duration kml_int16 kml_tour_stop_flyto_mode kml_char(20) kml_lod_max_fade_extent kml_real64 kml_tour_stop_view_perspective kml_char(15) kml_icon_view_refresh_time kml_int16 kml_description kml_buffer kml_extended_data_xmlns_prefix kml_buffer kml_gx_altitude_mode kml_char(50) kml_viewvolume_rightfov kml_int16 kml_icon_temp_file_location kml_buffer kml_iconstyle_color_mode kml_char(20) kml_tour_stop_view_tilt kml_char(25) kml_camera_gx_timestamp_when kml_datetime kml_linestyle_color_mode kml_char(20) kml_latlonaltbox_min_altitude kml_real64 kml_latlonaltbox_north kml_real64 kml_rotationxy_xunits kml_char(20) kml_latlonaltbox_south kml_real64 kml_expires kml_datetime kml_label_color kml_char(50) kml_gx_flyto_mode kml_char(10) kml_atom_link_rel kml_buffer kml_polystyle_fill kml_real64 kml_sort_value kml_buffer kml_latlonbox_rotation kml_real64 kml_data{}.name kml_buffer kml_common_style kml_buffer kml_link_description kml_buffer kml_balloonstyle_text kml_buffer kml_id kml_buffer kml_tour kml_buffer kml_liststyle_list_item_type kml_char(50) fme_pen_opacity kml_real64 kml_lookat_latitude kml_real64 kml_overlayxy_x kml_real64 kml_overlayxy_y kml_real64 kml_lod_min_fade_extent kml_real64 kml_link_view_format kml_buffer kml_roll kml_real64 kml_gx_timestamp_when kml_datetime kml_atom_author_email kml_buffer kml_link_http_query kml_buffer kml_rotationxy_x kml_real64 kml_size_yunits kml_char(20) kml_document_path kml_buffer kml_extrude kml_int16 kml_rotationxy_y kml_real64 kml_timestamp_when kml_datetime kml_camera_longitude kml_real64 fme_secondary_axis kml_real64 kml_schema_url kml_buffer"
+#! DEFLINE_PARMS="&quot;GUI OPTIONAL ICONPICK KML21_INFORMATION_POINT_ICON icons Information Point Icon&quot; &quot;&quot; &quot;GUI OPTIONAL COLOR_PICK KML21_ICON_COLOR Icon Color&quot; &quot;&quot; &quot;GUI OPTIONAL COLOR_PICK KML21_FILL_COLOR Fill Color&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT KML21_FILL_OPACITY Fill Opacity&quot; &quot;&quot; &quot;GUI OPTIONAL COLOR_PICK KML21_PEN_COLOR Pen Color&quot; &quot;&quot; &quot;GUI OPTIONAL FLOAT KML21_PEN_OPACITY Pen Opacity&quot; &quot;&quot; &quot;GUI OPTIONAL ATTR KML21_SORT_BY_ATTRIBUTE _ Sort By Attribute&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE KML21_HTML_DESCRIPTIONS yes%no Use HTML in Description Balloon&quot; &quot;&quot; &quot;GUI OPTIONAL CHOICE KML21_ATTR_IN_DESCRIPTION yes%no Create Attribute Table in Description Balloon&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT KML21_DOCUMENT_FILENAME Parent Document File Name&quot; &quot;&quot; &quot;GUI CHOICE KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes%no Create Folder for Feature Type&quot; yes "
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! GENERATE_FME_BUILD_NUM="14336"
+#! FANOUT_PREFIX=""
+#! COORDSYS=""
+#! FANOUT="No"
+#! FANOUT_SUFFIX=""
+#! FANOUT_ID_ATTR=""
+#! FANOUT_DIRECTORY=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="SUPPORTS_ESTABLISHED_CACHE"
+#! VALUE="YES"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="NETWORK_PROXY"
+#! VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE=".kml application/vnd.google-earth.kml+xml .kmz application/vnd.google-earth.kmz ADD_DISPOSITION"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="NETWORK_AUTHENTICATION"
+#! VALUE="NO"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="KML21_INFORMATION_POINT_ICON KML21_RASTER_COMPRESSION_LEVEL KML21_OUTPUT_SCHEMA KML21_AUTO_CREATE_NETWORK_LINKS KML21_LOG_VERBOSE KML21_ORIENTATION KML21_DATASET_HINT KML21_STYLE_DOC KML21_SCHEMA_DOC KML21_DETECT_RASTERS KML21_RASTER_MODE KML21_RASTER_FORMAT KML21_TEXTURE_FORMAT KML21_COPY_ICON KML21_REGIONATE_DATA KML21_REGIONATOR_PIPELINE KML21_EXEC_GO_PIPELINE KML21_GO_PYRAMIDER_PIPELINE KML21_EXEC_PO_PIPELINE KML21_PO_PYRAMIDER_PIPELINE KML21_ENABLE_GENERATED_BY_COMMENT KML21_OMIT_DOCUMENT_ELEMENT KML21_CREATE_EMPTY_FOLDERS KML21_TARGET_HREF KML21_FANOUT_TYPE KML21_MOVE_TO_KML_LOCAL_COORDSYS KML21_WRITE_3D_GEOM_AS_POLYGONS KML21_WRITE_3D_GEOM_AS_POLYGONS KML21_APPLY_MODEL_TRANSFORMS KML21_WRITE_TEXTURES_TXT_FILE KML21_GME_COMPATIBILITY_MODE"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="text"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(20)"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(12)"
+#! FME_TYPE="fme_time"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(8)"
+#! FME_TYPE="fme_date"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(1)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="x_coordinate"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="y_coordinate"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="z_coordinate"
+#! FME_TYPE="fme_real64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_int32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_int64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="logical"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_int16"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="int"
+#! FME_TYPE="fme_uint8"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="number(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="CSV"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_char(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_char(255)"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_char(1)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_buffer"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_datetime"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_date"
+#! FME_TYPE="fme_date"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_time"
+#! FME_TYPE="fme_time"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_int16"
+#! FME_TYPE="fme_int16"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_int16"
+#! FME_TYPE="fme_uint8"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_int32"
+#! FME_TYPE="fme_int32"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_int32"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_real32"
+#! FME_TYPE="fme_real32"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_real64"
+#! FME_TYPE="fme_real64"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_real64"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_real64"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_real64"
+#! FME_TYPE="fme_int64"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_real64"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="OGCKML"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_boolean"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="OGCKML"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_point"
+#! FME_TYPE="fme_point"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_point"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_line"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_area"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_text"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_arc"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_map"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_collection"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_raster"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_surface"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_solid"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="csv_none"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="CSV"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_no_geom"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_aggregate"
+#! FME_TYPE="fme_collection"
+#! FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_point"
+#! FME_TYPE="fme_point"
+#! FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_point"
+#! FME_TYPE="fme_text"
+#! FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_line"
+#! FME_TYPE="fme_line"
+#! FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_area"
+#! FME_TYPE="fme_area"
+#! FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_area"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_area"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_raster"
+#! FME_TYPE="fme_raster"
+#! FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_surface"
+#! FME_TYPE="fme_surface"
+#! FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_solid"
+#! FME_TYPE="fme_solid"
+#! FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_area"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_line"
+#! FME_TYPE="fme_arc"
+#! FORMAT="OGCKML"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="false"
+#! FORMAT_TYPE="kml_area"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="OGCKML"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#! IS_SOURCE="false"
+#! NODE_NAME="NewFeatureType"
+#! IS_EDITABLE="true"
+#! IDENTIFIER="25"
+#! FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
+#! POSITION="3282 -260"
+#! ORDER="5e+14"
+#! COLLAPSED="true"
+#! KEYWORD="OGCKML_1"
+#! ENABLED="true"
+#! FANOUT="No"
+#! FANOUT_ID_ATTR=""
+#! DYNAMIC_SCHEMA="true"
+#! DYNAMIC_SCHEMA_SOURCES="CSV_2"
+#! DYNAMIC_SCHEMA_FEATURE_TYPE="FIXED"
+#! DYNAMIC_SCHEMA_FEATURE_TYPE_NAME="GeocodedResults"
+#! DYNAMIC_SCHEMA_DEFINITION="AUTOMATIC"
+#! DYNAMIC_SCHEMA_DEFINITION_NAME=""
+#! DYNAMIC_SCHEMA_GEOMETRY="AUTOMATIC"
+#! DYNAMIC_SCHEMA_GEOMETRY_NAME=""
+#! DYNAMIC_SCHEMA_ATTRIBUTES_TO_REMOVE=""
+#! >
+#! <DEFLINE_PARM PARM_NAME="KML21_FILL_OPACITY" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="KML21_ATTR_IN_DESCRIPTION" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="KML21_PEN_COLOR" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="KML21_INFORMATION_POINT_ICON" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="KML21_PEN_OPACITY" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="KML21_CREATE_FOLDER_FOR_FEATURE_TYPE" PARM_VALUE="yes"/>
+#! <DEFLINE_PARM PARM_NAME="KML21_SORT_BY_ATTRIBUTE" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="KML21_FILL_COLOR" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="KML21_ICON_COLOR" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="KML21_HTML_DESCRIPTIONS" PARM_VALUE=""/>
+#! <DEFLINE_PARM PARM_NAME="KML21_DOCUMENT_FILENAME" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="CSV"
+#! IS_EDITABLE="false"
+#! IDENTIFIER="34"
+#! FEAT_GEOMTYPE="csv_none"
+#! POSITION="0 -214"
+#! ORDER="5e+14"
+#! COLLAPSED="true"
+#! KEYWORD="CSV_2"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE="false"
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="RecordID" ATTR_TYPE="number(5,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="acct_sgmnt_cd" ATTR_TYPE="char(9)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="lblty_type_cd" ATTR_TYPE="char(4)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="AddressLine1" ATTR_TYPE="char(39)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="addr2" ATTR_TYPE="char(19)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="City" ATTR_TYPE="char(19)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="StateProvince" ATTR_TYPE="char(3)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="PostalCode" ATTR_TYPE="number(6,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="zip4" ATTR_TYPE="number(5,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! <FEAT_ATTRIBUTE ATTR_NAME="act_susp_lines" ATTR_TYPE="number(3,0)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <SERVICES>
+#! <SERVICE
+#! NAME="fmedatadownload"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="ADVANCED"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="FAILURE_TOPICS"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="HTTP_DATASET"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="NOTIFICATION_WRITER"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="OUTPUT_WRITER"
+#! VALUE="OGCKML_1"
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="SUCCESS_TOPICS"
+#! VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! <SERVICE
+#! NAME="fmedatastreaming"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="ADVANCED"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="FAILURE_TOPICS"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="HTTP_DATASET"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="NOTIFICATION_WRITER"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="OUTPUT_WRITER"
+#! VALUE="OGCKML_1"
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="SUCCESS_TOPICS"
+#! VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! <SERVICE
+#! NAME="fmejobsubmitter"
+#! >
+#! <PROPERTIES>
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="ADVANCED"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="FAILURE_TOPICS"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="HTTP_DATASET"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="NOTIFICATION_WRITER"
+#! VALUE=""
+#! />
+#! <PROPERTY
+#! CATEGORY="FMEUSERPROPDATA"
+#! NAME="SUCCESS_TOPICS"
+#! VALUE=""
+#! />
+#! </PROPERTIES>
+#! </SERVICE>
+#! </SERVICES>
+#! <REPOSITORY
+#! NAME="EasyGeocoder"
+#! />
+#! <ITEM
+#! NAME="CallGeocoder.fmw"
+#! />
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR AddressAttr Address:"
+#! DEFAULT_VALUE="AddressLine1"
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR CityAttr City:"
+#! DEFAULT_VALUE="City"
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR ProvinceAttr Province/State:"
+#! DEFAULT_VALUE="StateProvince"
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR PostalCodeAttr Postal Code/Zip:"
+#! DEFAULT_VALUE=""
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI OPTIONAL TEXT_OR_ATTR CountryAttr Country:"
+#! DEFAULT_VALUE="US"
+#! IS_STAND_ALONE="true"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI MULTIFILE SourceDataset CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Source Comma Separated Value (CSV) File(s):"
+#! DEFAULT_VALUE="/www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv"
+#! IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI IGNORE TEXT_OR_ATTR GeocoderURL Geocoder URL:"
+#! DEFAULT_VALUE="http://services.gisgraphy.com/geocoding/geocode?"
+#! IS_STAND_ALONE="true"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#! IDENTIFIER="30"
+#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;need two letter country code&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="1499 -505"
+#! ORDER="34"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! TOP_LEFT="1499 -505"
+#! BOTTOM_RIGHT="1499 -505"
+#! COLOUR="1,1,0.784314,1"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="19"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#! IDENTIFIER="21"
+#! TYPE="AttributeCreator"
+#! VERSION="5"
+#! POSITION="1018 -589"
+#! ORDER="5e+14"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="acct_sgmnt_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lblty_type_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AddressLine1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="addr2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="StateProvince" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="zip4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="act_susp_lines" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlAddr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlPostal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlCountry" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="_urlAddr,&lt;at&gt;Value&lt;openparen&gt;$(AddressAttr)&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;$(CityAttr)&lt;closeparen&gt;,_urlPostal,&lt;at&gt;Value&lt;openparen&gt;$(PostalCodeAttr)&lt;closeparen&gt;,_urlCountry,&quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;$(CountryAttr)&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST $(CountryAttr) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_;TEST $(CountryAttr) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_&apos;$(CountryAttr)&apos;FME_NUM_CONDITIONS2___&quot;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="19"
+#! TYPE="AttributeValueMapper"
+#! VERSION="4"
+#! POSITION="1502 -654"
+#! ORDER="37"
+#! PARMS_EDITED="true"
+#! ENABLED="false"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="acct_sgmnt_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lblty_type_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AddressLine1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="addr2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="StateProvince" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="zip4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="act_susp_lines" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlAddr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlPostal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlCountry" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="DIRECTION" PARM_VALUE="Forward (Source To Destination)"/>
+#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="_urlCountry"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValueMapper"/>
+#! <XFORM_PARM PARM_NAME="MAPPING_GRP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;_urlCountry&lt;closeparen&gt;"/>
+#! <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="Antigua&lt;space&gt;And&lt;space&gt;Barbuda,AG,Arab&lt;space&gt;Emirates,AE,Bosnia&lt;space&gt;And&lt;space&gt;Herzegovina,BA,Cayman&lt;space&gt;Islands,KY,China&lt;space&gt;P.Rep.,CN,China,CN,Cocos&lt;space&gt;Islands,CC,Cook&lt;space&gt;Islands,CK,Costa&lt;space&gt;Rica,CR,Czech&lt;space&gt;Republic,CZ,Dominican&lt;space&gt;Repl.,DO,El&lt;space&gt;Salvador,SV,Falkland&lt;space&gt;Islands&lt;space&gt;&lt;openparen&gt;Malvinas&lt;closeparen&gt;,FK,Faroe&lt;space&gt;Islands,FO,Fr.&lt;space&gt;Polynesia,PF,French&lt;space&gt;Guiana,GF,Georgia&lt;space&gt;&lt;openparen&gt;Republic&lt;space&gt;Of&lt;closeparen&gt;,GE,Ivory&lt;space&gt;Coast,CI,Marshall&lt;space&gt;Islands,MH,Neth.&lt;space&gt;Antilles,AN,New&lt;space&gt;Caledonia,NC,New&lt;space&gt;Guinea,PG,New&lt;space&gt;Zealand,NZ,Norfolk&lt;space&gt;Island,NF,North&lt;space&gt;Korea,KP,Russian&lt;space&gt;Federation,RU,Saint&lt;space&gt;Kitts&lt;space&gt;And&lt;space&gt;Nevis,KN,San&lt;space&gt;Marino,SM,Saudi&lt;space&gt;Arabia,SA,Sierra&lt;space&gt;Leone,SL,Solomon&lt;space&gt;Islands,SB,South&lt;space&gt;Africa,ZA,South&lt;space&gt;Korea,KR,Sri&lt;space&gt;Lanka,LK,St.&lt;space&gt;Lucia,LC,St.&lt;space&gt;Vincent&lt;solidus&gt;Grenadines,VC,The&lt;space&gt;Bahamas,BS,Turks&lt;space&gt;And&lt;space&gt;Caicos&lt;space&gt;Islands,TC,United&lt;space&gt;Kingdom,GB,Vanuatu&lt;space&gt;&lt;openparen&gt;New&lt;space&gt;Hebrides&lt;closeparen&gt;,VU,Vatican&lt;space&gt;City&lt;space&gt;State&lt;space&gt;&lt;openparen&gt;Holy&lt;space&gt;See&lt;closeparen&gt;,VA,Viet&lt;space&gt;Nam,VN,Virgin&lt;space&gt;&lt;openparen&gt;British&lt;closeparen&gt;&lt;space&gt;Islands,VG,Albania,AL,Algeria,DZ,Andorra,AD,Angola,AO,Anguilla,AI,Argentina,AR,Armenia,AM,Aruba,AW,Australia,AU,Austria,AT,Azerbaijan,AZ,Bahrain,BH,Bangladesh,BD,Barbados,BB,Belarus,BY,Belgium,BE,Belize,BZ,Bermuda,BM,Bolivia,BO,Botswana,BW,Brazil,BR,Brunei,BN,Bulgaria,BG,Cambodia,KH,Cameroon,CM,Canada,CA,Chad,TD,Chile,CL,China,HK,Colombia,CO,Congo,CD,Croatia,HR,Cuba,CU,Cyprus,CY,Czechoslovakia,CS,Denmark,DK,Dominica,DM,Ecuador,EC,Egypt,EG,Estonia,EE,Ethiopia,ET,Fiji,FJ,Finland,FI,France,FR,Gabon,GA,Gambia,GM,Germany,DE,Ghana,GH,Gibraltar,GI,Greece,GR,Greenland,GL,Grenada,GD,Guadeloupe,GP,Guatemala,GT,Guinea,GN,Guyana,GY,Haiti,HT,Honduras,HN,Hungary,HU,Iceland,IS,India,IN,Indonesia,ID,Iran,IR,Iraq,IQ,Ireland,IE,Israel,IL,Italy,IT,Jamaica,JM,Japan,JP,Jordan,JO,Kazakhstan,KZ,Kenya,KE,Kuwait,KW,Kyrgyzstan,KG,Laos,LA,Latvia,LV,Lebanon,LB,Liberia,LR,Libya,LY,Liechtenstein,LI,Lithuania,LT,Luxembourg,LU,Macau,MO,Macedonia,MK,Madagascar,MG,Malawi,MW,Malaysia,MY,Mali,ML,Malta,MT,Martinique,MQ,Mauritania,MR,Mauritius,MU,Mexico,MX,Moldova,MD,Monaco,MC,Morocco,MA,Myanmar,MM,Namibia,NA,Nepal,NP,Netherlands,NL,Nicaragua,NI,Niger,NE,Nigeria,NG,Norway,NO,Oman,OM,Pakistan,PK,Palau,PW,Panama,PA,Paraguay,PY,Peru,PE,Philippines,PH,Poland,PL,Portugal,PT,Qatar,QA,Romania,RO,Senegal,SN,Singapore,SG,Slovakia,SK,Slovenia,SI,Spain,ES,Sudan,SD,Suriname,SR,Swaziland,SZ,Sweden,SE,Switzerland,CH,Syria,SY,Taiwan,TW,Tanzania,TZ,Thailand,TH,Trinidad&lt;solidus&gt;Tobago,TT,Tunisia,TN,Turkey,TR,U.S.S.R.,SU,Uganda,UG,Ukraine,UA,Uruguay,UY,Uzbekistan,UZ,Venezuela,VE,Yemen,YE,Yugoslavia,YU,Zambia,ZM,Zimbabwe,ZW"/>
+#! <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="_urlCountry"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="32"
+#! TYPE="HTTPFetcher"
+#! VERSION="3"
+#! POSITION="1983 -660"
+#! ORDER="5e+14"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="acct_sgmnt_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lblty_type_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AddressLine1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="addr2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="StateProvince" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="zip4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="act_susp_lines" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlAddr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlPostal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlCountry" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_url_contents" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="acct_sgmnt_cd" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="lblty_type_cd" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="AddressLine1" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="addr2" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="StateProvince" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="zip4" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="act_susp_lines" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_urlAddr" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_urlPostal" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_urlCountry" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="_url_contents" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_PARM PARM_NAME="HTTP_AUTH_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="TARGET_URL" PARM_VALUE="$(GeocoderURL)address=&lt;at&gt;Value&lt;openparen&gt;_urlAddr&lt;closeparen&gt;&lt;amp&gt;postal=&lt;at&gt;Value&lt;openparen&gt;_urlPostal&lt;closeparen&gt;&lt;amp&gt;country=&lt;at&gt;Value&lt;openparen&gt;_urlCountry&lt;closeparen&gt;"/>
+#! <XFORM_PARM PARM_NAME="REQUEST_HEADER" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PROXY_PASSWORD" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PROXY_PORT" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="STATUS_CODE_ATTR" PARM_VALUE="_http_status_code"/>
+#! <XFORM_PARM PARM_NAME="HTTP_REQUEST_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="TARGET_ATTR_ENCODING" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="AUTH_USERNAME" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="AUTH_PASSWORD" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PROXY_USERNAME" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="SAVE_FILE" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="PROXY_AUTH_METHOD" PARM_VALUE="Basic"/>
+#! <XFORM_PARM PARM_NAME="PROXY_URL" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="HTTPFetcher"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="FOLLOW_REDIRECTS" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="OUTPUT_FILENAME" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="RESPONSE_HEADER_LIST_ATTR" PARM_VALUE="_headers"/>
+#! <XFORM_PARM PARM_NAME="ERROR_ATTR" PARM_VALUE="_error"/>
+#! <XFORM_PARM PARM_NAME="HTTP_RESPONSE_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="USE_COOKIES" PARM_VALUE="No"/>
+#! <XFORM_PARM PARM_NAME="VERIFY_SSL_CERTIFICATES" PARM_VALUE="Yes"/>
+#! <XFORM_PARM PARM_NAME="AUTH_METHOD" PARM_VALUE="Basic"/>
+#! <XFORM_PARM PARM_NAME="TARGET_ATTR" PARM_VALUE="_url_contents"/>
+#! <XFORM_PARM PARM_NAME="PROXY_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="23"
+#! TYPE="Sampler"
+#! VERSION="1"
+#! POSITION="519 -537"
+#! ORDER="5e+14"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="SAMPLED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="acct_sgmnt_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lblty_type_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AddressLine1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="addr2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="StateProvince" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="zip4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="act_susp_lines" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <OUTPUT_FEAT NAME="NOT_SAMPLED"/>
+#! <FEAT_COLLAPSED COLLAPSED="1"/>
+#! <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="acct_sgmnt_cd" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="lblty_type_cd" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="AddressLine1" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="addr2" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="StateProvince" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="zip4" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_ATTR ATTR_NAME="act_susp_lines" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#! <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="RATE" PARM_VALUE="5"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Sampler"/>
+#! <XFORM_PARM PARM_NAME="SAMPLE_TYPE_LONG" PARM_VALUE="First N Features"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="43"
+#! TYPE="Logger"
+#! VERSION="3"
+#! POSITION="2231 -1382"
+#! ORDER="5e+14"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="LOGGED"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="acct_sgmnt_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lblty_type_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AddressLine1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="addr2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="StateProvince" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="zip4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="act_susp_lines" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlAddr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlPostal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlCountry" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_url_contents" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="Feature is:"/>
+#! <XFORM_PARM PARM_NAME="FEATURE_TYPE" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="HTTPFetcher__Rejected_"/>
+#! <XFORM_PARM PARM_NAME="MAXFEATS" PARM_VALUE="20"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="MAXCOORDS" PARM_VALUE="20"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="36"
+#! TYPE="XMLFlattener"
+#! VERSION="2"
+#! POSITION="2569 -606"
+#! ORDER="5e+14"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="acct_sgmnt_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lblty_type_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AddressLine1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="addr2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="StateProvince" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="zip4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="act_susp_lines" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlAddr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlPostal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlCountry" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_url_contents" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lng" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lat" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="NEW_ATTRIBUTES" PARM_VALUE="lng lat"/>
+#! <XFORM_PARM PARM_NAME="SUB_FRAGMENT_OPTIONS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTRIBUTE_XML" PARM_VALUE="_url_contents"/>
+#! <XFORM_PARM PARM_NAME="XML_SOURCE_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ATTR_EXPOSE" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="XMLFlattener"/>
+#! <XFORM_PARM PARM_NAME="XML_SOURCE_TYPE" PARM_VALUE="Attribute with XML document"/>
+#! <XFORM_PARM PARM_NAME="FILE_XML" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="EMBEDDED_EXPRESSIONS" PARM_VALUE="result"/>
+#! <XFORM_PARM PARM_NAME="FEATURE_PATHS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="FLATTEN_OPTIONS" PARM_VALUE="&lt;lf&gt;&lt;lt&gt;structure&lt;space&gt;separator=&lt;quote&gt;.&lt;quote&gt;&lt;space&gt;map-empty-elements=&lt;quote&gt;yes&lt;quote&gt;&lt;space&gt;matched-prefix=&lt;quote&gt;attributes&lt;quote&gt;&lt;space&gt;matched-attributes=&lt;quote&gt;yes&lt;quote&gt;&lt;space&gt;cardinality=&lt;quote&gt;+&lt;opencurly&gt;?&lt;closecurly&gt;&lt;quote&gt;&lt;space&gt;structure-prefix=&lt;quote&gt;&lt;quote&gt;&lt;space&gt;child-position-attribute=&lt;quote&gt;&lt;quote&gt;&lt;space&gt;except-expression=&lt;quote&gt;&lt;quote&gt;&lt;space&gt;ui-mode=&lt;quote&gt;basic&lt;quote&gt;&lt;space&gt;matched-ancestor-attributes=&lt;quote&gt;&lt;quote&gt;&lt;solidus&gt;&lt;gt&gt;&lt;lf&gt;"/>
+#! <XFORM_PARM PARM_NAME="FEATURE_PATHS_STRUCTURE_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="31"
+#! TYPE="VertexCreator"
+#! VERSION="0"
+#! POSITION="2607 -792"
+#! ORDER="5e+14"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="acct_sgmnt_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lblty_type_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AddressLine1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="addr2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="StateProvince" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="zip4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="act_susp_lines" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlAddr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlPostal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlCountry" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_url_contents" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lng" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lat" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="MODE_NAME" PARM_VALUE="Add Point"/>
+#! <XFORM_PARM PARM_NAME="PARAMETER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="VertexCreator"/>
+#! <XFORM_PARM PARM_NAME="XVAL" PARM_VALUE="@Value(lng)"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="ZVAL" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="YVAL" PARM_VALUE="@Value(lat)"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="38"
+#! TYPE="CoordinateSystemSetter"
+#! VERSION="0"
+#! POSITION="2636 -979"
+#! ORDER="5e+14"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="acct_sgmnt_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lblty_type_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="AddressLine1" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="addr2" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="StateProvince" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="zip4" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="act_susp_lines" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlAddr" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlPostal" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_urlCountry" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_headers{}.value" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_error" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_http_status_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="_url_contents" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lng" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_ATTR ATTR_NAME="lat" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="COORDSYS" PARM_VALUE="LL84"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="CoordinateSystemSetter"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#! IDENTIFIER="41"
+#! SOURCE_NODE="23"
+#! TARGET_NODE="21"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="45"
+#! SOURCE_NODE="32"
+#! TARGET_NODE="43"
+#! SOURCE_PORT_DESC="fo 1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="22"
+#! SOURCE_NODE="21"
+#! TARGET_NODE="19"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="24"
+#! SOURCE_NODE="19"
+#! TARGET_NODE="32"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="37"
+#! SOURCE_NODE="32"
+#! TARGET_NODE="36"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="42"
+#! SOURCE_NODE="36"
+#! TARGET_NODE="31"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="39"
+#! SOURCE_NODE="31"
+#! TARGET_NODE="38"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="48"
+#! SOURCE_NODE="38"
+#! TARGET_NODE="25"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="-1"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="44"
+#! SOURCE_NODE="34"
+#! TARGET_NODE="23"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="26"
+#! SOURCE_NODE="21"
+#! TARGET_NODE="32"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+#! 
+GUI IGNORE SourceDataset_CSV_2,CSV_IN_NETWORK_AUTHENTICATION_CSV_2,CSV_IN_NETWORK_PROXY_CSV_2,_SKIP_LINES_CSV_2,_SKIP_FOOTER_CSV_2,_STRIP_QUOTES_CSV_2,_DUPLICATE_DELIMS_CSV_2,SORT_GROUP_CSV_2,_SORT_PARAMS_CSV_2,FILTER_GROUP_CSV_2,_FILTER_PARAMS_CSV_2,_ENCODING_CSV_2,DestDataset_OGCKML_1,KML21_DATASET_HINT_OGCKML_1,KML21_STYLE_DOC_OGCKML_1,KML21_SCHEMA_DOC_OGCKML_1,KML21_DOCUMENT_NAME_OGCKML_1,KML21_DOCUMENT_DESC_OGCKML_1,KML21_DOCUMENT_VISIBILITY_OGCKML_1,KML21_ATOM_AUTHOR_NAME_OGCKML_1,KML21_ATOM_AUTHOR_EMAIL_OGCKML_1,KML21_ATOM_LINK_HREF_OGCKML_1,KML21_WATERMARK_NAME_OGCKML_1,KML21_WATERMARK_SNIPPET_OGCKML_1,KML21_WATERMARK_ICON_OGCKML_1,KML21_ATTR_IN_DESCRIPTION_OGCKML_1,KML21_HTML_DESCRIPTIONS_OGCKML_1,KML21_DETECT_RASTERS_OGCKML_1,KML21_RASTER_MODE_OGCKML_1,KML21_RASTER_FORMAT_OGCKML_1,KML21_TEXTURE_FORMAT_OGCKML_1,KML21_COPY_ICON_OGCKML_1,KML21_OUTPUT_SCHEMA_OGCKML_1,KML21_AUTO_CREATE_NETWORK_LINKS_OGCKML_1,KML21_ORIENTATION_OGCKML_1,KML21_LOG_VERBOSE_OGCKML_1,KML21_ENABLE_GENERATED_BY_COMMENT_OGCKML_1,KML21_OMIT_DOCUMENT_ELEMENT_OGCKML_1,KML21_REGIONATE_DATA_OGCKML_1,KML21_EXEC_GO_PIPELINE_OGCKML_1,KML21_EXEC_PO_PIPELINE_OGCKML_1,KML21_CREATE_EMPTY_FOLDERS_OGCKML_1,KML21_TARGET_HREF_OGCKML_1,KML21_MOVE_TO_KML_LOCAL_COORDSYS_OGCKML_1,KML21_WRITE_3D_GEOM_AS_POLYGONS_OGCKML_1,KML21_WRITE_TEXTURES_TXT_FILE_OGCKML_1,KML21_FANOUT_TYPE_OGCKML_1,KML21_GME_COMPATIBILITY_MODE_OGCKML_1
+DEFAULT_MACRO AddressAttr AddressLine1
+GUI OPTIONAL TEXT AddressAttr Address:
+DEFAULT_MACRO CityAttr City
+GUI OPTIONAL TEXT CityAttr City:
+DEFAULT_MACRO ProvinceAttr StateProvince
+GUI OPTIONAL TEXT ProvinceAttr Province/State:
+DEFAULT_MACRO PostalCodeAttr 
+GUI OPTIONAL TEXT PostalCodeAttr Postal Code/Zip:
+DEFAULT_MACRO CountryAttr US
+GUI OPTIONAL TEXT CountryAttr Country:
+DEFAULT_MACRO SourceDataset /www/fmepedia-easygeocoder/fme/data/TestFile_1000.csv
+GUI MULTIFILE SourceDataset CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Source Comma Separated Value (CSV) File(s):
+DEFAULT_MACRO GeocoderURL http://services.gisgraphy.com/geocoding/geocode?
+GUI IGNORE TEXT GeocoderURL Geocoder URL:
+INCLUDE [ if {{$(SourceDataset)} == {}} { puts_real {Parameter 'SourceDataset' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(GeocoderURL)} == {}} { puts_real {Parameter 'GeocoderURL' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE CSV
+READER_KEYWORD CSV_2
+READER_GEN_DIRECTIVES _GROUP_BY_DATASET,no,_ALLOW_SPACES_IN_COLUMN_NAMES,yes,_SORT_TABLE_CONFIG,<quote>NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:<semicolon>%COL_DELIM:<comma>%HAS_DEFAULTS%START_NUM_ROWS:3%<backslash><quote>Attribute<backslash><quote>%<backslash><quote>STRING_OR_CHOICE_ENCODED<space>ATTRIBUTES<space>%<backslash><quote>%%<backslash><quote>Alpha<solidus>Num<backslash><quote>%<backslash><quote>LOOKUP_CHOICE<space>SORT_CHOICE<space>Alphabetic<comma>alphabetic%Numeric<comma>numeric<backslash><quote>%alphabetic%<backslash><quote>Order<backslash><quote>%<backslash><quote>LOOKUP_CHOICE<space>SORT_ORDER<space>Ascending<comma>ascending%Descending<comma>descending<backslash><quote>%ascending<quote>,FILTER_GROUP,NO,_MERGE_SCHEMAS,YES,_SCHEMA,,groupBox_2,,groupBox_4,,groupBox_5,,_IN_FIELD_NAMES,YES,groupBox_6,,_SKIP_FOOTER,0,_DUPLICATE_DELIMS,no,_FILTER_TABLE_CONFIG,<quote>NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:<semicolon>%COL_DELIM:<comma>%HAS_DEFAULTS%START_NUM_ROWS:3%<backslash><quote>Field<space>Name<backslash><quote>%<backslash><quote>STRING_OR_CHOICE_ENCODED<space>ATTRIBUTES<space>%<backslash><quote>%%<backslash><quote>Filter<backslash><quote>%<backslash><quote>STRING_ENCODED<space>_FILTER_REGEX<space><backslash><quote>%%<backslash><quote>Invert<space>Filter<backslash><quote>%<backslash><quote>CHECKBOX<space>_FILTER_UNMATCHED<space>yes%no<backslash><quote>%no<quote>,_SCHEMA_WITH_COL_NAMES,,_FIELD_NAMES_AFTER_HEADER,no,SCAN_MAX_FEATURES,10000,_SORT_PARAMS,,_STRIP_QUOTES,yes,groupBox,,SORT_GROUP,NO,_FILTER_PARAMS,,_IN_SEPARATOR,<comma>,_ENCODING,,_SKIP_LINES,1
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} OGCKML
+MULTI_WRITER_KEYWORD{0} OGCKML_1
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "CSV_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_2
+# ============================================================================
+# The following GUI line prompts for a directory to be used as the
+# source of the CSV files.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_CSV_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER CSV CSV_2
+DEFAULT_MACRO SourceDataset_CSV_2 $(SourceDataset)
+GUI MULTIFILE SourceDataset_CSV_2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Source Comma Separated Value (CSV) File(s):
+# ============================================================================
+# Hardcode the settings that were used to generate this mapping file
+#
+DEFAULT_MACRO _SCHEMA_CSV_2 
+DEFAULT_MACRO _IN_FIELD_NAMES_CSV_2 YES
+DEFAULT_MACRO _FIELD_NAMES_AFTER_HEADER_CSV_2 no
+DEFAULT_MACRO _EXTENSION_CSV_2 CSV
+DEFAULT_MACRO _ALLOW_SPACES_IN_COLUMN_NAMES_CSV_2 yes
+DEFAULT_MACRO _GROUP_BY_DATASET_CSV_2 no
+CSV_2_SCHEMA 
+DEFAULT_MACRO _SKIP_LINES_CSV_2 1
+CSV_2_SKIP_LINES $(_SKIP_LINES_CSV_2)
+DEFAULT_MACRO _SKIP_FOOTER_CSV_2 0
+CSV_2_SKIP_FOOTER $(_SKIP_FOOTER_CSV_2)
+CSV_2_FIELD_NAMES $(_IN_FIELD_NAMES_CSV_2)
+CSV_2_FIELD_NAMES_AFTER_HEADER $(_FIELD_NAMES_AFTER_HEADER_CSV_2)
+DEFAULT_MACRO _STRIP_QUOTES_CSV_2 yes
+CSV_2_STRIP_QUOTES $(_STRIP_QUOTES_CSV_2)
+CSV_2_SEPARATOR (",")
+CSV_2_EXTENSION CSV
+DEFAULT_MACRO _DUPLICATE_DELIMS_CSV_2 no
+CSV_2_DUPLICATE_DELIMS $(_DUPLICATE_DELIMS_CSV_2)
+CSV_2_SEQUENCED no
+CSV_2_ALLOW_SPACES_IN_COLUMN_NAMES $(_ALLOW_SPACES_IN_COLUMN_NAMES_CSV_2)
+CSV_2_GROUP_BY_DATASET $(_GROUP_BY_DATASET_CSV_2)
+DEFAULT_MACRO SORT_GROUP_CSV_2 NO
+CSV_2_SORT_GROUP $(SORT_GROUP_CSV_2)
+DEFAULT_MACRO _SORT_PARAMS_CSV_2 
+CSV_2_SORT_PARAMS $(_SORT_PARAMS_CSV_2)
+DEFAULT_MACRO FILTER_GROUP_CSV_2 NO
+CSV_2_FILTER_GROUP $(FILTER_GROUP_CSV_2)
+DEFAULT_MACRO _FILTER_PARAMS_CSV_2 
+CSV_2_FILTER_PARAMS $(_FILTER_PARAMS_CSV_2)
+# =====================================================================
+# Provide some control over what attributes have the user-selected
+# encoding applied. Normally all attributes are updated after being
+# read, but the following lines exclude from this treatment all
+# attributes whose names start with fme_ or csv_.
+CSV_2_UNENCODED_ATTR_PREFIX fme_ csv_
+# ===========================================================================
+DEFAULT_MACRO CSV_IN_NETWORK_AUTHENTICATION_CSV_2 
+CSV_2_NETWORK_AUTHENTICATION "$(CSV_IN_NETWORK_AUTHENTICATION_CSV_2)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_AUTHENTICATION_CSV_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO CSV_IN_NETWORK_PROXY_CSV_2 
+CSV_2_NETWORK_PROXY "$(CSV_IN_NETWORK_PROXY_CSV_2)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_PROXY_CSV_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Proxy"%PROMPT_TYPE%PROXY Network Proxy
+GUI INTEGER _SKIP_LINES_CSV_2 Number of Lines to Skip:
+GUI INTEGER _SKIP_FOOTER_CSV_2 Number of Footer Lines to Skip:
+# GUI CHOICE _IN_FIELD_NAMES yes%no Field Names in File:
+# GUI CHOICE _FIELD_NAMES_AFTER_HEADER yes%no Field After Header:
+GUI CHOICE _STRIP_QUOTES_CSV_2 yes%no Strip Quotes From Fields:
+# GUI TEXT _IN_SEPARATOR Field Delimiter:
+# GUI TEXT _EXTENSION Default File Extension:
+GUI CHOICE _DUPLICATE_DELIMS_CSV_2 yes%no Skip Duplicate Delimiters:
+GUI CHOICE SORT_GROUP_CSV_2 yes%no Sorting Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _SORT_PARAMS_CSV_2 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Attribute"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES %"%%"Alpha/Num"%"LOOKUP_CHOICE SORT_CHOICE Alphabetic,alphabetic%Numeric,numeric"%alphabetic%"Order"%"LOOKUP_CHOICE SORT_ORDER Ascending,ascending%Descending,descending"%ascending Sorting Parameters:
+GUI CHOICE FILTER_GROUP_CSV_2 yes%no Filter Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _FILTER_PARAMS_CSV_2 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Field Name"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES %"%%"Filter"%"STRING_ENCODED _FILTER_REGEX "%%"Invert Filter"%"CHECKBOX _FILTER_UNMATCHED yes%no"%no Filter Parameters:
+# =====================================================================
+# Allows to set one of the character encodings for output file
+DEFAULT_MACRO _ENCODING_CSV_2 
+GUI OPTIONAL STRING_OR_ENCODING _ENCODING_CSV_2 SYSTEM%* Character Encoding:
+CSV_2_ENCODING $(_ENCODING_CSV_2)
+CSV_2_DATASET "$(SourceDataset_CSV_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "OGCKML_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER OGCKML OGCKML_1
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_OGCKML_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER OGCKML OGCKML_1
+DEFAULT_MACRO DestDataset_OGCKML_1 /www/fmepedia-easygeocoder/fme/data/Output/GeocodedResults.kml
+GUI FILENAME DestDataset_OGCKML_1 KML_Files(*.kml;*.kmz)|*.kml;*.kmz|All_Files(*.*)|*.* Destination Google Earth KML File:
+OGCKML_1_WRITE_3D_GEOM_AS_POLYGONS no
+OGCKML_1_COORDINATE_SYSTEM_GRANULARITY FEATURE
+DEFAULT_MACRO KML21_DATASET_HINT_OGCKML_1 
+GUI OPTIONAL TEXT KML21_DATASET_HINT_OGCKML_1 KML hint attribute:
+OGCKML_1_DATASET_HINT "$(KML21_DATASET_HINT_OGCKML_1)"
+DEFAULT_MACRO KML21_STYLE_DOC_OGCKML_1 
+GUI OPTIONAL TEXT KML21_STYLE_DOC_OGCKML_1 External Style Document:
+OGCKML_1_STYLE_DOC "$(KML21_STYLE_DOC_OGCKML_1)"
+DEFAULT_MACRO KML21_SCHEMA_DOC_OGCKML_1 
+GUI OPTIONAL TEXT KML21_SCHEMA_DOC_OGCKML_1 External Schema Document:
+OGCKML_1_SCHEMA_DOC "$(KML21_SCHEMA_DOC_OGCKML_1)"
+DEFAULT_MACRO KML21_DOCUMENT_NAME_OGCKML_1 
+GUI OPTIONAL TEXT KML21_DOCUMENT_NAME_OGCKML_1 Root Document name:
+OGCKML_1_DOCUMENT_NAME "$(KML21_DOCUMENT_NAME_OGCKML_1)"
+DEFAULT_MACRO KML21_DOCUMENT_DESC_OGCKML_1 
+GUI OPTIONAL TEXT KML21_DOCUMENT_DESC_OGCKML_1 Document description:
+OGCKML_1_DOCUMENT_DESC "$(KML21_DOCUMENT_DESC_OGCKML_1)"
+DEFAULT_MACRO KML21_DOCUMENT_VISIBILITY_OGCKML_1 yes
+GUI CHOICE KML21_DOCUMENT_VISIBILITY_OGCKML_1 yes%no Document visible on load:
+OGCKML_1_DOCUMENT_VISIBILITY "$(KML21_DOCUMENT_VISIBILITY_OGCKML_1)"
+DEFAULT_MACRO KML21_ATOM_AUTHOR_NAME_OGCKML_1 
+GUI OPTIONAL TEXT KML21_ATOM_AUTHOR_NAME_OGCKML_1 Author Name:
+OGCKML_1_ATOM_AUTHOR_NAME "$(KML21_ATOM_AUTHOR_NAME_OGCKML_1)"
+DEFAULT_MACRO KML21_ATOM_AUTHOR_EMAIL_OGCKML_1 
+GUI OPTIONAL TEXT KML21_ATOM_AUTHOR_EMAIL_OGCKML_1 Author Email:
+OGCKML_1_ATOM_AUTHOR_EMAIL "$(KML21_ATOM_AUTHOR_EMAIL_OGCKML_1)"
+DEFAULT_MACRO KML21_ATOM_LINK_HREF_OGCKML_1 
+GUI OPTIONAL TEXT KML21_ATOM_LINK_HREF_OGCKML_1 Author URL:
+OGCKML_1_ATOM_LINK_HREF "$(KML21_ATOM_LINK_HREF_OGCKML_1)"
+DEFAULT_MACRO KML21_WATERMARK_NAME_OGCKML_1 
+GUI OPTIONAL TEXT KML21_WATERMARK_NAME_OGCKML_1 Watermark Name:
+OGCKML_1_WATERMARK_NAME "$(KML21_WATERMARK_NAME_OGCKML_1)"
+DEFAULT_MACRO KML21_WATERMARK_SNIPPET_OGCKML_1 
+GUI OPTIONAL TEXT KML21_WATERMARK_SNIPPET_OGCKML_1 Watermark Snippet Text:
+OGCKML_1_WATERMARK_SNIPPET "$(KML21_WATERMARK_SNIPPET_OGCKML_1)"
+DEFAULT_MACRO KML21_WATERMARK_ICON_OGCKML_1 
+GUI OPTIONAL TEXT KML21_WATERMARK_ICON_OGCKML_1 Watermark Overlay Icon:
+OGCKML_1_WATERMARK_ICON "$(KML21_WATERMARK_ICON_OGCKML_1)"
+DEFAULT_MACRO KML21_ATTR_IN_DESCRIPTION_OGCKML_1 yes
+GUI CHOICE KML21_ATTR_IN_DESCRIPTION_OGCKML_1 yes%no Create Attribute Table in Description Balloon:
+OGCKML_1_ATTR_IN_DESCRIPTION "$(KML21_ATTR_IN_DESCRIPTION_OGCKML_1)"
+DEFAULT_MACRO KML21_HTML_DESCRIPTIONS_OGCKML_1 yes
+GUI CHOICE KML21_HTML_DESCRIPTIONS_OGCKML_1 yes%no Use HTML in Description Balloon:
+OGCKML_1_HTML_DESCRIPTIONS "$(KML21_HTML_DESCRIPTIONS_OGCKML_1)"
+DEFAULT_MACRO KML21_DETECT_RASTERS_OGCKML_1 yes
+GUI CHOICE KML21_DETECT_RASTERS_OGCKML_1 yes%no Generate Raster Ground Overlays:
+OGCKML_1_DETECT_RASTERS "$(KML21_DETECT_RASTERS_OGCKML_1)"
+DEFAULT_MACRO KML21_RASTER_MODE_OGCKML_1 write
+GUI CHOICE KML21_RASTER_MODE_OGCKML_1 write%copy%relative Raster Handling Mode:
+OGCKML_1_RASTER_MODE "$(KML21_RASTER_MODE_OGCKML_1)"
+DEFAULT_MACRO KML21_RASTER_FORMAT_OGCKML_1 tiff
+GUI OPTIONAL CHOICE KML21_RASTER_FORMAT_OGCKML_1 jpeg%tiff%png%gif Raster Output Format:
+OGCKML_1_RASTER_FORMAT "$(KML21_RASTER_FORMAT_OGCKML_1)"
+DEFAULT_MACRO KML21_TEXTURE_FORMAT_OGCKML_1 NONE
+GUI LOOKUP_CHOICE KML21_TEXTURE_FORMAT_OGCKML_1 Auto,NONE%PNG,PNGRASTER%JPEG%GIF,GIFRASTER%BMP%TIFF Preferred Texture Format:
+OGCKML_1_TEXTURE_FORMAT "$(KML21_TEXTURE_FORMAT_OGCKML_1)"
+DEFAULT_MACRO KML21_COPY_ICON_OGCKML_1 yes
+GUI CHOICE KML21_COPY_ICON_OGCKML_1 yes%no Copy icons to destination dataset:
+OGCKML_1_COPY_ICON "$(KML21_COPY_ICON_OGCKML_1)"
+DEFAULT_MACRO KML21_OUTPUT_SCHEMA_OGCKML_1 yes
+GUI CHOICE KML21_OUTPUT_SCHEMA_OGCKML_1 yes%no Create KML Schema Elements:
+OGCKML_1_OUTPUT_SCHEMA "$(KML21_OUTPUT_SCHEMA_OGCKML_1)"
+DEFAULT_MACRO KML21_AUTO_CREATE_NETWORK_LINKS_OGCKML_1 no
+GUI CHOICE KML21_AUTO_CREATE_NETWORK_LINKS_OGCKML_1 yes%no Create Network Links for Referenced Documents:
+OGCKML_1_AUTO_CREATE_NETWORK_LINKS "$(KML21_AUTO_CREATE_NETWORK_LINKS_OGCKML_1)"
+DEFAULT_MACRO KML21_ORIENTATION_OGCKML_1 none
+GUI CHOICE KML21_ORIENTATION_OGCKML_1 none%left%right Force Geometry Orientation:
+OGCKML_1_ORIENTATIONS "$(KML21_ORIENTATION_OGCKML_1)"
+DEFAULT_MACRO KML21_LOG_VERBOSE_OGCKML_1 no
+GUI CHOICE KML21_LOG_VERBOSE_OGCKML_1 yes%no Verbose Logging:
+OGCKML_1_LOG_VERBOSE "$(KML21_LOG_VERBOSE_OGCKML_1)"
+DEFAULT_MACRO KML21_ENABLE_GENERATED_BY_COMMENT_OGCKML_1 yes
+GUI CHOICE KML21_ENABLE_GENERATED_BY_COMMENT_OGCKML_1 yes%no Add `Generated-By' comment:
+OGCKML_1_ENABLE_GENERATED_BY_COMMENT "$(KML21_ENABLE_GENERATED_BY_COMMENT_OGCKML_1)"
+DEFAULT_MACRO KML21_OMIT_DOCUMENT_ELEMENT_OGCKML_1 no
+GUI CHOICE KML21_OMIT_DOCUMENT_ELEMENT_OGCKML_1 yes%no Omit Document Element:
+OGCKML_1_OMIT_DOCUMENT_ELEMENT "$(KML21_OMIT_DOCUMENT_ELEMENT_OGCKML_1)"
+DEFAULT_MACRO KML21_REGIONATE_DATA_OGCKML_1 no
+GUI CHOICE KML21_REGIONATE_DATA_OGCKML_1 yes%no Regionate Vectors (Beta):
+OGCKML_1_REGIONATE_DATA "$(KML21_REGIONATE_DATA_OGCKML_1)"
+DEFAULT_MACRO KML21_EXEC_GO_PIPELINE_OGCKML_1 no
+GUI CHOICE KML21_EXEC_GO_PIPELINE_OGCKML_1 yes%no Generate Super-Overlays:
+OGCKML_1_EXEC_GO_PIPELINE "$(KML21_EXEC_GO_PIPELINE_OGCKML_1)"
+DEFAULT_MACRO KML21_EXEC_PO_PIPELINE_OGCKML_1 no
+GUI CHOICE KML21_EXEC_PO_PIPELINE_OGCKML_1 yes%no Pyramid PhotoOverlays (Beta):
+OGCKML_1_EXEC_PO_PIPELINE "$(KML21_EXEC_PO_PIPELINE_OGCKML_1)"
+DEFAULT_MACRO KML21_CREATE_EMPTY_FOLDERS_OGCKML_1 no
+GUI CHOICE KML21_CREATE_EMPTY_FOLDERS_OGCKML_1 yes%no Create Empty Folders:
+OGCKML_1_CREATE_EMPTY_FOLDERS "$(KML21_CREATE_EMPTY_FOLDERS_OGCKML_1)"
+DEFAULT_MACRO KML21_TARGET_HREF_OGCKML_1 
+GUI OPTIONAL TEXT KML21_TARGET_HREF_OGCKML_1 Update Target HREF (NetworkLinkControl):
+OGCKML_1_KML21_TARGET_HREF "$(KML21_TARGET_HREF_OGCKML_1)"
+DEFAULT_MACRO KML21_MOVE_TO_KML_LOCAL_COORDSYS_OGCKML_1 yes
+GUI CHOICE KML21_MOVE_TO_KML_LOCAL_COORDSYS_OGCKML_1 yes%no Move To Local Coordinate System:
+OGCKML_1_MOVE_TO_KML_LOCAL_COORDSYS "$(KML21_MOVE_TO_KML_LOCAL_COORDSYS_OGCKML_1)"
+DEFAULT_MACRO KML21_WRITE_3D_GEOM_AS_POLYGONS_OGCKML_1 no
+GUI CHOICE KML21_WRITE_3D_GEOM_AS_POLYGONS_OGCKML_1 yes%no Write 3D Geometry As Polygons:
+OGCKML_1_WRITE_3D_GEOM_AS_POLYGONS "$(KML21_WRITE_3D_GEOM_AS_POLYGONS_OGCKML_1)"
+DEFAULT_MACRO KML21_WRITE_TEXTURES_TXT_FILE_OGCKML_1 no
+GUI CHOICE KML21_WRITE_TEXTURES_TXT_FILE_OGCKML_1 yes%no Write texture list to textures.txt:
+OGCKML_1_WRITE_TEXTURES_TXT_FILE "$(KML21_WRITE_TEXTURES_TXT_FILE_OGCKML_1)"
+DEFAULT_MACRO KML21_FANOUT_TYPE_OGCKML_1 folder
+GUI CHOICE KML21_FANOUT_TYPE_OGCKML_1 folder%subfolder Feature Type Fanout Mode:
+OGCKML_1_KML21_FANOUT_TYPE "$(KML21_FANOUT_TYPE_OGCKML_1)"
+DEFAULT_MACRO KML21_GME_COMPATIBILITY_MODE_OGCKML_1 no
+GUI CHOICE KML21_GME_COMPATIBILITY_MODE_OGCKML_1 yes%no GME Compatibility Mode:
+OGCKML_1_GME_COMPATIBILITY_MODE "$(KML21_GME_COMPATIBILITY_MODE_OGCKML_1)"
+FORMAT_PARAMETER ADVANCED_PARMS KML21_INFORMATION_POINT_ICON KML21_RASTER_COMPRESSION_LEVEL KML21_OUTPUT_SCHEMA KML21_AUTO_CREATE_NETWORK_LINKS KML21_LOG_VERBOSE KML21_ORIENTATION KML21_DATASET_HINT KML21_STYLE_DOC KML21_SCHEMA_DOC KML21_DETECT_RASTERS KML21_RASTER_MODE KML21_RASTER_FORMAT KML21_TEXTURE_FORMAT KML21_COPY_ICON KML21_REGIONATE_DATA KML21_REGIONATOR_PIPELINE KML21_EXEC_GO_PIPELINE KML21_GO_PYRAMIDER_PIPELINE KML21_EXEC_PO_PIPELINE KML21_PO_PYRAMIDER_PIPELINE KML21_ENABLE_GENERATED_BY_COMMENT KML21_OMIT_DOCUMENT_ELEMENT KML21_CREATE_EMPTY_FOLDERS KML21_TARGET_HREF KML21_FANOUT_TYPE KML21_MOVE_TO_KML_LOCAL_COORDSYS KML21_WRITE_3D_GEOM_AS_POLYGONS KML21_WRITE_3D_GEOM_AS_POLYGONS KML21_APPLY_MODEL_TRANSFORMS KML21_WRITE_TEXTURES_TXT_FILE KML21_GME_COMPATIBILITY_MODE
+OGCKML_1_DATASET "$(DestDataset_OGCKML_1)"
+#! END_DEST_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)CallGeocoder.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_CSV_2 CSV_2
+DEFAULT_MACRO DATASET_KEYWORD_OGCKML_1 OGCKML_1
+# -------------------------------------------------------------------------
+
+CSV_2_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME CallGeocoder
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+CSV_2_DEF CSV   RecordID                     number(5,0)   acct_sgmnt_cd                char(9)   lblty_type_cd                char(4)   AddressLine1                 char(39)   addr2                        char(19)   City                         char(19)   StateProvince                char(3)   PostalCode                   number(6,0)   zip4                         number(5,0)   act_susp_lines               number(3,0)
+
+# -------------------------------------------------------------------------
+
+Lookup ___KnownFeatureTypes___   CSV yes   "" no
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory   FACTORY_NAME "Unexpected Input Remover"   INPUT FEATURE_TYPE *   TEST @Lookup(___KnownFeatureTypes___,@FeatureType()) == yes   OUTPUT PASSED FEATURE_TYPE *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TYPE *    OUTPUT FEATURE_TYPE *       @Transform(CSV,FME_GENERIC,PRESERVE_GEOMETRY)
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+INCLUDE [ puts "MACRO REAL_RATE [expr 5 * -1 ]" ]
+FACTORY_DEF * SamplingFactory    FACTORY_NAME Sampler    SAMPLE_RATE $(REAL_RATE)    INPUT  FEATURE_TYPE CSV    OUTPUT SAMPLED FEATURE_TYPE ___SAMPLED___
+# This TeeFactory is needed because Sampler will still output features if it has no OUTPUT clauses specified.
+# This way we behave nicely even if there are no output connections on the transformer. See PR#28886.
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME Sampler_Sampled    INPUT FEATURE_TYPE ___SAMPLED___    OUTPUT FEATURE_TYPE Sampler_SAMPLED
+
+
+# -------------------------------------------------------------------------
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE Sampler_SAMPLED ATTR _urlAddr <at>Value<openparen>$(AddressAttr$encode)<closeparen><space><at>Value<openparen>$(CityAttr$encode)<closeparen> ATTR _urlPostal <at>Value<openparen>$(PostalCodeAttr$encode)<closeparen> ATTR _urlCountry "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>$(CountryAttr$encode)<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST $(CountryAttr$encode) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_;TEST $(CountryAttr$encode) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_'$(CountryAttr$encode)'FME_NUM_CONDITIONS2___"    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValueMapper (Disabled) Nuker"   INPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPFetcher       INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=    INPUT  FEATURE_TYPE AttributeValueMapper_OUTPUT    TARGET_URL @EvaluateExpression(STRING_ENCODED,$(GeocoderURL$encode)address=<at>Value<openparen>_urlAddr<closeparen><amp>postal=<at>Value<openparen>_urlPostal<closeparen><amp>country=<at>Value<openparen>_urlCountry<closeparen>,HTTPFetcher)    SAVE_FILE No    OUTPUT_FILENAME "<Unused>"    TARGET_ATTR "_url_contents"    HTTP_METHOD GET    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    TARGET_ATTRIBUTE_ENCODING    RESPONSE_HEADER_LIST_ATTR "_headers"    STATUS_CODE_ATTR "_http_status_code"    ERROR_ATTR "_error"    FOLLOW_REDIRECTS Yes    VERIFY_SSL_CERTIFICATES Yes    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPFetcher_OUTPUT    OUTPUT REJECTED FEATURE_TYPE HTTPFetcher_<REJECTED>
+
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME HTTPFetcher__Rejected__Logger    INPUT  FEATURE_TYPE HTTPFetcher_<REJECTED>    OUTPUT FEATURE_TYPE HTTPFetcher__Rejected__LOGGED                        @FeatureType("")                  @Log("HTTPFetcher__Rejected_: Feature is:",20,20)
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "HTTPFetcher__Rejected_ LOGGED Output Nuker"   INPUT FEATURE_TYPE HTTPFetcher__Rejected__LOGGED
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * XFMapFactory    FACTORY_NAME XMLFlattener    INPUT  FEATURE_TYPE HTTPFetcher_OUTPUT    XML_STREAM "_url_contents"    XFMAP_FEATURE_PATHS_EXPRESSION "result"    XFMAP_FEATURE_PATHS_STRUCTURE "<lf><lt>structure<space>separator=<quote>.<quote><space>map-empty-elements=<quote>yes<quote><space>matched-prefix=<quote>attributes<quote><space>matched-attributes=<quote>yes<quote><space>cardinality=<quote>+<opencurly>?<closecurly><quote><space>structure-prefix=<quote><quote><space>child-position-attribute=<quote><quote><space>except-expression=<quote><quote><space>ui-mode=<quote>basic<quote><space>matched-ancestor-attributes=<quote><quote><solidus><gt><lf>"    OUTPUT_ONE_FEATURE_PER_INPUT yes    OUTPUT MAPPED FEATURE_TYPE XMLFlattener_OUTPUT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * VertexCreatorFactory    FACTORY_NAME VertexCreator    INPUT  FEATURE_TYPE XMLFlattener_OUTPUT    MODE ADD    XVAL "@Value(lng)"    YVAL "@Value(lat)"    OUTPUT OUTPUT FEATURE_TYPE VertexCreator_OUTPUT
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME CoordinateSystemSetter    INPUT  FEATURE_TYPE VertexCreator_OUTPUT    OUTPUT FEATURE_TYPE CoordinateSystemSetter_OUTPUT         @CoordSys("LL84")
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "CoordinateSystemSetter_OUTPUT -> NewFeatureType Correlator"    INPUT FEATURE_TYPE CoordinateSystemSetter_OUTPUT    OUTPUT FEATURE_TYPE __GO_TO_FINAL_OUTPUT_ROUTER__       multi_writer_id 0       @Transform(FME_GENERIC,OGCKML)       @SupplyAttributes(ENCODED,fme_template_feature_type,NewFeatureType)       @SupplyAttributes(ENCODED,__wb_out_feat_type__,GeocodedResults)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   INPUT FEATURE_TYPE *   TEST @Value(__wb_out_feat_type__) != ""   OUTPUT PASSED FEATURE_TYPE *     @FeatureType(@Value(__wb_out_feat_type__))   OUTPUT FAILED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+OGCKML_1_DEF_TEMPLATE NewFeatureType   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes   fme_schema_readers           CSV_2   fme_schema_name_attr         fme_feature_type
