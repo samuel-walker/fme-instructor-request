@@ -1,12 +1,12 @@
 $(document).ready(function(){
 	
 	var fileLocation = '';
-	document.getElementById('dropdowns').style.display = 'none';
+	 document.getElementById('dropdowns').style.display = 'none';
 	document.getElementById('results').style.display = 'none';
 	
 	//initialize behaviour for file upload 
 	$('#fileupload').fileupload({
-		url : 'http://bd-lkdesktop/fmedataupload/EasyGeocoder/GenerateSchemaElements.fmw?opt_fullpath=true',
+		url : 'https://fmepedia2014-safe-software.fmecloud.com/fmedataupload/EasyGeocoder/GenerateSchemaElements.fmw?opt_fullpath=true',
 		dropzone : $('#dropzone'),
 		autoUpload : true,
 
@@ -58,8 +58,8 @@ $(document).ready(function(){
 	});
 
 	geocoder.init({
-		host : 'http://bd-lkdesktop',
-		token : '3d07f91c1bfa88ed0c94c2a36dda209fa4634c4c'
+		host : 'https://fmepedia2014-safe-software.fmecloud.com',
+		token : 'fb1c3ee6828e6814c75512dd4770a02e73d913b8'
 	});
 }); 
 
