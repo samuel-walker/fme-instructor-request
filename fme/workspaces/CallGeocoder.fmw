@@ -16,7 +16,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="-96 -204"
+#! VIEW_POSITION="-96 -195"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -34,13 +34,13 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="cdeaf10c-ea79-11e3-9a8d-d3c5ab7d1ca8,1a423706-ea7d-11e3-896a-b4134a57705e,8f5363d8-ea98-11e3-896a-b4134a57705e,8516e430-eab1-11e3-896a-b4134a57705e,61911d10-eb78-11e3-9e72-a06b92e0836f"
-#! DOC_TOP_LEFT="0 -1382"
+#! FME_DOCUMENT_PRIORGUID="cdeaf10c-ea79-11e3-9a8d-d3c5ab7d1ca8,1a423706-ea7d-11e3-896a-b4134a57705e,8f5363d8-ea98-11e3-896a-b4134a57705e,8516e430-eab1-11e3-896a-b4134a57705e,61911d10-eb78-11e3-9e72-a06b92e0836f,b25b4d1e-eb79-11e3-9e72-a06b92e0836f"
+#! DOC_TOP_LEFT="-6 -1042"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2014-06-05T16:16:49"
+#! LAST_SAVE_DATE="2014-06-24T15:20:42"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
@@ -50,8 +50,8 @@
 #! LOG_FILE=""
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
-#! DOC_EXTENTS="3282 1168"
-#! FME_DOCUMENT_GUID="b25b4d1e-eb79-11e3-9e72-a06b92e0836f"
+#! DOC_EXTENTS="2924 690"
+#! FME_DOCUMENT_GUID="c7d4c5f6-fbed-11e3-8c6b-fca3c6ca0c69"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -62,7 +62,7 @@
 #! ROLE="READER"
 #! FORMAT="CSV"
 #! DATASET="$(SourceDataset)"
-#! KEYWORD="CSV_2"
+#! KEYWORD="CSV_1"
 #! MULTI_GEOM_ALLOWED="false"
 #! ATTR_MAX_LENGTH="60"
 #! ATTR_CASE="ANY"
@@ -126,8 +126,8 @@
 #! FANOUT_DIRECTORY=""
 #! >
 #! <METAFILE_PARAMETER
-#! NAME="SUPPORTS_ESTABLISHED_CACHE"
-#! VALUE="YES"
+#! NAME="ADVANCED_PARMS"
+#! VALUE="KML21_INFORMATION_POINT_ICON KML21_RASTER_COMPRESSION_LEVEL KML21_OUTPUT_SCHEMA KML21_AUTO_CREATE_NETWORK_LINKS KML21_LOG_VERBOSE KML21_ORIENTATION KML21_DATASET_HINT KML21_STYLE_DOC KML21_SCHEMA_DOC KML21_DETECT_RASTERS KML21_RASTER_MODE KML21_RASTER_FORMAT KML21_TEXTURE_FORMAT KML21_COPY_ICON KML21_REGIONATE_DATA KML21_REGIONATOR_PIPELINE KML21_EXEC_GO_PIPELINE KML21_GO_PYRAMIDER_PIPELINE KML21_EXEC_PO_PIPELINE KML21_PO_PYRAMIDER_PIPELINE KML21_ENABLE_GENERATED_BY_COMMENT KML21_OMIT_DOCUMENT_ELEMENT KML21_CREATE_EMPTY_FOLDERS KML21_TARGET_HREF KML21_FANOUT_TYPE KML21_MOVE_TO_KML_LOCAL_COORDSYS KML21_WRITE_3D_GEOM_AS_POLYGONS KML21_WRITE_3D_GEOM_AS_POLYGONS KML21_APPLY_MODEL_TRANSFORMS KML21_WRITE_TEXTURES_TXT_FILE KML21_GME_COMPATIBILITY_MODE"
 #! />
 #! <METAFILE_PARAMETER
 #! NAME="NETWORK_PROXY"
@@ -142,8 +142,8 @@
 #! VALUE="NO"
 #! />
 #! <METAFILE_PARAMETER
-#! NAME="ADVANCED_PARMS"
-#! VALUE="KML21_INFORMATION_POINT_ICON KML21_RASTER_COMPRESSION_LEVEL KML21_OUTPUT_SCHEMA KML21_AUTO_CREATE_NETWORK_LINKS KML21_LOG_VERBOSE KML21_ORIENTATION KML21_DATASET_HINT KML21_STYLE_DOC KML21_SCHEMA_DOC KML21_DETECT_RASTERS KML21_RASTER_MODE KML21_RASTER_FORMAT KML21_TEXTURE_FORMAT KML21_COPY_ICON KML21_REGIONATE_DATA KML21_REGIONATOR_PIPELINE KML21_EXEC_GO_PIPELINE KML21_GO_PYRAMIDER_PIPELINE KML21_EXEC_PO_PIPELINE KML21_PO_PYRAMIDER_PIPELINE KML21_ENABLE_GENERATED_BY_COMMENT KML21_OMIT_DOCUMENT_ELEMENT KML21_CREATE_EMPTY_FOLDERS KML21_TARGET_HREF KML21_FANOUT_TYPE KML21_MOVE_TO_KML_LOCAL_COORDSYS KML21_WRITE_3D_GEOM_AS_POLYGONS KML21_WRITE_3D_GEOM_AS_POLYGONS KML21_APPLY_MODEL_TRANSFORMS KML21_WRITE_TEXTURES_TXT_FILE KML21_GME_COMPATIBILITY_MODE"
+#! NAME="SUPPORTS_ESTABLISHED_CACHE"
+#! VALUE="YES"
 #! />
 #! </DATASET>
 #! </DATASETS>
@@ -596,7 +596,7 @@
 #! IS_EDITABLE="true"
 #! IDENTIFIER="25"
 #! FEAT_GEOMTYPE="&lt;NO_GEOMETRY&gt;"
-#! POSITION="3282 -260"
+#! POSITION="2918 -518"
 #! ORDER="5e+14"
 #! COLLAPSED="true"
 #! KEYWORD="OGCKML_1"
@@ -604,7 +604,7 @@
 #! FANOUT="No"
 #! FANOUT_ID_ATTR=""
 #! DYNAMIC_SCHEMA="true"
-#! DYNAMIC_SCHEMA_SOURCES="CSV_2"
+#! DYNAMIC_SCHEMA_SOURCES="CSV_1"
 #! DYNAMIC_SCHEMA_FEATURE_TYPE="FIXED"
 #! DYNAMIC_SCHEMA_FEATURE_TYPE_NAME="GeocodedResults"
 #! DYNAMIC_SCHEMA_DEFINITION="AUTOMATIC"
@@ -631,10 +631,10 @@
 #! IS_EDITABLE="false"
 #! IDENTIFIER="34"
 #! FEAT_GEOMTYPE="csv_none"
-#! POSITION="0 -214"
+#! POSITION="-6 -352"
 #! ORDER="5e+14"
 #! COLLAPSED="true"
-#! KEYWORD="CSV_2"
+#! KEYWORD="CSV_1"
 #! ENABLED="true"
 #! HIDDEN_USER_ATTRS=""
 #! MERGE="false"
@@ -806,20 +806,6 @@
 #! />
 #! </GLOBAL_PARAMETERS>
 #! <COMMENTS>
-#! <COMMENT
-#! IDENTIFIER="30"
-#! COMMENT_VALUE="&lt;html&gt;&lt;body&gt;need two letter country code&lt;/body&gt;&lt;/html&gt;"
-#! POSITION="1499 -505"
-#! ORDER="34"
-#! FOLLOW_ANCHOR="true"
-#! INFO_NODE="false"
-#! TOP_LEFT="1499 -505"
-#! BOTTOM_RIGHT="1499 -505"
-#! COLOUR="1,1,0.784314,1"
-#! SIZE_POLICY="8"
-#! COMMENT_TYPE="REGULAR"
-#! ANCHORED_NODE="19"
-#! />
 #! </COMMENTS>
 #! <CONSTANTS>
 #! </CONSTANTS>
@@ -859,43 +845,10 @@
 #! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="_urlAddr,&lt;at&gt;Value&lt;openparen&gt;$(AddressAttr)&lt;closeparen&gt;&lt;space&gt;&lt;at&gt;Value&lt;openparen&gt;$(CityAttr)&lt;closeparen&gt;,_urlPostal,&lt;at&gt;Value&lt;openparen&gt;$(PostalCodeAttr)&lt;closeparen&gt;,_urlCountry,&quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;$(CountryAttr)&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST $(CountryAttr) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_;TEST $(CountryAttr) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_&apos;$(CountryAttr)&apos;FME_NUM_CONDITIONS2___&quot;"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
-#! IDENTIFIER="19"
-#! TYPE="AttributeValueMapper"
-#! VERSION="4"
-#! POSITION="1502 -654"
-#! ORDER="37"
-#! PARMS_EDITED="true"
-#! ENABLED="false"
-#! >
-#! <OUTPUT_FEAT NAME="OUTPUT"/>
-#! <FEAT_COLLAPSED COLLAPSED="0"/>
-#! <XFORM_ATTR ATTR_NAME="RecordID" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="acct_sgmnt_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="lblty_type_cd" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="AddressLine1" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="addr2" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="City" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="StateProvince" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="PostalCode" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="zip4" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="act_susp_lines" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_urlAddr" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_urlPostal" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_ATTR ATTR_NAME="_urlCountry" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#! <XFORM_PARM PARM_NAME="DIRECTION" PARM_VALUE="Forward (Source To Destination)"/>
-#! <XFORM_PARM PARM_NAME="VAL_ATTR" PARM_VALUE="_urlCountry"/>
-#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeValueMapper"/>
-#! <XFORM_PARM PARM_NAME="MAPPING_GRP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
-#! <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="&lt;at&gt;Value&lt;openparen&gt;_urlCountry&lt;closeparen&gt;"/>
-#! <XFORM_PARM PARM_NAME="LUT" PARM_VALUE="Antigua&lt;space&gt;And&lt;space&gt;Barbuda,AG,Arab&lt;space&gt;Emirates,AE,Bosnia&lt;space&gt;And&lt;space&gt;Herzegovina,BA,Cayman&lt;space&gt;Islands,KY,China&lt;space&gt;P.Rep.,CN,China,CN,Cocos&lt;space&gt;Islands,CC,Cook&lt;space&gt;Islands,CK,Costa&lt;space&gt;Rica,CR,Czech&lt;space&gt;Republic,CZ,Dominican&lt;space&gt;Repl.,DO,El&lt;space&gt;Salvador,SV,Falkland&lt;space&gt;Islands&lt;space&gt;&lt;openparen&gt;Malvinas&lt;closeparen&gt;,FK,Faroe&lt;space&gt;Islands,FO,Fr.&lt;space&gt;Polynesia,PF,French&lt;space&gt;Guiana,GF,Georgia&lt;space&gt;&lt;openparen&gt;Republic&lt;space&gt;Of&lt;closeparen&gt;,GE,Ivory&lt;space&gt;Coast,CI,Marshall&lt;space&gt;Islands,MH,Neth.&lt;space&gt;Antilles,AN,New&lt;space&gt;Caledonia,NC,New&lt;space&gt;Guinea,PG,New&lt;space&gt;Zealand,NZ,Norfolk&lt;space&gt;Island,NF,North&lt;space&gt;Korea,KP,Russian&lt;space&gt;Federation,RU,Saint&lt;space&gt;Kitts&lt;space&gt;And&lt;space&gt;Nevis,KN,San&lt;space&gt;Marino,SM,Saudi&lt;space&gt;Arabia,SA,Sierra&lt;space&gt;Leone,SL,Solomon&lt;space&gt;Islands,SB,South&lt;space&gt;Africa,ZA,South&lt;space&gt;Korea,KR,Sri&lt;space&gt;Lanka,LK,St.&lt;space&gt;Lucia,LC,St.&lt;space&gt;Vincent&lt;solidus&gt;Grenadines,VC,The&lt;space&gt;Bahamas,BS,Turks&lt;space&gt;And&lt;space&gt;Caicos&lt;space&gt;Islands,TC,United&lt;space&gt;Kingdom,GB,Vanuatu&lt;space&gt;&lt;openparen&gt;New&lt;space&gt;Hebrides&lt;closeparen&gt;,VU,Vatican&lt;space&gt;City&lt;space&gt;State&lt;space&gt;&lt;openparen&gt;Holy&lt;space&gt;See&lt;closeparen&gt;,VA,Viet&lt;space&gt;Nam,VN,Virgin&lt;space&gt;&lt;openparen&gt;British&lt;closeparen&gt;&lt;space&gt;Islands,VG,Albania,AL,Algeria,DZ,Andorra,AD,Angola,AO,Anguilla,AI,Argentina,AR,Armenia,AM,Aruba,AW,Australia,AU,Austria,AT,Azerbaijan,AZ,Bahrain,BH,Bangladesh,BD,Barbados,BB,Belarus,BY,Belgium,BE,Belize,BZ,Bermuda,BM,Bolivia,BO,Botswana,BW,Brazil,BR,Brunei,BN,Bulgaria,BG,Cambodia,KH,Cameroon,CM,Canada,CA,Chad,TD,Chile,CL,China,HK,Colombia,CO,Congo,CD,Croatia,HR,Cuba,CU,Cyprus,CY,Czechoslovakia,CS,Denmark,DK,Dominica,DM,Ecuador,EC,Egypt,EG,Estonia,EE,Ethiopia,ET,Fiji,FJ,Finland,FI,France,FR,Gabon,GA,Gambia,GM,Germany,DE,Ghana,GH,Gibraltar,GI,Greece,GR,Greenland,GL,Grenada,GD,Guadeloupe,GP,Guatemala,GT,Guinea,GN,Guyana,GY,Haiti,HT,Honduras,HN,Hungary,HU,Iceland,IS,India,IN,Indonesia,ID,Iran,IR,Iraq,IQ,Ireland,IE,Israel,IL,Italy,IT,Jamaica,JM,Japan,JP,Jordan,JO,Kazakhstan,KZ,Kenya,KE,Kuwait,KW,Kyrgyzstan,KG,Laos,LA,Latvia,LV,Lebanon,LB,Liberia,LR,Libya,LY,Liechtenstein,LI,Lithuania,LT,Luxembourg,LU,Macau,MO,Macedonia,MK,Madagascar,MG,Malawi,MW,Malaysia,MY,Mali,ML,Malta,MT,Martinique,MQ,Mauritania,MR,Mauritius,MU,Mexico,MX,Moldova,MD,Monaco,MC,Morocco,MA,Myanmar,MM,Namibia,NA,Nepal,NP,Netherlands,NL,Nicaragua,NI,Niger,NE,Nigeria,NG,Norway,NO,Oman,OM,Pakistan,PK,Palau,PW,Panama,PA,Paraguay,PY,Peru,PE,Philippines,PH,Poland,PL,Portugal,PT,Qatar,QA,Romania,RO,Senegal,SN,Singapore,SG,Slovakia,SK,Slovenia,SI,Spain,ES,Sudan,SD,Suriname,SR,Swaziland,SZ,Sweden,SE,Switzerland,CH,Syria,SY,Taiwan,TW,Tanzania,TZ,Thailand,TH,Trinidad&lt;solidus&gt;Tobago,TT,Tunisia,TN,Turkey,TR,U.S.S.R.,SU,Uganda,UG,Ukraine,UA,Uruguay,UY,Uzbekistan,UZ,Venezuela,VE,Yemen,YE,Yugoslavia,YU,Zambia,ZM,Zimbabwe,ZW"/>
-#! <XFORM_PARM PARM_NAME="SRC" PARM_VALUE="_urlCountry"/>
-#! </TRANSFORMER>
-#! <TRANSFORMER
 #! IDENTIFIER="32"
 #! TYPE="HTTPFetcher"
 #! VERSION="3"
-#! POSITION="1983 -660"
+#! POSITION="1682 -638"
 #! ORDER="5e+14"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1011,7 +964,7 @@
 #! IDENTIFIER="43"
 #! TYPE="Logger"
 #! VERSION="3"
-#! POSITION="2231 -1382"
+#! POSITION="1783 -1042"
 #! ORDER="5e+14"
 #! PARMS_EDITED="false"
 #! ENABLED="true"
@@ -1048,7 +1001,7 @@
 #! IDENTIFIER="36"
 #! TYPE="XMLFlattener"
 #! VERSION="2"
-#! POSITION="2569 -606"
+#! POSITION="2301 -452"
 #! ORDER="5e+14"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1093,7 +1046,7 @@
 #! IDENTIFIER="31"
 #! TYPE="VertexCreator"
 #! VERSION="0"
-#! POSITION="2607 -792"
+#! POSITION="2339 -638"
 #! ORDER="5e+14"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1132,7 +1085,7 @@
 #! IDENTIFIER="38"
 #! TYPE="CoordinateSystemSetter"
 #! VERSION="0"
-#! POSITION="2636 -979"
+#! POSITION="2368 -825"
 #! ORDER="5e+14"
 #! PARMS_EDITED="true"
 #! ENABLED="true"
@@ -1180,24 +1133,6 @@
 #! SOURCE_NODE="32"
 #! TARGET_NODE="43"
 #! SOURCE_PORT_DESC="fo 1"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="22"
-#! SOURCE_NODE="21"
-#! TARGET_NODE="19"
-#! SOURCE_PORT_DESC="fo 0"
-#! TARGET_PORT_DESC="fi 0"
-#! ENABLED="true"
-#! EXTRA_POINTS=""
-#! />
-#! <FEAT_LINK
-#! IDENTIFIER="24"
-#! SOURCE_NODE="19"
-#! TARGET_NODE="32"
-#! SOURCE_PORT_DESC="fo 0"
 #! TARGET_PORT_DESC="fi 0"
 #! ENABLED="true"
 #! EXTRA_POINTS=""
@@ -1267,7 +1202,7 @@
 #! </LOOKUP_TABLES>
 #! </WORKSPACE>
 #! 
-GUI IGNORE SourceDataset_CSV_2,CSV_IN_NETWORK_AUTHENTICATION_CSV_2,CSV_IN_NETWORK_PROXY_CSV_2,_SKIP_LINES_CSV_2,_SKIP_FOOTER_CSV_2,_STRIP_QUOTES_CSV_2,_DUPLICATE_DELIMS_CSV_2,SORT_GROUP_CSV_2,_SORT_PARAMS_CSV_2,FILTER_GROUP_CSV_2,_FILTER_PARAMS_CSV_2,_ENCODING_CSV_2,DestDataset_OGCKML_1,KML21_DATASET_HINT_OGCKML_1,KML21_STYLE_DOC_OGCKML_1,KML21_SCHEMA_DOC_OGCKML_1,KML21_DOCUMENT_NAME_OGCKML_1,KML21_DOCUMENT_DESC_OGCKML_1,KML21_DOCUMENT_VISIBILITY_OGCKML_1,KML21_ATOM_AUTHOR_NAME_OGCKML_1,KML21_ATOM_AUTHOR_EMAIL_OGCKML_1,KML21_ATOM_LINK_HREF_OGCKML_1,KML21_WATERMARK_NAME_OGCKML_1,KML21_WATERMARK_SNIPPET_OGCKML_1,KML21_WATERMARK_ICON_OGCKML_1,KML21_ATTR_IN_DESCRIPTION_OGCKML_1,KML21_HTML_DESCRIPTIONS_OGCKML_1,KML21_DETECT_RASTERS_OGCKML_1,KML21_RASTER_MODE_OGCKML_1,KML21_RASTER_FORMAT_OGCKML_1,KML21_TEXTURE_FORMAT_OGCKML_1,KML21_COPY_ICON_OGCKML_1,KML21_OUTPUT_SCHEMA_OGCKML_1,KML21_AUTO_CREATE_NETWORK_LINKS_OGCKML_1,KML21_ORIENTATION_OGCKML_1,KML21_LOG_VERBOSE_OGCKML_1,KML21_ENABLE_GENERATED_BY_COMMENT_OGCKML_1,KML21_OMIT_DOCUMENT_ELEMENT_OGCKML_1,KML21_REGIONATE_DATA_OGCKML_1,KML21_EXEC_GO_PIPELINE_OGCKML_1,KML21_EXEC_PO_PIPELINE_OGCKML_1,KML21_CREATE_EMPTY_FOLDERS_OGCKML_1,KML21_TARGET_HREF_OGCKML_1,KML21_MOVE_TO_KML_LOCAL_COORDSYS_OGCKML_1,KML21_WRITE_3D_GEOM_AS_POLYGONS_OGCKML_1,KML21_WRITE_TEXTURES_TXT_FILE_OGCKML_1,KML21_FANOUT_TYPE_OGCKML_1,KML21_GME_COMPATIBILITY_MODE_OGCKML_1
+GUI IGNORE SourceDataset_CSV_1,CSV_IN_NETWORK_AUTHENTICATION_CSV_1,CSV_IN_NETWORK_PROXY_CSV_1,_SKIP_LINES_CSV_1,_SKIP_FOOTER_CSV_1,_STRIP_QUOTES_CSV_1,_DUPLICATE_DELIMS_CSV_1,SORT_GROUP_CSV_1,_SORT_PARAMS_CSV_1,FILTER_GROUP_CSV_1,_FILTER_PARAMS_CSV_1,_ENCODING_CSV_1,DestDataset_OGCKML_1,KML21_DATASET_HINT_OGCKML_1,KML21_STYLE_DOC_OGCKML_1,KML21_SCHEMA_DOC_OGCKML_1,KML21_DOCUMENT_NAME_OGCKML_1,KML21_DOCUMENT_DESC_OGCKML_1,KML21_DOCUMENT_VISIBILITY_OGCKML_1,KML21_ATOM_AUTHOR_NAME_OGCKML_1,KML21_ATOM_AUTHOR_EMAIL_OGCKML_1,KML21_ATOM_LINK_HREF_OGCKML_1,KML21_WATERMARK_NAME_OGCKML_1,KML21_WATERMARK_SNIPPET_OGCKML_1,KML21_WATERMARK_ICON_OGCKML_1,KML21_ATTR_IN_DESCRIPTION_OGCKML_1,KML21_HTML_DESCRIPTIONS_OGCKML_1,KML21_DETECT_RASTERS_OGCKML_1,KML21_RASTER_MODE_OGCKML_1,KML21_RASTER_FORMAT_OGCKML_1,KML21_TEXTURE_FORMAT_OGCKML_1,KML21_COPY_ICON_OGCKML_1,KML21_OUTPUT_SCHEMA_OGCKML_1,KML21_AUTO_CREATE_NETWORK_LINKS_OGCKML_1,KML21_ORIENTATION_OGCKML_1,KML21_LOG_VERBOSE_OGCKML_1,KML21_ENABLE_GENERATED_BY_COMMENT_OGCKML_1,KML21_OMIT_DOCUMENT_ELEMENT_OGCKML_1,KML21_REGIONATE_DATA_OGCKML_1,KML21_EXEC_GO_PIPELINE_OGCKML_1,KML21_EXEC_PO_PIPELINE_OGCKML_1,KML21_CREATE_EMPTY_FOLDERS_OGCKML_1,KML21_TARGET_HREF_OGCKML_1,KML21_MOVE_TO_KML_LOCAL_COORDSYS_OGCKML_1,KML21_WRITE_3D_GEOM_AS_POLYGONS_OGCKML_1,KML21_WRITE_TEXTURES_TXT_FILE_OGCKML_1,KML21_FANOUT_TYPE_OGCKML_1,KML21_GME_COMPATIBILITY_MODE_OGCKML_1
 DEFAULT_MACRO AddressAttr AddressLine1
 GUI OPTIONAL TEXT AddressAttr Address:
 DEFAULT_MACRO CityAttr City
@@ -1287,8 +1222,7 @@ INCLUDE [ if {{$(GeocoderURL)} == {}} { puts_real {Parameter 'GeocoderURL' must 
 #! START_HEADER
 #! START_WB_HEADER
 READER_TYPE CSV
-READER_KEYWORD CSV_2
-READER_GEN_DIRECTIVES _GROUP_BY_DATASET,no,_ALLOW_SPACES_IN_COLUMN_NAMES,yes,_SORT_TABLE_CONFIG,<quote>NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:<semicolon>%COL_DELIM:<comma>%HAS_DEFAULTS%START_NUM_ROWS:3%<backslash><quote>Attribute<backslash><quote>%<backslash><quote>STRING_OR_CHOICE_ENCODED<space>ATTRIBUTES<space>%<backslash><quote>%%<backslash><quote>Alpha<solidus>Num<backslash><quote>%<backslash><quote>LOOKUP_CHOICE<space>SORT_CHOICE<space>Alphabetic<comma>alphabetic%Numeric<comma>numeric<backslash><quote>%alphabetic%<backslash><quote>Order<backslash><quote>%<backslash><quote>LOOKUP_CHOICE<space>SORT_ORDER<space>Ascending<comma>ascending%Descending<comma>descending<backslash><quote>%ascending<quote>,FILTER_GROUP,NO,_MERGE_SCHEMAS,YES,_SCHEMA,,groupBox_2,,groupBox_4,,groupBox_5,,_IN_FIELD_NAMES,YES,groupBox_6,,_SKIP_FOOTER,0,_DUPLICATE_DELIMS,no,_FILTER_TABLE_CONFIG,<quote>NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:<semicolon>%COL_DELIM:<comma>%HAS_DEFAULTS%START_NUM_ROWS:3%<backslash><quote>Field<space>Name<backslash><quote>%<backslash><quote>STRING_OR_CHOICE_ENCODED<space>ATTRIBUTES<space>%<backslash><quote>%%<backslash><quote>Filter<backslash><quote>%<backslash><quote>STRING_ENCODED<space>_FILTER_REGEX<space><backslash><quote>%%<backslash><quote>Invert<space>Filter<backslash><quote>%<backslash><quote>CHECKBOX<space>_FILTER_UNMATCHED<space>yes%no<backslash><quote>%no<quote>,_SCHEMA_WITH_COL_NAMES,,_FIELD_NAMES_AFTER_HEADER,no,SCAN_MAX_FEATURES,10000,_SORT_PARAMS,,_STRIP_QUOTES,yes,groupBox,,SORT_GROUP,NO,_FILTER_PARAMS,,_IN_SEPARATOR,<comma>,_ENCODING,,_SKIP_LINES,1
+READER_KEYWORD CSV_1
 WRITER_TYPE MULTI_WRITER
 MULTI_WRITER_DATASET_ORDER BY_ID
 MULTI_WRITER_FIRST_WRITER_ID 0
@@ -1296,9 +1230,9 @@ MULTI_WRITER_TYPE{0} OGCKML
 MULTI_WRITER_KEYWORD{0} OGCKML_1
 #! END_WB_HEADER
 #! START_WB_HEADER
-MACRO WB_KEYWORD "CSV_2"
+MACRO WB_KEYWORD "CSV_1"
 #! END_WB_HEADER
-#! START_SOURCE_HEADER CSV CSV_2
+#! START_SOURCE_HEADER CSV CSV_1
 # ============================================================================
 # The following GUI line prompts for a directory to be used as the
 # source of the CSV files.
@@ -1309,77 +1243,77 @@ MACRO WB_KEYWORD "CSV_2"
 #! START_WB_HEADER
 DEFAULT_MACRO SourceDataset
 INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
- puts {DEFAULT_MACRO SourceDataset_CSV_2 $(SourceDataset)}     \
+ puts {DEFAULT_MACRO SourceDataset_CSV_1 $(SourceDataset)}     \
  } ]
 #! END_WB_HEADER
-#! START_SOURCE_HEADER CSV CSV_2
-DEFAULT_MACRO SourceDataset_CSV_2 $(SourceDataset)
-GUI MULTIFILE SourceDataset_CSV_2 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Source Comma Separated Value (CSV) File(s):
+#! START_SOURCE_HEADER CSV CSV_1
+DEFAULT_MACRO SourceDataset_CSV_1 $(SourceDataset)
+GUI MULTIFILE SourceDataset_CSV_1 CSV/Compressed_CSV/TEXT_Files(*.csv;*.gz;*.txt)|*.csv;*.gz;*.txt|CSV_Files(*.csv)|*.csv|Compressed_CSV_Files(*.gz)|*.gz|Text_Files(*.txt)|*.txt|All_Files|*.* Source Comma Separated Value (CSV) File(s):
 # ============================================================================
 # Hardcode the settings that were used to generate this mapping file
 #
-DEFAULT_MACRO _SCHEMA_CSV_2 
-DEFAULT_MACRO _IN_FIELD_NAMES_CSV_2 YES
-DEFAULT_MACRO _FIELD_NAMES_AFTER_HEADER_CSV_2 no
-DEFAULT_MACRO _EXTENSION_CSV_2 CSV
-DEFAULT_MACRO _ALLOW_SPACES_IN_COLUMN_NAMES_CSV_2 yes
-DEFAULT_MACRO _GROUP_BY_DATASET_CSV_2 no
-CSV_2_SCHEMA 
-DEFAULT_MACRO _SKIP_LINES_CSV_2 1
-CSV_2_SKIP_LINES $(_SKIP_LINES_CSV_2)
-DEFAULT_MACRO _SKIP_FOOTER_CSV_2 0
-CSV_2_SKIP_FOOTER $(_SKIP_FOOTER_CSV_2)
-CSV_2_FIELD_NAMES $(_IN_FIELD_NAMES_CSV_2)
-CSV_2_FIELD_NAMES_AFTER_HEADER $(_FIELD_NAMES_AFTER_HEADER_CSV_2)
-DEFAULT_MACRO _STRIP_QUOTES_CSV_2 yes
-CSV_2_STRIP_QUOTES $(_STRIP_QUOTES_CSV_2)
-CSV_2_SEPARATOR (",")
-CSV_2_EXTENSION CSV
-DEFAULT_MACRO _DUPLICATE_DELIMS_CSV_2 no
-CSV_2_DUPLICATE_DELIMS $(_DUPLICATE_DELIMS_CSV_2)
-CSV_2_SEQUENCED no
-CSV_2_ALLOW_SPACES_IN_COLUMN_NAMES $(_ALLOW_SPACES_IN_COLUMN_NAMES_CSV_2)
-CSV_2_GROUP_BY_DATASET $(_GROUP_BY_DATASET_CSV_2)
-DEFAULT_MACRO SORT_GROUP_CSV_2 NO
-CSV_2_SORT_GROUP $(SORT_GROUP_CSV_2)
-DEFAULT_MACRO _SORT_PARAMS_CSV_2 
-CSV_2_SORT_PARAMS $(_SORT_PARAMS_CSV_2)
-DEFAULT_MACRO FILTER_GROUP_CSV_2 NO
-CSV_2_FILTER_GROUP $(FILTER_GROUP_CSV_2)
-DEFAULT_MACRO _FILTER_PARAMS_CSV_2 
-CSV_2_FILTER_PARAMS $(_FILTER_PARAMS_CSV_2)
+DEFAULT_MACRO _SCHEMA_CSV_1 
+DEFAULT_MACRO _IN_FIELD_NAMES_CSV_1 YES
+DEFAULT_MACRO _FIELD_NAMES_AFTER_HEADER_CSV_1 no
+DEFAULT_MACRO _EXTENSION_CSV_1 CSV
+DEFAULT_MACRO _ALLOW_SPACES_IN_COLUMN_NAMES_CSV_1 yes
+DEFAULT_MACRO _GROUP_BY_DATASET_CSV_1 no
+CSV_1_SCHEMA 
+DEFAULT_MACRO _SKIP_LINES_CSV_1 1
+CSV_1_SKIP_LINES $(_SKIP_LINES_CSV_1)
+DEFAULT_MACRO _SKIP_FOOTER_CSV_1 0
+CSV_1_SKIP_FOOTER $(_SKIP_FOOTER_CSV_1)
+CSV_1_FIELD_NAMES $(_IN_FIELD_NAMES_CSV_1)
+CSV_1_FIELD_NAMES_AFTER_HEADER $(_FIELD_NAMES_AFTER_HEADER_CSV_1)
+DEFAULT_MACRO _STRIP_QUOTES_CSV_1 yes
+CSV_1_STRIP_QUOTES $(_STRIP_QUOTES_CSV_1)
+CSV_1_SEPARATOR (",")
+CSV_1_EXTENSION CSV
+DEFAULT_MACRO _DUPLICATE_DELIMS_CSV_1 no
+CSV_1_DUPLICATE_DELIMS $(_DUPLICATE_DELIMS_CSV_1)
+CSV_1_SEQUENCED no
+CSV_1_ALLOW_SPACES_IN_COLUMN_NAMES $(_ALLOW_SPACES_IN_COLUMN_NAMES_CSV_1)
+CSV_1_GROUP_BY_DATASET $(_GROUP_BY_DATASET_CSV_1)
+DEFAULT_MACRO SORT_GROUP_CSV_1 NO
+CSV_1_SORT_GROUP $(SORT_GROUP_CSV_1)
+DEFAULT_MACRO _SORT_PARAMS_CSV_1 
+CSV_1_SORT_PARAMS $(_SORT_PARAMS_CSV_1)
+DEFAULT_MACRO FILTER_GROUP_CSV_1 NO
+CSV_1_FILTER_GROUP $(FILTER_GROUP_CSV_1)
+DEFAULT_MACRO _FILTER_PARAMS_CSV_1 
+CSV_1_FILTER_PARAMS $(_FILTER_PARAMS_CSV_1)
 # =====================================================================
 # Provide some control over what attributes have the user-selected
 # encoding applied. Normally all attributes are updated after being
 # read, but the following lines exclude from this treatment all
 # attributes whose names start with fme_ or csv_.
-CSV_2_UNENCODED_ATTR_PREFIX fme_ csv_
+CSV_1_UNENCODED_ATTR_PREFIX fme_ csv_
 # ===========================================================================
-DEFAULT_MACRO CSV_IN_NETWORK_AUTHENTICATION_CSV_2 
-CSV_2_NETWORK_AUTHENTICATION "$(CSV_IN_NETWORK_AUTHENTICATION_CSV_2)"
-GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_AUTHENTICATION_CSV_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+DEFAULT_MACRO CSV_IN_NETWORK_AUTHENTICATION_CSV_1 
+CSV_1_NETWORK_AUTHENTICATION "$(CSV_IN_NETWORK_AUTHENTICATION_CSV_1)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_AUTHENTICATION_CSV_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
 # ===========================================================================
-DEFAULT_MACRO CSV_IN_NETWORK_PROXY_CSV_2 
-CSV_2_NETWORK_PROXY "$(CSV_IN_NETWORK_PROXY_CSV_2)"
-GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_PROXY_CSV_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Proxy"%PROMPT_TYPE%PROXY Network Proxy
-GUI INTEGER _SKIP_LINES_CSV_2 Number of Lines to Skip:
-GUI INTEGER _SKIP_FOOTER_CSV_2 Number of Footer Lines to Skip:
+DEFAULT_MACRO CSV_IN_NETWORK_PROXY_CSV_1 
+CSV_1_NETWORK_PROXY "$(CSV_IN_NETWORK_PROXY_CSV_1)"
+GUI OPTIONAL AUTHENTICATOR CSV_IN_NETWORK_PROXY_CSV_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Proxy"%PROMPT_TYPE%PROXY Network Proxy
+GUI INTEGER _SKIP_LINES_CSV_1 Number of Lines to Skip:
+GUI INTEGER _SKIP_FOOTER_CSV_1 Number of Footer Lines to Skip:
 # GUI CHOICE _IN_FIELD_NAMES yes%no Field Names in File:
 # GUI CHOICE _FIELD_NAMES_AFTER_HEADER yes%no Field After Header:
-GUI CHOICE _STRIP_QUOTES_CSV_2 yes%no Strip Quotes From Fields:
+GUI CHOICE _STRIP_QUOTES_CSV_1 yes%no Strip Quotes From Fields:
 # GUI TEXT _IN_SEPARATOR Field Delimiter:
 # GUI TEXT _EXTENSION Default File Extension:
-GUI CHOICE _DUPLICATE_DELIMS_CSV_2 yes%no Skip Duplicate Delimiters:
-GUI CHOICE SORT_GROUP_CSV_2 yes%no Sorting Enabled:
-GUI OPTIONAL GUI_LINE_TABLE _SORT_PARAMS_CSV_2 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Attribute"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES %"%%"Alpha/Num"%"LOOKUP_CHOICE SORT_CHOICE Alphabetic,alphabetic%Numeric,numeric"%alphabetic%"Order"%"LOOKUP_CHOICE SORT_ORDER Ascending,ascending%Descending,descending"%ascending Sorting Parameters:
-GUI CHOICE FILTER_GROUP_CSV_2 yes%no Filter Enabled:
-GUI OPTIONAL GUI_LINE_TABLE _FILTER_PARAMS_CSV_2 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Field Name"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES %"%%"Filter"%"STRING_ENCODED _FILTER_REGEX "%%"Invert Filter"%"CHECKBOX _FILTER_UNMATCHED yes%no"%no Filter Parameters:
+GUI CHOICE _DUPLICATE_DELIMS_CSV_1 yes%no Skip Duplicate Delimiters:
+GUI CHOICE SORT_GROUP_CSV_1 yes%no Sorting Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _SORT_PARAMS_CSV_1 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Attribute"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES %"%%"Alpha/Num"%"LOOKUP_CHOICE SORT_CHOICE Alphabetic,alphabetic%Numeric,numeric"%alphabetic%"Order"%"LOOKUP_CHOICE SORT_ORDER Ascending,ascending%Descending,descending"%ascending Sorting Parameters:
+GUI CHOICE FILTER_GROUP_CSV_1 yes%no Filter Enabled:
+GUI OPTIONAL GUI_LINE_TABLE _FILTER_PARAMS_CSV_1 NOT_OK_IF_INVALID%NO_LABEL%ROW_DELIM:;%COL_DELIM:,%HAS_DEFAULTS%START_NUM_ROWS:3%"Field Name"%"STRING_OR_CHOICE_ENCODED ATTRIBUTES %"%%"Filter"%"STRING_ENCODED _FILTER_REGEX "%%"Invert Filter"%"CHECKBOX _FILTER_UNMATCHED yes%no"%no Filter Parameters:
 # =====================================================================
 # Allows to set one of the character encodings for output file
-DEFAULT_MACRO _ENCODING_CSV_2 
-GUI OPTIONAL STRING_OR_ENCODING _ENCODING_CSV_2 SYSTEM%* Character Encoding:
-CSV_2_ENCODING $(_ENCODING_CSV_2)
-CSV_2_DATASET "$(SourceDataset_CSV_2)"
+DEFAULT_MACRO _ENCODING_CSV_1 
+GUI OPTIONAL STRING_OR_ENCODING _ENCODING_CSV_1 SYSTEM%* Character Encoding:
+CSV_1_ENCODING $(_ENCODING_CSV_1)
+CSV_1_DATASET "$(SourceDataset_CSV_1)"
 #! END_SOURCE_HEADER
 #! START_WB_HEADER
 MACRO WB_KEYWORD "OGCKML_1"
@@ -1516,11 +1450,11 @@ FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
 FME_GEOMETRY_HANDLING Enhanced
 FME_STROKE_MAX_DEVIATION 0
 LOG_FILTER_MASK -1
-DEFAULT_MACRO DATASET_KEYWORD_CSV_2 CSV_2
+DEFAULT_MACRO DATASET_KEYWORD_CSV_1 CSV_1
 DEFAULT_MACRO DATASET_KEYWORD_OGCKML_1 OGCKML_1
 # -------------------------------------------------------------------------
 
-CSV_2_READER_META_ATTRIBUTES fme_feature_type
+CSV_1_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
@@ -1537,7 +1471,7 @@ MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
 MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
 MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
 # -------------------------------------------------------------------------
-CSV_2_DEF CSV   RecordID                     number(5,0)   acct_sgmnt_cd                char(9)   lblty_type_cd                char(4)   AddressLine1                 char(39)   addr2                        char(19)   City                         char(19)   StateProvince                char(3)   PostalCode                   number(6,0)   zip4                         number(5,0)   act_susp_lines               number(3,0)
+CSV_1_DEF CSV   RecordID                     number(5,0)   acct_sgmnt_cd                char(9)   lblty_type_cd                char(4)   AddressLine1                 char(39)   addr2                        char(19)   City                         char(19)   StateProvince                char(3)   PostalCode                   number(6,0)   zip4                         number(5,0)   act_susp_lines               number(3,0)
 
 # -------------------------------------------------------------------------
 
@@ -1561,12 +1495,9 @@ FACTORY_DEF * TeeFactory    FACTORY_NAME Sampler_Sampled    INPUT FEATURE_TYPE _
 
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE Sampler_SAMPLED ATTR _urlAddr <at>Value<openparen>$(AddressAttr$encode)<closeparen><space><at>Value<openparen>$(CityAttr$encode)<closeparen> ATTR _urlPostal <at>Value<openparen>$(PostalCodeAttr$encode)<closeparen> ATTR _urlCountry "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>$(CountryAttr$encode)<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST $(CountryAttr$encode) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_;TEST $(CountryAttr$encode) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_'$(CountryAttr$encode)'FME_NUM_CONDITIONS2___"    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeCreator OUTPUT Splitter"   INPUT FEATURE_TYPE AttributeCreator_OUTPUT   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=   OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=
-# -------------------------------------------------------------------------
-FACTORY_DEF * TeeFactory   FACTORY_NAME "AttributeValueMapper (Disabled) Nuker"   INPUT FEATURE_TYPE AttributeCreator_OUTPUT_1_olPiq+C1D00=
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPFetcher       INPUT  FEATURE_TYPE AttributeCreator_OUTPUT_0_olPiq+C1D00=    INPUT  FEATURE_TYPE AttributeValueMapper_OUTPUT    TARGET_URL @EvaluateExpression(STRING_ENCODED,$(GeocoderURL$encode)address=<at>Value<openparen>_urlAddr<closeparen><amp>postal=<at>Value<openparen>_urlPostal<closeparen><amp>country=<at>Value<openparen>_urlCountry<closeparen>,HTTPFetcher)    SAVE_FILE No    OUTPUT_FILENAME "<Unused>"    TARGET_ATTR "_url_contents"    HTTP_METHOD GET    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    TARGET_ATTRIBUTE_ENCODING    RESPONSE_HEADER_LIST_ATTR "_headers"    STATUS_CODE_ATTR "_http_status_code"    ERROR_ATTR "_error"    FOLLOW_REDIRECTS Yes    VERIFY_SSL_CERTIFICATES Yes    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPFetcher_OUTPUT    OUTPUT REJECTED FEATURE_TYPE HTTPFetcher_<REJECTED>
+FACTORY_DEF * HTTPFactory    FACTORY_NAME HTTPFetcher       INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    TARGET_URL @EvaluateExpression(STRING_ENCODED,$(GeocoderURL$encode)address=<at>Value<openparen>_urlAddr<closeparen><amp>postal=<at>Value<openparen>_urlPostal<closeparen><amp>country=<at>Value<openparen>_urlCountry<closeparen>,HTTPFetcher)    SAVE_FILE No    OUTPUT_FILENAME "<Unused>"    TARGET_ATTR "_url_contents"    HTTP_METHOD GET    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    TARGET_ATTRIBUTE_ENCODING    RESPONSE_HEADER_LIST_ATTR "_headers"    STATUS_CODE_ATTR "_http_status_code"    ERROR_ATTR "_error"    FOLLOW_REDIRECTS Yes    VERIFY_SSL_CERTIFICATES Yes    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE HTTPFetcher_OUTPUT    OUTPUT REJECTED FEATURE_TYPE HTTPFetcher_<REJECTED>
 
 
 # -------------------------------------------------------------------------
@@ -1597,4 +1528,4 @@ FACTORY_DEF * TestFactory   FACTORY_NAME "Final Output Feature Type Router"   IN
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
 
 # -------------------------------------------------------------------------
-OGCKML_1_DEF_TEMPLATE NewFeatureType   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes   fme_schema_readers           CSV_2   fme_schema_name_attr         fme_feature_type
+OGCKML_1_DEF_TEMPLATE NewFeatureType   KML21_INFORMATION_POINT_ICON ""   KML21_OPACITY                ""   KML21_FILL_OPACITY           ""   KML21_PEN_OPACITY            ""   KML21_ICON_COLOR             ""   KML21_FILL_COLOR             ""   KML21_PEN_COLOR              ""   KML21_SORT_BY_ATTRIBUTE      ""   KML21_ATTR_IN_DESCRIPTION    ""   KML21_HTML_DESCRIPTIONS      ""   KML21_DOCUMENT_FILENAME      ""   KML21_CREATE_FOLDER_FOR_FEATURE_TYPE yes   fme_schema_readers           CSV_1   fme_schema_name_attr         fme_feature_type
