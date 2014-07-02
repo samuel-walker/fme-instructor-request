@@ -154,7 +154,7 @@ body {
 
 #mapDiv{ 
   width:100%;
-  height:480px;
+  height:100%;
   margin:10px 0px;
   position:relative;
 }
