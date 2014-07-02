@@ -140,6 +140,7 @@ body {
 #results{
   text-align: center;
   font-size: 1rem;
+  padding-top: 100px;
 }
 
 #geocodeFormDiv{
@@ -151,7 +152,20 @@ body {
   color: DimGrey;
 }
 
+#mapDiv{ 
+  width:100%;
+  height:480px;
+  margin:10px 0px;
+  position:relative;
+}
 
+#loadingImg{
+  display:none;
+  position:absolute;
+  left:50%;
+  top:50%;
+  z-index:10002;
+}
 
 
 

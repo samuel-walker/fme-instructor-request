@@ -27,9 +27,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="libs/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
-	<!-- Google Maps, if you need it -->
-	<!-- <link href="https://google-developers.appspot.com/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" /> -->
-	<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
+	<!-- Google Maps -->
+	<!--<link href="https://google-developers.appspot.com/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false&amp;libraries=drawing"></script>
 
 	<!-- Stylesheet for demo/tutorial -->
 	<link rel="stylesheet" href="css/index.css">
@@ -91,7 +93,7 @@
 			
 		</div>
 	</div>
-	<!--<div id="hiddenDropdowns" style="display:none"> -->
+
 	<div id="dropdowns">
 		<div id="geocodeFormDiv">
 			<h1>Geocode Form</h1>
@@ -130,17 +132,12 @@
 					</div>
 				</div>
 				<div class="controls">
-					<button id="downloadKML" onClick="geocoder.downloadKML()">Download Results as KML</button>
-					<!--<button id="showInMap" onClick="showInMap()">Show Results in Google Maps</button>-->
+					<button id="displayMap" onClick="geocoder.displayMap()">Display Results</button>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="results">
-		<b>Thank you for using the Easy Geocoder!</b>
-		<p>Your results will begin downloading shortly.</p>
-	</div>
-
+	<div id="mapDiv" class="map"></div>
 	
 </body>
 

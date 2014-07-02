@@ -1,8 +1,8 @@
 $(document).ready(function(){
 	
 	var fileLocation = '';
-	 document.getElementById('dropdowns').style.display = 'none';
-	document.getElementById('results').style.display = 'none';
+	document.getElementById('dropdowns').style.display = 'none';
+	document.getElementById('mapDiv').style.display = 'none';
 	
 	//initialize behaviour for file upload 
 	$('#fileupload').fileupload({
@@ -60,7 +60,8 @@ $(document).ready(function(){
 	geocoder.init({
 		host : 'https://fmepedia2014-safe-software.fmecloud.com',
 		token : 'fb1c3ee6828e6814c75512dd4770a02e73d913b8'
-	});
+	});	
+
 }); 
 
 var geocoder = (function(){
@@ -71,6 +72,8 @@ var geocoder = (function(){
 	var repository = 'EasyGeocoder';
 	var host;
 	var token;
+	var layer, map;
+	var loading;
 
 	function createComboBox(boxName, colList){
 		var html = '<select id="' + boxName + '">';
@@ -119,6 +122,32 @@ var geocoder = (function(){
 		return params;
 	}
 
+	function initGoogleMap(){
+		//init google maps
+		loading = new Image();
+		loading.src = "libs/upload/img/loading.gif";
+		loading.id = "loadingImg";
+		
+		//google maps init
+		var mapStyles = [ {
+			featureType : "all",
+			elementType : "labels",
+			stylers : [ { visibility : "off" } ]
+		}];
+
+		var mapOptions = {
+			zoom: 3,
+			center: new google.maps.LatLng( 50.355, -97.855 ),
+			mapTypeId : google.maps.MapTypeId.SATELLITE
+		};
+
+		map = new google.maps.Map( document.getElementById( "mapDiv" ), mapOptions );
+
+		google.maps.event.addListenerOnce( map, 'idle', function() {
+			map.setOptions( { styles : mapStyles } );
+		    document.getElementById( "mapDiv" ).appendChild( loading );
+		});
+	}
 
 	//public methods
 	return {
@@ -142,12 +171,25 @@ var geocoder = (function(){
 			FMEServer.customRequest(url, 'GET' ,displayNextStep);
 		}, 
 
-		downloadKML : function(){
+		displayMap : function(){
 			var params = getParams();
 			var url = host + '/fmedatastreaming/' + repository + '/'+ geocodeWorkspace + '?' + params + '&token=' + token;
-			window.location = url;
+
+			initGoogleMap();
+
+			loading.style.display = 'block';
+
+			layer = new google.maps.KmlLayer( url, { 
+				preserveViewport : false,
+				map : map
+			});
+
+			layer.status_changed = function() {
+				loading.style.display = 'none';
+			};
+
 			document.getElementById('dropdowns').style.display = 'none';
-			document.getElementById('results').style.display = 'block';
+			document.getElementById('mapDiv').style.display = 'block';
 		}
 	};
 

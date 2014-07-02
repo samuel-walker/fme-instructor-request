@@ -86,7 +86,7 @@
 </SchemaData>
 </ExtendedData>
 <Point>
-<coordinates>-82.74085725,27.75141895,0 </coordinates>
+<coordinates>-118.1328077,34.1427682,0 </coordinates>
 </Point>
 </Placemark>
 <Placemark id="kml_2">
@@ -137,7 +137,7 @@
 </SchemaData>
 </ExtendedData>
 <Point>
-<coordinates>-82.5186046781895,27.862128945652,0 </coordinates>
+<coordinates>-82.5180789,27.9435167,0 </coordinates>
 </Point>
 </Placemark>
 <Placemark id="kml_3">
@@ -188,7 +188,7 @@
 </SchemaData>
 </ExtendedData>
 <Point>
-<coordinates>-81.9927407288045,26.8982844549127,0 </coordinates>
+<coordinates>-119.1733649,34.2494291,0 </coordinates>
 </Point>
 </Placemark>
 <Placemark id="kml_4">
@@ -239,7 +239,7 @@
 </SchemaData>
 </ExtendedData>
 <Point>
-<coordinates>-95.9930812267657,36.1585022529371,0 </coordinates>
+<coordinates>-95.934538,36.040624,0 </coordinates>
 </Point>
 </Placemark>
 <Placemark id="kml_5">
@@ -290,7 +290,7 @@
 </SchemaData>
 </ExtendedData>
 <Point>
-<coordinates>-76.3786685826124,42.7295301328679,0 </coordinates>
+<coordinates>-78.812239,43.241148,0 </coordinates>
 </Point>
 </Placemark>
 </Folder>
