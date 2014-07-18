@@ -11,17 +11,7 @@ $(document).ready(function(){
 		autoUpload : true,
 
 		add: function (e, data) {
-        	if (data.files[0].type == 'text/csv'){
-        		data.submit();
-        	}
-        	else{
-        		//error out
-        		var warn = document.createElement('div');
-        		warn.innerHTML = 'Please upload a CSV file with a ".csv" extension. <button type="button" class="close" data-dismiss="alert">&times;</button>';
-        		warn.className = "alert alert-error";
-        		var refNode = document.getElementById('uploadBtn');
-        		document.getElementById('dropzone').insertBefore(warn, refNode);
-        	}
+			data.submit();
     	},
 
 		done : function(e, data){
