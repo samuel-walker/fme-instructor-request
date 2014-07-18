@@ -2,13 +2,27 @@ $(document).ready(function(){
 	
 	var fileLocation = '';
 	document.getElementById('dropdowns').style.display = 'none';
-	document.getElementById('mapDiv').style.display = 'none';
+	document.getElementById('mapPage').style.display = 'none';
 	
 	//initialize behaviour for file upload 
 	$('#fileupload').fileupload({
 		url : 'https://fmepedia2014-safe-software.fmecloud.com/fmedataupload/EasyGeocoder/GenerateSchemaElements.fmw?opt_fullpath=true',
 		dropzone : $('#dropzone'),
 		autoUpload : true,
+
+		add: function (e, data) {
+        	if (data.files[0].type == 'text/csv'){
+        		data.submit();
+        	}
+        	else{
+        		//error out
+        		var warn = document.createElement('div');
+        		warn.innerHTML = 'Please upload a CSV file with a ".csv" extension. <button type="button" class="close" data-dismiss="alert">&times;</button>';
+        		warn.className = "alert alert-error";
+        		var refNode = document.getElementById('uploadBtn');
+        		document.getElementById('dropzone').insertBefore(warn, refNode);
+        	}
+    	},
 
 		done : function(e, data){
 			//when file has been uploaded, capture JSON response from FME Server
@@ -79,13 +93,10 @@ var geocoder = (function(){
 		var html = '<select id="' + boxName + '">';
 		//populate selection choices
 		var colCount = colList.columns.length;
-		html = html + '<option value=" "> - </option>';
+		html = html + '<option selected="true" style="display:none;" value=" ">Choose a Field</option>'
+		html = html + '<option value=" "> --N/A-- </option>';
 		for (i = 0; i< colCount; i++){
-			if (i==0){
-				html = html + '<option selected value="' + colList.columns[i] + '">' + colList.columns[i] + '</option>';
-			} else {
-				html = html + '<option value="' + colList.columns[i] + '">' + colList.columns[i] + '</option>';
-			}
+			html = html + '<option value="' + colList.columns[i] + '">' + colList.columns[i] + '</option>';
 		}
 		html = html + '</select>';
 		return html;
@@ -122,6 +133,14 @@ var geocoder = (function(){
 		return params;
 	}
 
+	function clearDropdowns(){
+		document.getElementById('address').innerHTML = '';
+		document.getElementById('city').innerHTML = '';
+		document.getElementById('state').innerHTML = '';
+		document.getElementById('postalcode').innerHTML = '';
+		document.getElementById('country').innerHTML = '';
+	}
+
 	function initGoogleMap(){
 		//init google maps
 		loading = new Image();
@@ -138,7 +157,8 @@ var geocoder = (function(){
 		var mapOptions = {
 			zoom: 3,
 			center: new google.maps.LatLng( 50.355, -97.855 ),
-			mapTypeId : google.maps.MapTypeId.SATELLITE
+			mapTypeId : google.maps.MapTypeId.SATELLITE,
+			disableDefaultUI : true
 		};
 
 		map = new google.maps.Map( document.getElementById( "mapDiv" ), mapOptions );
@@ -147,6 +167,14 @@ var geocoder = (function(){
 			map.setOptions( { styles : mapStyles } );
 		    document.getElementById( "mapDiv" ).appendChild( loading );
 		});
+	}
+
+	function dataLoadError(){
+		//display a useful error message
+		window.onerror = function(msg, url, linenumber) {
+    	alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+    	return true;
+		}
 	}
 
 	//public methods
@@ -171,10 +199,21 @@ var geocoder = (function(){
 			FMEServer.customRequest(url, 'GET' ,displayNextStep);
 		}, 
 
+		backToUpload : function(){
+			clearDropdowns();
+			document.getElementById('dropdowns').style.display = 'none';
+			document.getElementById('content').style.display = 'block';
+		},
+
+		backToFields : function(){
+			document.getElementById('mapPage').style.display = 'none';
+			document.getElementById('dropdowns').style.display = 'block';
+		},
+
 		displayMap : function(){
 			var params = getParams();
 			var url = host + '/fmedatastreaming/' + repository + '/'+ geocodeWorkspace + '?' + params + '&token=' + token;
-
+			
 			initGoogleMap();
 
 			loading.style.display = 'block';
@@ -185,11 +224,15 @@ var geocoder = (function(){
 			});
 
 			layer.status_changed = function() {
+				//console.log(layer);
+				if (layer.status = 'FETCH_ERROR'){
+					dataLoadError();
+				}
 				loading.style.display = 'none';
 			};
 
 			document.getElementById('dropdowns').style.display = 'none';
-			document.getElementById('mapDiv').style.display = 'block';
+			document.getElementById('mapPage').style.display = 'block';
 		}
 	};
 

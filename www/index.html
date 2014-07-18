@@ -27,9 +27,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="libs/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 
-	<!-- Google Maps -->
-	<!--<link href="https://google-developers.appspot.com/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
 
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false&amp;libraries=drawing"></script>
 
@@ -71,74 +68,87 @@
 	</div>
 
 	<div class="container">
-
 	    <div id="content" class="form-horizontal">
-		    <h1>Upload CSV to Geocode</h1>
-			<p class='geocodeInstructions'>
-				Upload a CSV file for geocoding.
-			</p>
+	    	<div>
+	    		<div class='title'>
+		    		<h1>Easy Geocoder</h1>
+		    	</div>
+		    	<p>
+					<p class='text-success'>
+						<strong>Step 1</strong> <br/> Upload a CSV file containing address data through this page. <br/> You can upload your own or download the sample file: <br/> <a href='http://demos.fmeserver.com/easygeocoder/download/SampleFile.csv'>SampleFile.csv</a>
+					</p>
+				</p>
+			</div>
 			<div id='dropzone' class='fade well well-large'>
-                  <!-- The container for the uploaded files -->
-                <div id='fileTable' style='display:none'></div>
-
                 <p id='dropText'>Click 'Add file' or drop your file here</p>
                 <br/>
-                <span class="btn btn-success fileinput-button">
+                
+                <span class="btn btn-success fileinput-button" id='uploadBtn'>
                 <i class="icon-plus icon-white"></i>
                 <span>Add file...</span>
                     <!-- The file input field used as target for the file upload widget -->
                 <input id="fileupload" type="file" name="files[]" multiple>
                 </span>
             </div>
-			
 		</div>
 	</div>
 
 	<div id="dropdowns">
 		<div id="geocodeFormDiv">
-			<h1>Geocode Form</h1>
-			<p class="geocodeInstructions">
-				Select the CSV columns that correspond to each geocoding field:
-			</p>
-			<div class='form-horizontal'>
+			<div>
+				<h1 class='title'>Geocode Form</h1>
+				<p class='text-success'>
+					<strong>Step 2:</strong><br/>
+					Select the CSV columns that correspond to each geocoding field:
+				</p>
+			</div>
+			<div id='backBtn'>
+				<button class='round-button' id='back' onClick='geocoder.backToUpload()'><i class='icon-chevron-left'></i></button>
+			</div>
+			<div id='form' class='form-horizontal'>
 				<div class="control-group">
-					<label class="control-label">Address Field: </label>
+					<label class="control-label">Address: </label>
 					<div id="address" class="controls">
 						<select> </select>
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label">City Field: </label>
+					<label class="control-label">City: </label>
 					<div id="city" class="controls">
 						<select> </select>
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label">State/Province Field: </label>
+					<label class="control-label">State/Province: </label>
 					<div id="state" class="controls">
 						<select> </select>
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label">Postal/Zip Code Field: </label>
+					<label class="control-label">Postal/Zip Code: </label>
 					<div id="postalcode" class="controls">
 						<select> </select>
 					</div>
 				</div>
 				<div class="control-group">
-					<label class="control-label">Country Field: </label>
+					<label class="control-label">Country: </label>
 					<div id="country" class="controls">
 						<select> </select>
 					</div>
 				</div>
 				<div class="controls">
-					<button id="displayMap" onClick="geocoder.displayMap()">Display Results</button>
+					<button class='btn btn-success btn-large' id="displayMap" onClick="geocoder.displayMap()"><strong>Display Results</strong></button>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="mapDiv" class="map"></div>
-	
+	<div id='mapPage'>
+		<div id='refreshBtn'>
+				<button class='round-button' id='back' onClick='geocoder.backToFields()'><i class='icon-chevron-left'></i></button>
+			</div>
+		<div id="mapDiv" class="map container">
+		</div>
+	</div>
 </body>
 
 </html>

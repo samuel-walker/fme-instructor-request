@@ -1,1 +1,0 @@
-{ "columns" : [ "RecordID", "acct_sgmnt_cd", "lblty_type_cd", "AddressLine1", "addr2", "City", "StateProvince", "PostalCode", "zip4", "act_susp_lines" ] }
