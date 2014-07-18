@@ -120,7 +120,9 @@ var geocoder = (function(){
 		params = params + '&PostalCodeAttr=' + postalcode;
 		params = params + '&CountryAttr=' + country;
 
-		return params;
+		var encodedParams = encodeURI(params);
+			
+		return encodedParams;
 	}
 
 	function clearDropdowns(){
@@ -195,9 +197,8 @@ var geocoder = (function(){
 			document.getElementById('content').style.display = 'block';
 		},
 
-		backToFields : function(){
-			document.getElementById('mapPage').style.display = 'none';
-			document.getElementById('dropdowns').style.display = 'block';
+		restart : function(){
+			window.location.reload();
 		},
 
 		displayMap : function(){
@@ -214,7 +215,6 @@ var geocoder = (function(){
 			});
 
 			layer.status_changed = function() {
-				//console.log(layer);
 				if (layer.status = 'FETCH_ERROR'){
 					dataLoadError();
 				}
