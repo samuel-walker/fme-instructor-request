@@ -1,9 +1,1 @@
-HallNumber,Name,Address,PhoneNumber,Engine,Ladder,PostalCode,Country,City,Province
-1,Vancouver Fire Hall No 1,900 Heatley Av,604-665-6001,Y,Y,V6A 3S7,Canada,Vancouver,British Columbia
-2,Vancouver Fire Hall No 2,199 Main St,604-665-6002,Y,,V6A 3S7,Canada,Vancouver,British Columbia
-3,Vancouver Fire Hall No 3,2801 Quebec St,604-665-6003,Y,Y,V6A 3S7,Canada,Vancouver,British Columbia
-4,Vancouver Fire Hall No 4,1475 W 10th Av,604-665-6004,,,V6A 3S7,Canada,Vancouver,British Columbia
-6,Vancouver Fire Hall No 6,1001 Nicola St,604-665-6006,Y,,V6A 3S7,Canada,Vancouver,British Columbia
-7,Vancouver Fire Hall No 7,1090 Haro St,604-665-6007,Y,Y,V6A 3S7,Canada,Vancouver,British Columbia
-8,Vancouver Fire Hall No 8,895 Hamilton St,604-665-6008,Y,,V6A 3S7,Canada,Vancouver,British Columbia
-12,Vancouver Fire Hall No 12,2460 Balaclava St,604-665-6012,Y,,V6A 3S7,Canada,Vancouver,British Columbia
+HallNumber,Name,Address,PhoneNumber,Engine,Ladder,PostalCode,Country,City,Province1,Vancouver Fire Hall No 1,900 Heatley Av,604-665-6001,Y,Y,V6A 3S7,Canada,Vancouver,British Columbia2,Vancouver Fire Hall No 2,199 Main St,604-665-6002,Y,,V6A 2S5,Canada,Vancouver,British Columbia3,Vancouver Fire Hall No 3,2801 Quebec St,604-665-6003,Y,Y,V5T 3A8,Canada,Vancouver,British Columbia4,Vancouver Fire Hall No 4,1475 W 10th Av,604-665-6004,,,V6H 1J8,Canada,Vancouver,British Columbia6,Vancouver Fire Hall No 6,1001 Nicola St,604-665-6006,Y,,V6G 2E1,Canada,Vancouver,British Columbia7,Vancouver Fire Hall No 7,1090 Haro St,604-665-6007,Y,Y,V6E 3V8,Canada,Vancouver,British Columbia8,Vancouver Fire Hall No 8,895 Hamilton St,604-665-6008,Y,,V6B 2R7,Canada,Vancouver,British Columbia12,Vancouver Fire Hall No 12,2460 Balaclava St,604-665-6012,Y,,V6K 4M9,Canada,Vancouver,British Columbia
