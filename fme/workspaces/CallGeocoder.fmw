@@ -16,7 +16,7 @@
 #    
 #! PASSWORD=""
 #! ATTR_TYPE_ENCODING="SDF"
-#! VIEW_POSITION="-114 0"
+#! VIEW_POSITION="-108 0"
 #! SHOW_INFO_NODES="true"
 #! FME_STROKE_MAX_DEVIATION="0"
 #! BEGIN_PYTHON=""
@@ -25,7 +25,7 @@
 #! TITLE=""
 #! MAX_LOG_FEATURES="200"
 #! END_TCL=""
-#! FME_BUILD_NUM="14336"
+#! FME_BUILD_NUM="14372"
 #! ZOOM_SCALE="100"
 #! CATEGORY=""
 #! REDIRECT_TERMINATORS="NONE"
@@ -34,24 +34,24 @@
 #! USAGE=""
 #! END_PYTHON=""
 #! HISTORY=""
-#! FME_DOCUMENT_PRIORGUID="cdeaf10c-ea79-11e3-9a8d-d3c5ab7d1ca8,1a423706-ea7d-11e3-896a-b4134a57705e,8f5363d8-ea98-11e3-896a-b4134a57705e,8516e430-eab1-11e3-896a-b4134a57705e,61911d10-eb78-11e3-9e72-a06b92e0836f,b25b4d1e-eb79-11e3-9e72-a06b92e0836f,c7d4c5f6-fbed-11e3-8c6b-fca3c6ca0c69,d3b73e20-023d-11e4-8bf2-f8cc49468dde,7abfeca2-03a2-11e4-84b7-a1711b4740fd"
+#! FME_DOCUMENT_PRIORGUID="cdeaf10c-ea79-11e3-9a8d-d3c5ab7d1ca8,1a423706-ea7d-11e3-896a-b4134a57705e,8f5363d8-ea98-11e3-896a-b4134a57705e,8516e430-eab1-11e3-896a-b4134a57705e,61911d10-eb78-11e3-9e72-a06b92e0836f,b25b4d1e-eb79-11e3-9e72-a06b92e0836f,c7d4c5f6-fbed-11e3-8c6b-fca3c6ca0c69,d3b73e20-023d-11e4-8bf2-f8cc49468dde,7abfeca2-03a2-11e4-84b7-a1711b4740fd,c4a29abc-0ecf-11e4-8f66-86d94e464774,e6528e42-1131-11e4-8f7d-f9e94e7336e9"
 #! DOC_TOP_LEFT="0 -756"
 #! REQUIREMENTS_KEYWORD=""
 #! SOURCE_ROUTING_FILE=""
 #! DESTINATION_ROUTING_FILE=""
 #! DESTINATION="NONE"
-#! LAST_SAVE_DATE="2014-07-18T16:03:44"
+#! LAST_SAVE_DATE="2014-07-28T12:56:29"
 #! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
 #! WORKSPACE_VERSION="1"
 #! SOURCE="NONE"
-#! LAST_SAVE_BUILD="FME(R) 2014 SP2 (20140528 - Build 14336 - macosx)"
+#! LAST_SAVE_BUILD="FME(R) 2014 SP3 (20140717 - Build 14372 - macosx)"
 #! FME_SERVER_SERVICES=""
 #! LOG_MAX_RECORDED_FEATURES="200"
 #! LOG_FILE=""
 #! REQUIREMENTS=""
 #! BEGIN_TCL=""
 #! DOC_EXTENTS="1813 609"
-#! FME_DOCUMENT_GUID="c4a29abc-0ecf-11e4-8f66-86d94e464774"
+#! FME_DOCUMENT_GUID="0dd2e28c-1691-11e4-9de0-e4e97fa249a6"
 #! SHOW_ANNOTATIONS="true"
 #! IGNORE_READER_FAILURE="No"
 #! WARN_INVALID_XFORM_PARAM="Yes"
@@ -858,7 +858,7 @@
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
 #! <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
-#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="_addr,&quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;$(AddressAttr)&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST $(AddressAttr) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(AddressAttr) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_&apos;&apos;FME_NUM_CONDITIONS2___&quot;,_postal,&quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;$(ProvinceAttr)&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST $(ProvinceAttr) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(ProvinceAttr) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_&apos;&apos;FME_NUM_CONDITIONS2___&quot;,_country,&quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;$(CountryAttr)&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST $(CountryAttr) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_;TEST $(CountryAttr) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_&apos;&apos;FME_NUM_CONDITIONS2___&quot;,_city,&quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;$(CityAttr)&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST $(CityAttr) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(CityAttr) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_&apos;&apos;FME_NUM_CONDITIONS2___&quot;,_province,&quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;$(ProvinceAttr)&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST $(ProvinceAttr) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(ProvinceAttr) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_&apos;&apos;FME_NUM_CONDITIONS2___&quot;"/>
+#! <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="_addr,&quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;$(AddressAttr)&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST $(AddressAttr) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(AddressAttr) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_&apos;&apos;FME_NUM_CONDITIONS2___&quot;,_postal,&quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;$(PostalCodeAttr)&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST $(PostalCodeAttr) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(PostalCodeAttr) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_&apos;&apos;FME_NUM_CONDITIONS2___&quot;,_country,&quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;$(CountryAttr)&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST $(CountryAttr) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_;TEST $(CountryAttr) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_&apos;&apos;FME_NUM_CONDITIONS2___&quot;,_city,&quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;$(CityAttr)&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST $(CityAttr) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(CityAttr) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_&apos;&apos;FME_NUM_CONDITIONS2___&quot;,_province,&quot;FME_CONDITIONAL:DEFAULT_VALUE&apos;&lt;at&gt;Value&lt;openparen&gt;$(ProvinceAttr)&lt;closeparen&gt;&apos;BOOL_OP;OR;COMPOSITE_TEST;&lt;Unused&gt;;TEST $(ProvinceAttr) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(ProvinceAttr) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_&apos;&apos;FME_NUM_CONDITIONS2___&quot;"/>
 #! </TRANSFORMER>
 #! <TRANSFORMER
 #! IDENTIFIER="18"
@@ -955,7 +955,7 @@
 #! PARMS_EDITED="true"
 #! ENABLED="true"
 #! >
-#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="There&lt;space&gt;was&lt;space&gt;an&lt;space&gt;error&lt;space&gt;geocoding&lt;space&gt;your&lt;space&gt;addresses.&lt;space&gt;&lt;lf&gt;&lt;lf&gt;Message:&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;_error&lt;closeparen&gt;&lt;quote&gt;"/>
+#! <XFORM_PARM PARM_NAME="MESSAGE" PARM_VALUE="There&lt;space&gt;was&lt;space&gt;an&lt;space&gt;error&lt;space&gt;geocoding&lt;space&gt;one&lt;space&gt;or&lt;space&gt;more&lt;space&gt;of&lt;space&gt;your&lt;space&gt;addresses.&lt;lf&gt;&lt;lf&gt;Message:&lt;space&gt;&lt;quote&gt;&lt;at&gt;Value&lt;openparen&gt;_error&lt;closeparen&gt;&lt;quote&gt;"/>
 #! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Terminator"/>
 #! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
 #! <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
@@ -1379,7 +1379,7 @@
 #! BOTTOM_RIGHT="6217 -1816"
 #! STICKY="true"
 #! COLOUR="0.00784314,0.631373,0.521569"
-#! CONTENTS="24 59 39 6 47 46 1 52 18 12 9 44 43 36 60 72 41 40 2 33 64 32 11 5 49 55 15 66 30 51 29 73 58 3 70 65 13 27 8 26 62 17 4 57 50 53 69 14 54 25 31 61 71 45 63 19 7 28 16 10 48 42 56 67 20 "
+#! CONTENTS="64 10 8 52 18 47 46 71 33 32 55 17 63 36 7 70 56 15 62 41 40 27 6 26 69 54 16 61 5 51 31 4 30 29 13 45 60 20 48 3 14 67 53 19 2 59 11 24 49 25 66 39 1 73 12 58 28 65 44 43 9 42 72 57 50 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="69"
@@ -1399,7 +1399,7 @@
 #! BOTTOM_RIGHT="6149 -1462"
 #! STICKY="true"
 #! COLOUR="0.992157,0.419608,0.576471"
-#! CONTENTS="4 25 9 2 31 50 53 7 27 54 26 3 5 6 30 49 60 24 29 52 56 8 51 "
+#! CONTENTS="5 4 52 31 50 2 30 7 27 29 6 26 51 54 3 49 53 60 24 56 8 25 9 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="71"
@@ -1409,7 +1409,7 @@
 #! BOTTOM_RIGHT="2967 -1442"
 #! STICKY="true"
 #! COLOUR="0.847059,0.427451,0.0901961"
-#! CONTENTS="58 16 45 32 12 66 40 57 67 10 19 "
+#! CONTENTS="66 40 10 67 57 45 32 19 12 58 16 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="72"
@@ -1419,7 +1419,7 @@
 #! BOTTOM_RIGHT="3684 -714"
 #! STICKY="true"
 #! COLOUR="0.819608,0.286275,0.639216"
-#! CONTENTS="17 63 "
+#! CONTENTS="63 17 "
 #! />
 #! <BOOKMARK
 #! IDENTIFIER="73"
@@ -1429,7 +1429,7 @@
 #! BOTTOM_RIGHT="2896 -728"
 #! STICKY="true"
 #! COLOUR="0.827451,0.831373,0.839216"
-#! CONTENTS="15 61 65 20 62 18 43 46 14 47 64 "
+#! CONTENTS="62 43 15 18 14 46 20 64 47 61 65 "
 #! />
 #! </BOOKMARKS>
 #! <TRANSFORMERS>
@@ -2630,7 +2630,7 @@ FACTORY_DEF * TestFactory   FACTORY_NAME "Unexpected Input Remover"   INPUT FEAT
 FACTORY_DEF * TeeFactory    FACTORY_NAME "Source -> Generic"    INPUT FEATURE_TYPE *    OUTPUT FEATURE_TYPE *       @Transform(CSV,FME_GENERIC,PRESERVE_GEOMETRY)
 DEFAULT_MACRO WB_CURRENT_CONTEXT
 # -------------------------------------------------------------------------
-FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE CSV ATTR _addr "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>$(AddressAttr$encode)<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST $(AddressAttr$encode) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(AddressAttr$encode) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_''FME_NUM_CONDITIONS2___" ATTR _postal "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>$(ProvinceAttr$encode)<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST $(ProvinceAttr$encode) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(ProvinceAttr$encode) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_''FME_NUM_CONDITIONS2___" ATTR _country "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>$(CountryAttr$encode)<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST $(CountryAttr$encode) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_;TEST $(CountryAttr$encode) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_''FME_NUM_CONDITIONS2___" ATTR _city "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>$(CityAttr$encode)<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST $(CityAttr$encode) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(CityAttr$encode) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_''FME_NUM_CONDITIONS2___" ATTR _province "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>$(ProvinceAttr$encode)<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST $(ProvinceAttr$encode) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(ProvinceAttr$encode) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_''FME_NUM_CONDITIONS2___"    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
+FACTORY_DEF * AttrSetFactory FACTORY_NAME AttributeCreator ATTRSET_PROPAGATE_MISSING YES INPUT  FEATURE_TYPE CSV ATTR _addr "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>$(AddressAttr$encode)<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST $(AddressAttr$encode) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(AddressAttr$encode) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_''FME_NUM_CONDITIONS2___" ATTR _postal "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>$(PostalCodeAttr$encode)<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST $(PostalCodeAttr$encode) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(PostalCodeAttr$encode) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_''FME_NUM_CONDITIONS2___" ATTR _country "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>$(CountryAttr$encode)<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST $(CountryAttr$encode) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_;TEST $(CountryAttr$encode) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_''FME_NUM_CONDITIONS2___" ATTR _city "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>$(CityAttr$encode)<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST $(CityAttr$encode) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(CityAttr$encode) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_''FME_NUM_CONDITIONS2___" ATTR _province "FME_CONDITIONAL:DEFAULT_VALUE'<at>Value<openparen>$(ProvinceAttr$encode)<closeparen>'BOOL_OP;OR;COMPOSITE_TEST;<Unused>;TEST $(ProvinceAttr$encode) ATTRIBUTE_IS_EMPTY _FME_BLANK_STRING_;TEST $(ProvinceAttr$encode) ATTRIBUTE_IS_MISSING _FME_BLANK_STRING_''FME_NUM_CONDITIONS2___"    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT 
 # -------------------------------------------------------------------------
 FACTORY_DEF * TeeFactory   FACTORY_NAME "GoogleGeocoder Input Input Collector"   INPUT FEATURE_TYPE AttributeCreator_OUTPUT   OUTPUT FEATURE_TYPE GoogleGeocoder_Input
 MACRO GoogleGeocoder_WORKSPACE_NAME GoogleGeocoder
@@ -2651,7 +2651,7 @@ MACRO $(GoogleGeocoder_WORKSPACE_NAME)_cryptokey <Unused>
 MACRO $(GoogleGeocoder_WORKSPACE_NAME)_MapsAPI http://maps.googleapis.com
 DEFAULT_MACRO GoogleGeocoder_WORKSPACE_NAME ""
 INCLUDE [puts {MACRO WB_OLD_CONTEXT_$(GoogleGeocoder_WORKSPACE_NAME) $(WB_CURRENT_CONTEXT)};          puts {MACRO WB_CURRENT_CONTEXT $(GoogleGeocoder_WORKSPACE_NAME)}]
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(GoogleGeocoder_WORKSPACE_NAME)_Input1405724624 Input Splitter"   INPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Input"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(GoogleGeocoder_WORKSPACE_NAME)_Input1406577389 Input Splitter"   INPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Input"   OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Input"
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_AttributeCreator_2 INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Input" ATTR GG_StrAdd $($(GoogleGeocoder_WORKSPACE_NAME)_Street_Address$encode) ATTR GG_City $($(GoogleGeocoder_WORKSPACE_NAME)_City$encode) ATTR GG_State $($(GoogleGeocoder_WORKSPACE_NAME)_State$encode) ATTR GG_PCode $($(GoogleGeocoder_WORKSPACE_NAME)_Postal_Code$encode) ATTR GG_Country $($(GoogleGeocoder_WORKSPACE_NAME)_Country$encode)    OUTPUT OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_AttributeCreator_2_OUTPUT" 
 # -------------------------------------------------------------------------
@@ -2665,16 +2665,16 @@ FACTORY_DEF * PythonFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_Pyt
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc $(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_2_c4a6e694_0ecf_11e4_8f66_86d94e4647740_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {URLtoSign}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_2    INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_PythonCaller_2_OUTPUT"    OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_2_OUTPUT"        @Tcl2("$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_2_c4a6e694_0ecf_11e4_8f66_86d94e4647740_doSetAttr {@EvaluateExpression(STRING_ENCODED,<solidus>maps<solidus>api<solidus>geocode<solidus>json?address=<at>Value<openparen>GG_FullAddress<closeparen><amp>sensor=false,$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_2)} ")
+Tcl2 proc $(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_2_0dd8578a_1691_11e4_9de0_e4e97fa249a62_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {URLtoSign}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_2    INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_PythonCaller_2_OUTPUT"    OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_2_OUTPUT"        @Tcl2("$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_2_0dd8578a_1691_11e4_9de0_e4e97fa249a62_doSetAttr {@EvaluateExpression(STRING_ENCODED,<solidus>maps<solidus>api<solidus>geocode<solidus>json?address=<at>Value<openparen>GG_FullAddress<closeparen><amp>sensor=false,$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_2)} ")
 
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TestFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_Tester    INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_2_OUTPUT"    TEST @EvaluateExpression(STRING_ENCODED,$($(GoogleGeocoder_WORKSPACE_NAME)_mode$encode),$(GoogleGeocoder_WORKSPACE_NAME)_Tester) = No ENCODED    BOOLEAN_OPERATOR OR    OUTPUT PASSED FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Tester_PASSED"    OUTPUT FAILED FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Tester_FAILED"
 # -------------------------------------------------------------------------
 
-Tcl2 proc $(GoogleGeocoder_WORKSPACE_NAME)_StringConcatenator_c4a6ef72_0ecf_11e4_8f66_86d94e4647740_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {URLToSign}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_StringConcatenator    INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Tester_FAILED"    OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_StringConcatenator_OUTPUT"        @Tcl2("$(GoogleGeocoder_WORKSPACE_NAME)_StringConcatenator_c4a6ef72_0ecf_11e4_8f66_86d94e4647740_doSetAttr {@EvaluateExpression(STRING_ENCODED,<at>Value<openparen>URLtoSign<closeparen><amp>client=$($(GoogleGeocoder_WORKSPACE_NAME)_clientid$encode),$(GoogleGeocoder_WORKSPACE_NAME)_StringConcatenator)} ")
+Tcl2 proc $(GoogleGeocoder_WORKSPACE_NAME)_StringConcatenator_0dd874ae_1691_11e4_9de0_e4e97fa249a62_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {URLToSign}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_StringConcatenator    INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Tester_FAILED"    OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_StringConcatenator_OUTPUT"        @Tcl2("$(GoogleGeocoder_WORKSPACE_NAME)_StringConcatenator_0dd874ae_1691_11e4_9de0_e4e97fa249a62_doSetAttr {@EvaluateExpression(STRING_ENCODED,<at>Value<openparen>URLtoSign<closeparen><amp>client=$($(GoogleGeocoder_WORKSPACE_NAME)_clientid$encode),$(GoogleGeocoder_WORKSPACE_NAME)_StringConcatenator)} ")
 
 # -------------------------------------------------------------------------
 FACTORY_DEF * AttrSetFactory FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_AttributeCreator INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_StringConcatenator_OUTPUT" ATTR crpytokey $($(GoogleGeocoder_WORKSPACE_NAME)_cryptokey$encode) ATTR encodedsignature ""    OUTPUT OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_AttributeCreator_OUTPUT" 
@@ -2687,17 +2687,17 @@ FACTORY_DEF * PythonFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_Pyt
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc $(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_3_c4a6fd0a_0ecf_11e4_8f66_86d94e4647740_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {googleGeocodeURL}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_3    INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_PythonCaller_OUTPUT"    OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_3_OUTPUT"        @Tcl2("$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_3_c4a6fd0a_0ecf_11e4_8f66_86d94e4647740_doSetAttr {@EvaluateExpression(STRING_ENCODED,$($(GoogleGeocoder_WORKSPACE_NAME)_MapsAPI$encode)<at>Value<openparen>URLtoSign<closeparen><amp>signature=<at>Value<openparen>encodedsignature<closeparen>,$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_3)} ")
+Tcl2 proc $(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_3_0dd88868_1691_11e4_9de0_e4e97fa249a62_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {googleGeocodeURL}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_3    INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_PythonCaller_OUTPUT"    OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_3_OUTPUT"        @Tcl2("$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_3_0dd88868_1691_11e4_9de0_e4e97fa249a62_doSetAttr {@EvaluateExpression(STRING_ENCODED,$($(GoogleGeocoder_WORKSPACE_NAME)_MapsAPI$encode)<at>Value<openparen>URLtoSign<closeparen><amp>signature=<at>Value<openparen>encodedsignature<closeparen>,$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_3)} ")
 
 # -------------------------------------------------------------------------
 
-Tcl2 proc $(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_4_c4a70098_0ecf_11e4_8f66_86d94e4647740_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {googleGeocodeURL}] [FME_DecodeText $attrText] }
-FACTORY_DEF * TeeFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_4    INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Tester_PASSED"    OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_4_OUTPUT"        @Tcl2("$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_4_c4a70098_0ecf_11e4_8f66_86d94e4647740_doSetAttr {@EvaluateExpression(STRING_ENCODED,$($(GoogleGeocoder_WORKSPACE_NAME)_MapsAPI$encode)<at>Value<openparen>URLtoSign<closeparen>,$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_4)} ")
+Tcl2 proc $(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_4_0dd88d7c_1691_11e4_9de0_e4e97fa249a62_doSetAttr {attrText} {    FME_SetAttribute [FME_DecodeText {googleGeocodeURL}] [FME_DecodeText $attrText] }
+FACTORY_DEF * TeeFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_4    INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Tester_PASSED"    OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_4_OUTPUT"        @Tcl2("$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_4_0dd88d7c_1691_11e4_9de0_e4e97fa249a62_doSetAttr {@EvaluateExpression(STRING_ENCODED,$($(GoogleGeocoder_WORKSPACE_NAME)_MapsAPI$encode)<at>Value<openparen>URLtoSign<closeparen>,$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_4)} ")
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * HTTPFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_GoogleGeocode       INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_4_OUTPUT"    INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_3_OUTPUT"    TARGET_URL @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>googleGeocodeURL<closeparen>,$(GoogleGeocoder_WORKSPACE_NAME)_GoogleGeocode)    SAVE_FILE No    OUTPUT_FILENAME "<Unused>"    TARGET_ATTR "geocode_json"    HTTP_METHOD GET    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    TARGET_ATTRIBUTE_ENCODING    RESPONSE_HEADER_LIST_ATTR "_headers"    STATUS_CODE_ATTR "_http_status_code"    ERROR_ATTR "_error"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_GoogleGeocode_OUTPUT"    OUTPUT REJECTED FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_GoogleGeocode_<REJECTED>"
+FACTORY_DEF * HTTPFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_GoogleGeocode       INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_3_OUTPUT"    INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_BuildURL_4_OUTPUT"    TARGET_URL @EvaluateExpression(STRING_ENCODED,<at>Value<openparen>googleGeocodeURL<closeparen>,$(GoogleGeocoder_WORKSPACE_NAME)_GoogleGeocode)    SAVE_FILE No    OUTPUT_FILENAME "<Unused>"    TARGET_ATTR "geocode_json"    HTTP_METHOD GET    AUTH_METHOD Basic    SINGLE_SIGN_ON No    PROXY_AUTH_METHOD Basic    TARGET_ATTRIBUTE_ENCODING    RESPONSE_HEADER_LIST_ATTR "_headers"    STATUS_CODE_ATTR "_http_status_code"    ERROR_ATTR "_error"    USE_COOKIES No    OUTPUT OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_GoogleGeocode_OUTPUT"    OUTPUT REJECTED FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_GoogleGeocode_<REJECTED>"
 
 
 # -------------------------------------------------------------------------
@@ -2743,8 +2743,8 @@ FACTORY_DEF * TeeFactory FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_TestFilte
 
 FACTORY_DEF * TeeFactory    FACTORY_NAME $(GoogleGeocoder_WORKSPACE_NAME)_CoordinateSystemSetter    INPUT  FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_TestFilter_Geocoded"    OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_CoordinateSystemSetter_OUTPUT"         @CoordSys("LL84")
 
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(GoogleGeocoder_WORKSPACE_NAME)_Not_Geocoded1405724624 Output Collector"   INPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_TestFilter_Not<space>Geocoded"   INPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Not_Geocoded"
-FACTORY_DEF * TeeFactory   FACTORY_NAME "$(GoogleGeocoder_WORKSPACE_NAME)_Geocoded1405724624 Output Collector"   INPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_CoordinateSystemSetter_OUTPUT"   OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Geocoded"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(GoogleGeocoder_WORKSPACE_NAME)_Not_Geocoded1406577389 Output Collector"   INPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_AttributeRemover_2_OUTPUT"   INPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_TestFilter_Not<space>Geocoded"   OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Not_Geocoded"
+FACTORY_DEF * TeeFactory   FACTORY_NAME "$(GoogleGeocoder_WORKSPACE_NAME)_Geocoded1406577389 Output Collector"   INPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_CoordinateSystemSetter_OUTPUT"   OUTPUT FEATURE_TYPE "$(GoogleGeocoder_WORKSPACE_NAME)_Geocoded"
 INCLUDE [puts {MACRO WB_CURRENT_CONTEXT $(WB_OLD_CONTEXT_$(GoogleGeocoder_WORKSPACE_NAME))}]
 FACTORY_DEF * TeeFactory   FACTORY_NAME "GoogleGeocoder Geocoded Output Renamer/Nuker"   INPUT FEATURE_TYPE GoogleGeocoder_Geocoded   OUTPUT FEATURE_TYPE GoogleGeocoder_Geocoded
 FACTORY_DEF * TeeFactory   FACTORY_NAME "GoogleGeocoder Not_Geocoded Output Renamer/Nuker"   INPUT FEATURE_TYPE GoogleGeocoder_Not_Geocoded   OUTPUT FEATURE_TYPE GoogleGeocoder_Not_Geocoded
@@ -2757,7 +2757,7 @@ FACTORY_DEF * TeeFactory   FACTORY_NAME "GoogleGeocoder Not_Geocoded Output Rena
 # somesuch.
 
 DEFAULT_MACRO _WB_BYPASS_TERMINATION No
-FACTORY_DEF * TestFactory    FACTORY_NAME Terminator    INPUT  FEATURE_TYPE GoogleGeocoder_Not_Geocoded    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,@EvaluateExpression(STRING_ENCODED,There<space>was<space>an<space>error<space>geocoding<space>your<space>addresses.<space><lf><lf>Message:<space><quote><at>Value<openparen>_error<closeparen><quote>,Terminator))       @SupplyAttributes(_wb_termination_xformer,"Terminator")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,@EvaluateExpression(STRING_ENCODED,There<space>was<space>an<space>error<space>geocoding<space>your<space>addresses.<space><lf><lf>Message:<space><quote><at>Value<openparen>_error<closeparen><quote>,Terminator))
+FACTORY_DEF * TestFactory    FACTORY_NAME Terminator    INPUT  FEATURE_TYPE GoogleGeocoder_Not_Geocoded    TEST "$(_WB_BYPASS_TERMINATION)" == Yes    OUTPUT PASSED FEATURE_TYPE __WB_BYPASS_TERMINATOR__       @SupplyAttributes(_wb_termination_feature_type,@FeatureType())       @SupplyAttributes(ENCODED,_wb_termination_message,@EvaluateExpression(STRING_ENCODED,There<space>was<space>an<space>error<space>geocoding<space>one<space>or<space>more<space>of<space>your<space>addresses.<lf><lf>Message:<space><quote><at>Value<openparen>_error<closeparen><quote>,Terminator))       @SupplyAttributes(_wb_termination_xformer,"Terminator")       @SupplyAttributes(_wb_termination_feature,Yes)    OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED,@EvaluateExpression(STRING_ENCODED,There<space>was<space>an<space>error<space>geocoding<space>one<space>or<space>more<space>of<space>your<space>addresses.<lf><lf>Message:<space><quote><at>Value<openparen>_error<closeparen><quote>,Terminator))
 
 # -------------------------------------------------------------------------
 
