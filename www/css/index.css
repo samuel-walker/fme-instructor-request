@@ -157,6 +157,10 @@ body {
   position:relative;
 }
 
+#mapDiv img{
+  max-width: none;
+}
+
 #loadingImg{
   display:none;
   position:absolute;

@@ -149,7 +149,9 @@ var geocoder = (function() {
             zoom: 3,
             center: new google.maps.LatLng( 50.355, -97.855 ),
             mapTypeId : google.maps.MapTypeId.SATELLITE,
-            disableDefaultUI : true
+            disableDefaultUI : true,
+            zoomControl : true,
+            panControl : true
         };
 
         map = new google.maps.Map( document.getElementById( "mapDiv" ), mapOptions );
@@ -181,6 +183,7 @@ var geocoder = (function() {
                 token : token
             });
 
+            this.displayMap()
         },
 
         requestSchema : function(filePath) {
@@ -217,6 +220,7 @@ var geocoder = (function() {
                 if (layer.status = 'FETCH_ERROR'){
                     dataLoadError();
                 }
+                console.log(layer);
                 loading.style.display = 'none';
             };
 
