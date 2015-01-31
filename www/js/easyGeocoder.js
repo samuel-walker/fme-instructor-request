@@ -1,11 +1,16 @@
 $(document).ready(function() {
+    $.getJSON("http://demos.fmeserver.com.s3.amazonaws.com/server-demo-config.json", function(config) {
+        initialize(config.initObject);
+    });
+});
 
+function initialize(initObject) {
     document.getElementById('dropdowns').style.display = 'none';
     document.getElementById('mapPage').style.display = 'none';
 
     //initialize behaviour for file upload 
     $('#fileupload').fileupload({
-        url : 'https://fmepedia2014-safe-software.fmecloud.com/fmedataupload/EasyGeocoder/GenerateSchemaElements.fmw?opt_fullpath=true',
+        url : initObject.server + '/fmedataupload/EasyGeocoder/GenerateSchemaElements.fmw?opt_fullpath=true',
         dropzone : $('#dropzone'),
         autoUpload : true,
 
@@ -61,11 +66,11 @@ $(document).ready(function() {
     });
 
     geocoder.init({
-        host : 'https://fmepedia2014-safe-software.fmecloud.com',
-        token : 'fb1c3ee6828e6814c75512dd4770a02e73d913b8'
+        host : initObject.server,
+        token : initObject.token
     }); 
 
-}); 
+} 
 
 var geocoder = (function() {
 
@@ -105,7 +110,6 @@ var geocoder = (function() {
     }
 
     function getParams() {
-
         var address = document.getElementById("Address_field").value;
         var city = document.getElementById("City_field").value;
         var province = document.getElementById("StateProvince_field").value;
@@ -182,8 +186,6 @@ var geocoder = (function() {
                 server : host,
                 token : token
             });
-
-            this.displayMap()
         },
 
         requestSchema : function(filePath) {
@@ -220,7 +222,6 @@ var geocoder = (function() {
                 if (layer.status = 'FETCH_ERROR'){
                     dataLoadError();
                 }
-                console.log(layer);
                 loading.style.display = 'none';
             };
 
