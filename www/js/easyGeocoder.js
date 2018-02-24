@@ -8,9 +8,10 @@ function initialize(initObject) {
     document.getElementById('dropdowns').style.display = 'none';
     document.getElementById('mapPage').style.display = 'none';
 
-    //initialize behaviour for file upload 
+    //initialize behaviour for file upload
     $('#fileupload').fileupload({
-        url : initObject.server + '/fmedataupload/EasyGeocoder/GenerateSchemaElements.fmw?opt_fullpath=true',
+			url : BuildForm.host + '/fmedataupload/' + BuildForm.repository + '/' +  BuildForm.workspaceName,
+			headers : {'Authorization' : 'fmetoken token=' + BuildForm.token},
         dropzone : $('#dropzone'),
         autoUpload : true,
 
@@ -37,7 +38,7 @@ function initialize(initObject) {
 
             if (!timeout) {
                 dropZone.addClass('in');
-            } 
+            }
             else {
                 clearTimeout(timeout);
             }
@@ -50,11 +51,11 @@ function initialize(initObject) {
                     break;
                 }
                 node = node.parentNode;
-            } 
+            }
             while (node !== null);
             if (found) {
                 dropZone.addClass('hover');
-            } 
+            }
             else {
                 dropZone.removeClass('hover');
             }
@@ -68,9 +69,9 @@ function initialize(initObject) {
     geocoder.init({
         host : initObject.server,
         token : initObject.token
-    }); 
+    });
 
-} 
+}
 
 var geocoder = (function() {
 
@@ -106,7 +107,7 @@ var geocoder = (function() {
         document.getElementById("city").innerHTML = createComboBox("City_field", colList);
         document.getElementById("state").innerHTML = createComboBox("StateProvince_field", colList);
         document.getElementById("postalcode").innerHTML = createComboBox("PostalCode_field", colList);
-        document.getElementById("country").innerHTML = createComboBox("Country_field", colList);        
+        document.getElementById("country").innerHTML = createComboBox("Country_field", colList);
     }
 
     function getParams() {
@@ -124,7 +125,7 @@ var geocoder = (function() {
         params = params + '&CountryAttr=' + country;
 
         var encodedParams = encodeURI(params);
-            
+
         return encodedParams;
     }
 
@@ -141,7 +142,7 @@ var geocoder = (function() {
         loading = new Image();
         loading.src = "libs/upload/img/loading.gif";
         loading.id = "loadingImg";
-        
+
         //google maps init
         var mapStyles = [ {
             featureType : "all",
@@ -193,7 +194,7 @@ var geocoder = (function() {
             var params = 'SourceDataset_SCHEMA=' + filePath;
             var url = host + '/fmedatastreaming/' + repository + '/' + schemaWorkspace + '?' + params;
             FMEServer.customRequest(url, 'GET' ,displayNextStep);
-        }, 
+        },
 
         backToUpload : function() {
             clearDropdowns();
@@ -208,12 +209,12 @@ var geocoder = (function() {
         displayMap : function() {
             var params = getParams();
             var url = host + '/fmedatastreaming/' + repository + '/'+ geocodeWorkspace + '?' + params + '&token=' + token;
-            
+
             initGoogleMap();
 
             loading.style.display = 'block';
 
-            layer = new google.maps.KmlLayer( url, { 
+            layer = new google.maps.KmlLayer( url, {
                 preserveViewport : false,
                 map : map
             });
@@ -231,27 +232,3 @@ var geocoder = (function() {
     };
 
 }());
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
