@@ -2,7 +2,7 @@
 <html lang="en">
 <meta charset="UTF-8">
 <head>
-	<!-- Safe Software, 2013 -->
+	<!-- Safe Software, 2018 -->
 	<!-- http://www.safe.com -->
 
 	<title>Easy Geocoder</title>
@@ -42,33 +42,11 @@
 
 </head>
 
-<body >
+<body>
 
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>
-
-			<div class="brand">FME Server<span class="hidden-tiny"> Demos</span></div>
-
-			<div class="nav-collapse collapse">
-				<a href="https://knowledge.safe.com/articles/Samples_and_Demos/EasyGeocoder-Data-Driven-Self-Serve-Data-Transformation" class="btn">
-					View KC article
-				</a>
-				<a href="http://playground.fmeserver.com/demos/" class="btn">
-					<img src="libs/server-icon.png"> View all Demos
-				</a>
-				<a href="https://github.com/safesoftware/fmepedia-easygeocoder" class="btn">
-					<img src="libs/GitHub.png"> Fork GitHub
-				</a>
-				<a href="https://github.com/safesoftware/fmepedia-easygeocoder/archive/master.zip" class="btn">
-					<i class="icon-download-alt"></i> Download Zip
-				</a>
-			</div>
 			<span class="hidden-phone" id="safe-ribbon"><a href="http://www.safe.com">Powered by FME</a></span>
 			</div>
 		</div>
@@ -78,84 +56,76 @@
 	    <div id="content" class="form-horizontal">
 	    	<div>
 	    		<div class='title'>
-		    		<h1>Easy Geocoder</h1>
+		    		<h1>FME Training Higher Education Instructor Space Access Request</h1>
 		    	</div>
 		    	<p>
 					<p class='text-success'>
-						<strong>Step 1</strong> <br/> Upload a CSV file containing address data through this page. <br/> You can upload your own or download the sample file: <br/> <a href='http://demos.fmeserver.com/easygeocoder/download/SampleFile.csv'>SampleFile.csv</a>
+						<strong>Step 1</strong> <br/> Please enter your information here.
 					</p>
 				</p>
 			</div>
-			<div id='dropzone' class='fade well well-large'>
+			<!-- <div id='dropzone' class='fade well well-large'>
                 <p id='dropText'>Click 'Add file' or drop your file here</p>
                 <br/>
 
                 <span class="btn btn-success fileinput-button" id='uploadBtn'>
                 <i class="icon-plus icon-white"></i>
-                <span>Add file...</span>
+                <span>Add file...</span> -->
                     <!-- The file input field used as target for the file upload widget -->
-                <input id="fileupload" type="file" name="files[]" multiple>
+                <!-- <input id="fileupload" type="file" name="files[]" multiple>
                 </span>
-            </div>
+        </div> -->
+				<div>
+						<form name="myForm" action="/action_page.php">
+								<fieldset>
+										<legend>Personal information</legend>
+												First name:<br>
+												<input type="text" name="firstname" required><br><br>
+												Last name:<br>
+												<input type="text" name="lastname" required><br><br>
+												Institution:<br>
+												<input type="text" name="institution" required><br><br>
+												Your official institution contact page or your personal professional website:<br>
+												<input type="url" name="website" required><br><br>
+								</fieldset>
+								<fieldset>
+										<legend>Email</legend>
+												<p>If your official institutional email does not match your Safe <a href="https://knowledge.safe.com/">Knowledge Center</a> email, you will have to verify it.<br><br>
+												Your official institution email:<br>
+												<input type="email" name="email_institution"><br><br>
+												Your <a href="https://knowledge.safe.com/">Knowledge Center</a> email (if different from the above; optional):<br>
+												<input type="email" name="email_kc"><br><br>
+												<input type="submit" value="Submit" onclick="validateAndSend()">
+								</fieldset>
+						</form>
+				</div>
 		</div>
 	</div>
 
 	<div id="dropdowns">
-		<div id="geocodeFormDiv">
+		<div id="requestSubmitted">
 			<div>
-				<h1 class='title'>Geocode Form</h1>
+				<h1 class='title'>Thank you!</h1>
 				<p class='text-success'>
-					<strong>Step 2:</strong><br/>
-					Select the CSV columns that correspond to each geocoding field:
+					Your request has been submitted. You will be emailed with the results of your submission.
 				</p>
 			</div>
-			<div id='backBtn'>
-				<button class='round-button' id='back' onClick='geocoder.backToUpload()'><i class='icon-chevron-left'></i></button>
-			</div>
-			<div id='form' class='form-horizontal'>
-				<div class="control-group">
-					<label class="control-label">Address: </label>
-					<div id="address" class="controls">
-						<select> </select>
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">City: </label>
-					<div id="city" class="controls">
-						<select> </select>
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">State/Province: </label>
-					<div id="state" class="controls">
-						<select> </select>
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">Postal/Zip Code: </label>
-					<div id="postalcode" class="controls">
-						<select> </select>
-					</div>
-				</div>
-				<div class="control-group">
-					<label class="control-label">Country: </label>
-					<div id="country" class="controls">
-						<select> </select>
-					</div>
-				</div>
-				<div class="controls">
-					<button class='btn btn-success btn-large' id="displayMap" onClick="geocoder.displayMap()"><strong>Display Results</strong></button>
-				</div>
-			</div>
 		</div>
 	</div>
-	<div id='mapPage'>
-		<div id='refreshBtn'>
-				<button class='round-button' id='back' onClick='geocoder.restart()'><i class='icon-refresh'></i></button>
-			</div>
-		<div id="mapDiv" class="map container">
-		</div>
-	</div>
+
+<!-- Script to validate form entry -->
+<script>
+		function validateAndSend() {
+				if (myForm.email_institution.value == '' && myForm.email_kc.value == '') {
+						alert('You may only enter one email.');
+						return false;
+				}
+				else {
+						myForm.submit();
+				}
+		}
+</script>
+
 </body>
 
 </html>
